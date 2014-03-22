@@ -103,29 +103,35 @@
 {  \bfseries \large Open Source \\ \huge Bannerreklamesystem}\\[0.4cm] % Title of your document
 \HRule \\[1.5cm]
 
-\begin{minipage}{0.4\textwidth}
+\begin{minipage}[t]{0.4\textwidth}
 \begin{flushleft} \large
 \emph{Projektgruppe:}
 \newline
 \\
 Signar % Your name
+\\
+060585
 \newline
 \\
 Aslak
+\\
+060693
 \newline
 \\
-Amanda Bergqvist 171090
+Amanda Bergqvist
+\\
+171090
 \end{flushleft}
 \end{minipage}
 ~
-\begin{minipage}{0.4\textwidth}
+\begin{minipage}[t]{0.4\textwidth}
 \begin{flushright} \large
 \emph{Instruktor:} \\
 Aske Mottelson Clausen % Supervisor's Name
 \end{flushright}
 \end{minipage}\\[4cm]
 
-{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+{\large 27. marts 2014}\\[3cm] % Date, change the \today to a set date if you want to be precise
 
 \end{titlepage}
 
@@ -136,13 +142,30 @@ Aske Mottelson Clausen % Supervisor's Name
 
 \section{Problemformulering}
 
+Ifølge en rapport fra Danske Medier Research\footnote{\url{ http://www.fdim.dk/sites/default/files/mediearkiv/rapporter/danskernes\_brug\_af\_internettet\_2012\_rapport.pdf}} om danskernes internetforbrug, er adgang til internettet fra hjemmet steget fra 83\% til 92\% på blot 4 år - fra 2007 til 2011. Udover adgang til internettet fra hjemmet, er danskerne i stigende grad online via mobile enheder. I takt med den stigende grad af internetforbrug, anvender annancører de digitale medier til at ramme deres målgruppe.
+
+I takt med danskernes internet forbrug bliver flere og flere virksomheder, interesseorganisationer, foreninger synlige på internettet med en hjemmeside. De står alle sammen for samme udfordring, nemlig hvordan man tjener penge på nettet. Den mest udbredte forretningsmodel er salg af annoncer på nettet. Der er to udfordringer ved at annoncere på nettet, den ene er den tekniske udfordring ved at selv skulle vedligeholde et bannersystem, og den anden er den økonomiske udfordring ved at købe sig adgang til et bannersystem. Vores system løser disse to problemer.
+
+Vores system er et opensource bannersystem, som gør det nemt at administrere annoncer på nettet, og fordi systemet er opensource, så er systemet gratis. Systemet modtager en anmodning om en annonce gennem http-protokollen fra en interessent og systemet sender et link til en annonce tilbage. Linket skal indsættes på siden, hvor annoncen skal placeres. Systemet er primært beregnet til to scenarier.
+
+Scenarie et: Systemet bliver installeret hos tredje mand, som administrerer annoncerne og sælger annoncer til interessenter. Interessenten får en del af salget og annoncen bliver vist på interessentens digitale medie.
+
+Scenarie to: Systemet bliver installeret direkte hos interessenten, som selv administrerer annoncerne på sit eget digitale medie.
+
+Tekniske krav der stilles til systemet: Apache webserver som understøtter afvikling af PHP, samt MySQL database. Derudover skal systemet ligge på en server eller computer, som er tilsluttet internettet 24 timer i døgnet, 365 dage om året.
+
+Redskaber projektgruppen vil bruge at løse problemet: HTML, CSS, JavaScript, PHP, SQL, Apache, MySQL.
+
+Visning af annoncer: 
+CTR (click-throug-rate) \footnote{\url{http://en.wikipedia.org/wiki/Click-through\_rate}}, CPI (cost-per-impression / visninger) \footnote{\url{http://en.wikipedia.org/wiki/Cost\_per\_impression}}, PPC (pay-per-click) \footnote{\url{http://en.wikipedia.org/wiki/Pay\_per\_click}}, CPM/CPT (cost-per-mille, cost-per-thousand) \footnote{\url{http://en.wikipedia.org/wiki/Cost\_per\_mille}}, tidsbegrænsning.
+
 https://github.com/AslakNiclasen/ProjektOpgave
 
 \section{Indledende projektplan}
 
 \section{Indledende skitse af system- og softwarearkitekturen}
 
-Signar's tegning 
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{architecture_diagram.png}
 
 \section{Projektaftalen}
 
