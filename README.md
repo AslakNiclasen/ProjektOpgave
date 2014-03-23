@@ -1,4 +1,4 @@
-ProjektOpgave
+﻿#Open Source Bannerreklamesystem
 =============
 
-Projektopgave på diku
+Projektopgave på DIKU 2014
