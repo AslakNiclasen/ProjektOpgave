@@ -144,22 +144,16 @@ Aske Mottelson Clausen % Supervisor's Name
 
 Ifølge en rapport fra Danske Medier Research\footnote{\url{ http://www.fdim.dk/sites/default/files/mediearkiv/rapporter/danskernes\_brug\_af\_internettet\_2012\_rapport.pdf}} om danskernes internetforbrug, er adgang til internettet fra hjemmet steget fra 83\% til 92\% på blot 4 år - fra 2007 til 2011. Udover adgang til internettet fra hjemmet, er danskerne i stigende grad online via mobile enheder. I takt med den stigende grad af internetforbrug, anvender annancører de digitale medier til at ramme deres målgruppe.
 
-I takt med danskernes internet forbrug bliver flere og flere virksomheder, interesseorganisationer, foreninger synlige på internettet med en hjemmeside. De står alle sammen for samme udfordring, nemlig hvordan man tjener penge på nettet. Den mest udbredte forretningsmodel er salg af annoncer på nettet. Der er to udfordringer ved at annoncere på nettet, den ene er den tekniske udfordring ved at selv skulle vedligeholde et bannersystem, og den anden er den økonomiske udfordring ved at købe sig adgang til et bannersystem. Vores system løser disse to problemer.
+I takt med danskernes internet forbrug bliver flere og flere virksomheder, interesseorganisationer, foreninger synlige på internettet med en hjemmeside eller profil på de sociale medier. De står alle overfor samme udfordring, nemlig hvordan man tjener penge på nettet. Den mest udbredte forretningsmodel er salg af annoncer på nettet. Der er to udfordringer ved at annoncere på nettet, den ene er den tekniske udfordring ved at selv skulle vedligeholde et bannersystem, og den anden er den økonomiske udfordring ved at købe sig adgang til et bannersystem eller den nødvendige tekniske viden. Vores system er et forsøg på at løse disse to problemer.
 
-Vores system er et opensource bannersystem, som gør det nemt at administrere annoncer på nettet, og fordi systemet er opensource, så er systemet gratis. Systemet modtager en anmodning om en annonce gennem http-protokollen fra en interessent og systemet sender et link til en annonce tilbage. Linket skal indsættes på siden, hvor annoncen skal placeres. Systemet er primært beregnet til to scenarier.
+Formålet med vores system er, at det skal være nemt at administrere annoncer på nettet, og det skal også være nemt at komme i gang med at bruge systemet. Fordi systemet er opensource er det dermed også gratis. Vores projekt er ment som en løsning på en udfordring hos Treu Media, som er specialister i annoncesalg på nettet. Den tekniske kontaktperson hos Treu Media er Simon Shine, og det er Simon der sætter tekniske krav til systemet, mens Jan Treu-Nielsen er kontaktperson vedrørende brug af systemet.
 
-Scenarie et: Systemet bliver installeret hos tredje mand, som administrerer annoncerne og sælger annoncer til interessenter. Interessenten får en del af salget og annoncen bliver vist på interessentens digitale medie.
+Systemet fungerer på den måde, at systemet bliver installeret på en af Treu Media's servere. Jan har adgang til systemet via et webinterface, hvorfra han kan administrere sine kunder og de tilhørende annoncer. Annoncerne bliver vist på kundernes hjemmesider ved at kundens hjemmeside kalder en API på vores system via http-protokollen, og vores system svarer kaldet med en annonce. Se tegning under afsnit 3.
 
-Scenarie to: Systemet bliver installeret direkte hos interessenten, som selv administrerer annoncerne på sit eget digitale medie.
+Selvom systemet bliver udviklet med henblik på Treu Media's udfordring, så kan systemet sagtens bruges på andre måder og i andre sammenhæng, f.eks. kan systemet installeres direkte hos en der har behov for at administrere annoncer på sin egen hjemmeside.
 
-Tekniske krav der stilles til systemet: Apache webserver som understøtter afvikling af PHP, samt MySQL database. Derudover skal systemet ligge på en server eller computer, som er tilsluttet internettet 24 timer i døgnet, 365 dage om året.
+Der stilles nogle tekniske krav til systemet. Da systemet er en webapplikation, skal systemet installeres på en webserver, som f.eks. Apache, samt have adgang til en MySQL database. Systemet vil blive udviklet i HTML, CSS, JavaScript og PHP.
 
-Redskaber projektgruppen vil bruge at løse problemet: HTML, CSS, JavaScript, PHP, SQL, Apache, MySQL.
-
-Visning af annoncer: 
-CTR (click-throug-rate) \footnote{\url{http://en.wikipedia.org/wiki/Click-through\_rate}}, CPI (cost-per-impression / visninger) \footnote{\url{http://en.wikipedia.org/wiki/Cost\_per\_impression}}, PPC (pay-per-click) \footnote{\url{http://en.wikipedia.org/wiki/Pay\_per\_click}}, CPM/CPT (cost-per-mille, cost-per-thousand) \footnote{\url{http://en.wikipedia.org/wiki/Cost\_per\_mille}}, tidsbegrænsning.
-
-https://github.com/AslakNiclasen/ProjektOpgave
 
 \section{Indledende projektplan SPMP}
 
