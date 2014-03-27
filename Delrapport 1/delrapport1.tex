@@ -142,15 +142,15 @@ Aske Mottelson Clausen % Supervisor's Name
 
 \section{Problemformulering}
 
-Ifølge en rapport fra Danske Medier Research\footnote{\url{ http://www.fdim.dk/sites/default/files/mediearkiv/rapporter/danskernes\_brug\_af\_internettet\_2012\_rapport.pdf}} om danskernes internetforbrug, er adgang til internettet fra hjemmet steget fra 83\% til 92\% på blot 4 år - fra 2007 til 2011. Udover adgang til internettet fra hjemmet, er danskerne i stigende grad online via mobile enheder. I takt med den stigende grad af internetforbrug, anvender annancører de digitale medier til at ramme deres målgruppe.
+Ifølge en rapport fra Danske Medier Research\footnote{\url{ http://www.fdim.dk/sites/default/files/mediearkiv/rapporter/danskernes\_brug\_af\_internettet\_2012\_rapport.pdf}} om danskernes internetforbrug er adgang til internettet fra hjemmet steget fra 83\% til 92\% på blot 4 år - fra 2007 til 2011. Udover adgang til internettet fra hjemmet er danskerne i stigende grad online via mobile enheder. I takt med den stigende grad af internetforbrug anvender annoncører de digitale medier til at ramme deres målgruppe.
 
-I takt med danskernes internet forbrug bliver flere og flere virksomheder, interesseorganisationer, foreninger synlige på internettet med en hjemmeside eller profil på de sociale medier. De står alle overfor samme udfordring, nemlig hvordan man tjener penge på nettet. Den mest udbredte forretningsmodel er salg af annoncer på nettet. Der er to udfordringer ved at annoncere på nettet, den ene er den tekniske udfordring ved at selv skulle vedligeholde et bannersystem, og den anden er den økonomiske udfordring ved at købe sig adgang til et bannersystem eller den nødvendige tekniske viden. Vores system er et forsøg på at løse disse to problemer.
+Flere og flere virksomheder, interesseorganisationer og foreninger bliver derfor synlige på internettet med en hjemmeside eller profil på de sociale medier. De står alle overfor samme udfordring, nemlig hvordan man tjener penge på nettet. Den mest udbredte forretningsmodel er salg af annoncer på nettet. Der er to udfordringer ved at annoncere på nettet; den ene er den tekniske udfordring ved at selv skulle vedligeholde et bannersystem, og den anden er den økonomiske udfordring ved at skulle købe sig adgang til et bannersystem eller den nødvendige tekniske viden. Vores system er et forsøg på at løse disse to problemer.
 
 Formålet med vores system er, at det skal være nemt at administrere annoncer på nettet, og det skal også være nemt at komme i gang med at bruge systemet. Fordi systemet er opensource er det dermed også gratis. Vores projekt er ment som en løsning på en udfordring hos Treu Media, som er specialister i annoncesalg på nettet. Den tekniske kontaktperson hos Treu Media er Simon Shine, og det er Simon der sætter tekniske krav til systemet, mens Jan Treu-Nielsen er kontaktperson vedrørende brug af systemet.
 
 Systemet fungerer på den måde, at systemet bliver installeret på en af Treu Media's servere. Jan har adgang til systemet via et webinterface, hvorfra han kan administrere sine kunder og de tilhørende annoncer. Annoncerne bliver vist på kundernes hjemmesider ved at kundens hjemmeside kalder en API på vores system via http-protokollen, og vores system svarer kaldet med en annonce. Se tegning under afsnit 3.
 
-Selvom systemet bliver udviklet med henblik på Treu Media's udfordring, så kan systemet sagtens bruges på andre måder og i andre sammenhæng, f.eks. kan systemet installeres direkte hos en der har behov for at administrere annoncer på sin egen hjemmeside.
+Selvom systemet bliver udviklet med henblik på Treu Media's udfordring, så kan systemet sagtens bruges på andre måder og i andre sammenhænge, f.eks. kan systemet installeres direkte hos én, der har behov for at administrere annoncer på sin egen hjemmeside.
 
 Der stilles nogle tekniske krav til systemet. Da systemet er en webapplikation, skal systemet installeres på en webserver, som f.eks. Apache, samt have adgang til en MySQL database. Systemet vil blive udviklet i HTML, CSS, JavaScript og PHP.
 
@@ -158,67 +158,67 @@ Herefter vil Treu Media blive kaldt interessenten, mens Treu Media's kunder vil 
 
 \section{Indledende projektplan SPMP}
 
-\textbf{Overblik over projektet:}
+\textbf{Overblik over projektet}
 \newline
-Projektet vil være et løbende udviklingsprojekt, som tager udgangspunkt i softwaren. Behovet for denne findes og fastlægges, derefter kan projektgruppen danner sig et overblik over hvilke arbejdsopgaver der skal løses. Når gruppen har dannet sig et reelt overblik over systemet, vil denne tage kontakt til interessenten. Herfra kan gruppen udforme projektet i en hensigtsmæssig retning med styring fra interessenten, uden at denne overtager det egentlige arbejde som gruppen står med. Projektet vil derfor hele tiden være i en udviklingsfase som optimeres med interessentens forespørgsler til, f.eks. krav om design.
-\newline
-\newline
-\textbf{Forventede resultater ved afsluttet projekt:}
-\newline
-Målet for projektet er, at gruppen til slut har formået at lave et funktionelt interface, med specifikke brugerkrav. Dette interface skal benyttes i samspil med en database, hvori der findes data som kunder kan opnå at få vist på deres hjemmesider. Dataene vil være reklamebannere. Vores system skal derfor benytte sig af interessenter som er i kontakt med kunderne. 
-Vores opgave er at gøre denne kontakt mellem interessent og kunde så funktionel så muligt i softwaren, således at interessenten ikke skal vedligeholde eller redigere i systemet, men benytte sig af dets funktionalitet. Kunden som ejer en hjemmeside, vil ikke benytte sig direkte af systemet, men vil benytte sig af interessenten.
+Projektet vil være et løbende udviklingsprojekt, som tager udgangspunkt i softwaren. Behovet for denne findes og fastlægges, derefter kan projektgruppen danne sig et overblik over, hvilke arbejdsopgaver, der skal løses. Når gruppen har dannet sig et reelt overblik over systemet, vil denne tage kontakt til interessenten. Herefter kan gruppen udforme projektet i en hensigtsmæssig retning med styring fra interessenten, uden at denne overtager det egentlige arbejde som gruppen står med. Projektet vil derfor hele tiden være i en udviklingsfase som optimeres med interessentens forespørgsler til f.eks. krav om design.
 \newline
 \newline
-\textbf{Work breakdown strucure:}
+\textbf{Forventede resultater ved afsluttet projekt}
+\newline
+Målet for projektet er, at gruppen til slut har formået at lave et funktionelt interface med specifikke brugerkrav. Dette interface skal benyttes i samspil med en database, hvori der findes data som kunder kan opnå at få vist på deres hjemmesider. Dataene vil være reklamebannere. Vores system skal derfor benytte sig af interessenter, som er i kontakt med kunderne. 
+Vores opgave er at gøre denne kontakt mellem interessent og kunde så funktionel som muligt i softwaren, således at interessenten ikke skal vedligeholde eller redigere i systemet, men benytte sig af dets funktionalitet. Kunden, som ejer en hjemmeside, vil ikke benytte sig direkte af systemet, men vil benytte sig af interessenten.
+\newline
+\newline
+\textbf{Work breakdown strucure}
 \newline
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio] {WorkBreakdownStructure.jpg}
 \newline
 \newline
-\textbf{Roller og ansvar:}
+\textbf{Roller og ansvar}
 \newline
-\textit{Internt:}
+\textit{Internt}
 \newline
-I projektgruppens interne planlægning og arbejdsstruktur, er målet først og fremmest at finde hinandens forcer og svagheder. Eftersom der benyttes HTML, CSS, JavaScript, Jquery mm. har man besluttet at uddelegere arbejdsbyrden i to dele. Den ene del består i selve udseendet af softwaren som vi tilbyder, den anden del er den reelle kontakt og problemhåndtering der opstår ved en forespørgsel fra interessenten til databasen, som vil blive benyttet til projektet.
-Eftersom meget er nyt for to af medlemmerne i gruppen, vil de stå for implementeringen af designet imens den tredje person vil have et fokus på interaktivitet og kontakt mellem data interessent og kunde.
+I projektgruppens interne planlægning og arbejdsstruktur er målet først og fremmest at finde hinandens forcer og svagheder. Eftersom der benyttes HTML, CSS, JavaScript, Jquery mm. har vi besluttet at uddelegere arbejdsbyrden i to dele. Den ene del består i selve udseendet af softwaren som vi tilbyder, den anden del er den reelle kontakt og problemhåndtering, der opstår ved en forespørgsel fra interessenten til databasen, som vil blive benyttet til projektet.
+Eftersom meget er nyt for to af medlemmerne i gruppen, vil de stå for implementeringen af designet mens den tredje person vil have fokus på interaktivitet og kontakt mellem data interessent og kunde.
 Dog vil den tredje person fra gruppen have et overblik over situationen for designet, da der skal være en sammenhæng mellem de to dele.
 \newline
 \newline
-\textit{Eksternt:}
+\textit{Eksternt}
 \newline
-Rollerne eksternt er i en vis forstand uddelegeret på forhånd ift. vores projekt. Projektgruppen står primært for udviklingen af softwaren der tilbydes, denne ”overdrages” herefter til næste led i kæden, personen der skal benytte gruppens software, nemlig interessenten. 
-Treu media betegnes som en interessent, eftersom det er folk som dette firma der er målet for softwaren. interessentens rolle bliver derfor et vigtigt mellemled, mellem gruppen og den reelle kunde, som har et behov om at få vist reklamer på deres offentligt tilgængelige hjemmeside.
-Kunden og interessenten skal ikke tage sig af hvordan systemet bagved fungerer, kunden skal kun kende til sin egen hjemmeside og kræve hvilke type af reklamer der skal vises. interessenten skal kunne benytte sig af systemet, men heller ikke kende til dets opbygning indvendigt.
-Det er derfor heller ikke gruppens job at ordne kundens forespørgsler, gruppen skal sørge for at systemet fungerer for interessenten. 
-\newline
-\newline
-\textbf{Projektplan:}
-\newline
-De næste tre uger frem vil der lægges vægt på forståelse af systemets kunnen. 
-Der skal forefindes møder med interessenten, projektgruppen skal internt afholder møder ca. 2 gange om ugen. Under disse interne møder vil der arbejdes med arbejdsdelegering og problemhåndtering, således at ingen i gruppen misforstår deres arbejdsdel når projektet for alvor skydes i gang.
-Efter de næste tre uger vil der foreligge en større plan om det fremtidige arbejde der skal udføres. Denne plan er en overordnet plan med delmål, som senere vil konkretiseres i fremtidige rapporter.
+Rollerne eksternt er i en vis forstand uddelegeret på forhånd ift. vores projekt. Projektgruppen står primært for udviklingen af softwaren, der tilbydes. Softwaren ”overdrages” herefter til næste led i kæden, personen der skal benytte denne, nemlig interessenten. 
+Treu media betegnes som en interessent, eftersom det er firmaer som dette der er målet for softwaren. Interessentens rolle bliver derfor et vigtigt mellemled mellem projektgruppen og den reelle kunde, som har et behov om at få vist reklamer på deres offentligt tilgængelige hjemmeside.
+Kunden og interessenten skal ikke tage sig af, hvordan systemet bagved fungerer. Kunden skal kun kende til sin egen hjemmeside og beslutte, hvilke type af reklamer, der skal vises. Interessenten skal kunne benytte sig af systemet, men heller ikke kende til dets opbygning indvendigt.
+Det er derfor heller ikke Projektgruppens job at ordne kundens forespørgsler. Projektgruppen skal alene sørge for at systemet fungerer for interessenten. 
 \newline
 \newline
-\textbf{Evt. omkostningsbudget:}
+\textbf{Projektplan}
 \newline
-Pt. Forefindes der ikke noget budget for projektgruppen, da alle nødvendige midler er til vores disposition. Vi har kontakt til både interessenten og hinanden telefonisk.
-Software der skal benyttes til at udvikle vores software er offentligt tilgængelig for alle parter i projektet.
-Et budget kunne tænkes at lægges i  form af transport omkostninger hvis der var langt til møder.
-Et budget kunne også fremstå som et tidsmæssigt aspekt, hvor planlægningen af projektarbejdet skulle vurderes ift. realistiske delmål som skulle opfyldes. Hvis disse derfor ikke lever op til hinanden, er kravene (her delmålene) får høje, og vores budget er derfor ikke omfattende nok. Et problem som dette ville kræve hjælp udefra, eller også ville man internt sænke kravene.
+De næste tre uger vil der blive lagt vægt på forståelse af systemets kunnen. 
+Der skal arrangeres møder med interessenten. Projektgruppen skal internt afholde møder ca. 2 gange om ugen. Under disse interne møder vil der blive arbejdet med arbejdsdelegering og problemhåndtering, således at ingen i gruppen misforstår deres arbejdsdel, når projektet for alvor skydes i gang.
+Om 3 uger vil der foreligge en større plan om det fremtidige arbejde, der skal udføres. Denne plan er en overordnet plan med delmål, som senere vil blive konkretiseret i fremtidige rapporter.
 \newline
 \newline
-\textbf{Risici- identifikation og håndtering af disse:}
+\textbf{Evt. omkostningsbudget}
 \newline
-Der vil altid være en form for risici når man arbejder med software. Dog kan problemet opstå på flere forskellige niveauer.
+Pt. forefindes der ikke noget budget for projektgruppen, da alle nødvendige midler er til vores disposition. Vi har kontakt til både interessenten og hinanden telefonisk.
+Software der, skal benyttes til at udvikle vores software er offentligt tilgængelig for alle parter i projektet.
+En budgetpost kunne være transportomkostninger, hvis der var langt til møder.
+Et budget kunne også fremstå som et tidsmæssigt aspekt, hvor planlægningen af projektarbejdet skulle vurderes ift. realistiske delmål, som skulle opfyldes. Hvis disse derfor ikke lever op til hinanden, er kravene (her delmålene) for høje, og vores budget er derfor ikke omfattende nok. Et problem som dette ville kræve hjælp udefra, eller også ville man være nød til at sænke kravene.
+\newline
+\newline
+\textbf{Risici- identifikation og håndtering af disse}
+\newline
+Der vil altid være en form for risici når man arbejder med software. Dog kan problemer opstå på flere forskellige niveauer.
 \newline 
- - Der kan opstå problemer som stiller teknologiske spørgsmål
+ - Som stiller teknologiske spørgsmål
  \newline
-- der kan opstå problemer mellem projektgruppen og interessenten
+- Mellem projektgruppen og interessenten
 \newline
-- der kan også opstå problemer i projektgruppen internt.
+- I projektgruppen internt.
 \newline 
-Alle disse risici må og vil projektgruppen tage stilling til og herved gøre sig klarere på hvordan man tackler de forskellige typer af problemer hvis de skulle opstå i løbet af projektet.
-Projektgruppen har en udfordring foran sig. Gruppen har internt snakket om hvilke problematikker der kan opstå i form af vægtning af visning af bannere. Dette problem kræver yderligere udforskning og gruppen har en forløbelig plan om hvordan dette tackles bedst. 
-Vi har endnu ikke snakket om mulige problemer mellem gruppen og interessenten. Man kunne tænke sig at interessenten ikke ville tage kontakt til gruppen, eller ikke var samarbejdsvillig. Desuden kunne man forestille sig at interessentens krav ift. softwaren var for omfattende til i gruppen var i stand til at løse problemet.
+Alle disse risici må og vil projektgruppen tage stilling til løbende og herved gøre sig klart, hvordan man tackler de forskellige typer af problemer, hvis de opstår i løbet af projektet.
+Projektgruppen har en udfordring foran sig. Gruppen har internt snakket om, hvilke problematikker der kan opstå i form af vægtning af visning af bannere. Dette problem kræver yderligere udforskning og gruppen har en foreløbelig plan om, hvordan dette tackles bedst. 
+Vi har endnu ikke snakket om mulige problemer mellem gruppen og interessenten. Man kunne tænke sig, at interessenten ikke ville tage kontakt til gruppen, eller ikke var samarbejdsvillig. Desuden kunne man forestille sig at interessentens krav ift. softwaren var for omfattende til at gruppen var i stand til at løse opgaven.
 Til sidst ville mulige problemer internt være hvis et gruppemedlem frafaldt og gruppen derfor manglede de nødvendige menneskelige ressourcer til at gennemføre projektet ift. de mål gruppen havde stillet fra projektets start.
 
 \section{Indledende skitse af system- og softwarearkitekturen}
@@ -227,28 +227,28 @@ Til sidst ville mulige problemer internt være hvis et gruppemedlem frafaldt og 
 
 \section{Projektaftalen}
 
-Projektet vil løbe over de kommende tre måneder. Projektet er en prototype og vil muligvis ikke være færdigt udviklet når perioden udløber. Projektet vil have til formål at udvikle et system det består af et interface og en database.  Interfacet skal være funktionelt og det skal være nemt at registrere annoncebannere. Det skal være muligt at registrere med hvilken vægtning et banner skal vises, samt registere en udløbsdato og/eller et maksimalt antal visninger for det pågældende banner. Derudover må et banner ikke vises på den samme hjemmeside mere end en gang.
-Treuer Media's ejer Jan har indvilliget i at stå til rådighed ved aftestning af systemet. Derudover vil der være løbende kontakt med en ekstern person der kan svare på eventuelle spørgsmål.   
+Projektet vil løbe over de kommende tre måneder. Projektet er en prototype og vil muligvis ikke være færdigudviklet når perioden udløber. Projektet vil have til formål at udvikle et system der består af et interface og en database.  Interfacet skal være funktionelt og det skal være nemt at registrere annoncebannere. Det skal være muligt at registrere med hvilken vægtning et banner skal vises, samt registere en udløbsdato og/eller et maksimalt antal visninger for det pågældende banner. Derudover må et banner ikke vises på den samme hjemmeside mere end en gang.
+Treuer Media's ejer Jan har indvilliget i at stå til rådighed ved testning af systemet. Derudover vil der være løbende kontakt med en ekstern person, der kan svare på eventuelle spørgsmål.   
 
 \section{Intern projektetablering}
 
-Projektet er et open source bannerreklamesystem. Systemet skal kunne downloades og bruges af mindre ikke-kommercialle foreninger og interesseorganisationer, som ikke har de fornødne midler til at købe dyre systemer. Der findes på nuværende tidspunkt ikke noget nemt håndterligt open source bannerreklamesystem, så projektet skal være en nyudvikling, der er ment til at erstatte de nuværende brugte systemer. Projektet skal udvikles til et firma ved navn Treu Media. Treu Media er specialiceret indenfor annoncesalg og en lang række andre medieudgivelser. 
+Projektet er et open source bannerreklamesystem. Systemet skal kunne downloades og bruges af mindre ikke-kommercielle foreninger og interesseorganisationer, som ikke har de fornødne midler til at købe dyre systemer. Der findes på nuværende tidspunkt ikke noget nemt håndterligt open source bannerreklamesystem, så projektet skal være en nyudvikling, der kan erstatte de nuværende brugte systemer. Projektet skal udvikles til et firma ved navn Treu Media. Treu Media er specialiceret indenfor annoncesalg og en lang række andre medieudgivelser. 
 \newline
 \newline
-Projektgruppen er blevet informeret om at systemet har følgende betingelser. Det skal kunne bruges i alle browser. Systemet skal gøre det nemt at registrere bannnere. Det skal være muligt at angive med hvilken vægtning et banner skal vises. Systemet skal også gøre det muligt at registret en udløbsdato og/eller et maksimalt antal visninger for det pågældende banner. Derudover må det samme banner ikke vises flere gange på samme hjemmeside. 
-Projektet har meget få betingelser og der er mange muligheder for udvidelse af projektet. Projektgruppen har stor mulighed for at påvirke projektet, og kommme med nye ideer til og udvidelser af projektet.
+Projektgruppen er blevet informeret om at systemet har følgende betingelser: Det skal kunne bruges i alle browsere. Systemet skal gøre det nemt at registrere bannnere. Det skal være muligt at angive med hvilken vægtning et banner skal vises. Systemet skal også gøre det muligt at registreret en udløbsdato og/eller et maksimalt antal visninger for det pågældende banner. Derudover må det samme banner ikke vises flere gange på samme hjemmeside. 
+Projektet har meget få betingelser og der er mange muligheder for udvidelse af projektet. Projektgruppen har stor mulighed for at påvirke projektet og komme med nye ideer til og udvidelser af projektet.
 Projektgruppen har derfor valgt at sætte følgende begrænsning på systemet. Systemet er i første omgang kun ment til at blive brugt af Treu Medias ejer Jan. Jan er som udgangspunkt den eneste interessent.
 \newline
 \newline
-Projektgruppen har endnu ikke haft et møde med Jan, men med en anden kontakt. Det er meningen at Jan kun vil være tilrådighed ved aftestning af systemet, eller hvis det opstår spørgsmål som kontaktpersonen ikke kan svare på. 
+Projektgruppen har endnu ikke haft et møde med Jan, men med en anden kontakt. Det er aftalt, at Jan kun vil være tilrådighed ved testning af systemet, eller hvis der opstår spørgsmål som kontaktpersonen ikke kan svare på. 
 \newline
 \newline
 Yderligere har projektet til formål at styrke projektgruppens erfaringer indenfor web-udwikling og databaser.
-Projektgruppen er opdelt således at Signar har det overordnede overblik over projektdelene. Han står derudover med ansvar for Javascript delen, da han har tidligere erfaring med dette. Aslak og Amanda fokusere på at styrke deres evner indenfor html, php og css, herunder bootstrap. Projektgruppen vil i fællesskab udvikle databasedelen.
+Projektgruppen er opdelt således at Signar har det overordnede overblik over projektdelene. Han står derudover med ansvar for Javascript-delen, da han har erfaring med dette. Aslak og Amanda fokuserer på at styrke deres evner indenfor html, php og css, herunder bootstrap. Projektgruppen vil i fællesskab udvikle databasedelen.
 \newline
 \newline
 Projektgruppen har valgt at bruge versionsstyringssystemet github. 
-Projektet kan findes under følgender URL: https://github.com/AslakNiclasen/ProjektOpgave. Projektgruppen har derudover valgt at mødes hver torsdag evt. mandag om nødvendigt, gruppemøderne vil finde sted på DIKU. 
+Projektet kan findes under følgender URL: https://github.com/AslakNiclasen/ProjektOpgave. Projektgruppen har derudover valgt at mødes hver torsdag, evt. mandag om nødvendigt. Gruppemøderne vil finde sted på DIKU. 
 \newline
 \newline 
 \section{FACTOR-kriteriet}
@@ -260,7 +260,7 @@ Projektet kan findes under følgender URL: https://github.com/AslakNiclasen/Proj
 \newline
 \large{\bf{A}}\normalsize{pplication domain
 \\
-- afhængigt af senariet er det enten Jan eller en it ansvarlig hos en organisation eller forening}
+- afhængigt af senariet er det enten Jan eller en it-ansvarlig hos en organisation eller forening}
 \newline
 \newline
 \large{\bf{C}}\normalsize{onditions\\
@@ -289,7 +289,7 @@ Projektet kan findes under følgender URL: https://github.com/AslakNiclasen/Proj
 \\
 \normalsize{Projektgruppemøde}
 \end{center}
-Dato: 20/3-14
+Dato: 20/3-2014
 \newline
 \newline
 Tid: 11.30
@@ -298,7 +298,7 @@ Tid: 11.30
 Sted: Biocenteret
 \newline
 \newline
-Inkaldte: Aslak, Signar og Amanda Bergqvist
+Indkaldte: Aslak Niclasen, Signar Nielsen og Amanda Bergqvist
 \newline
 \newline
 Afbud: Ingen
@@ -312,7 +312,7 @@ Dagsorden:
 1: Afklare spørgsmål vedrørende delrapport 1 og projektet.
 \newline
 \newline
-2: Udele arbejdsopgaver i forhold til delrapport 1.
+2: Uddelegere arbejdsopgaver i forhold til delrapport 1.
 \newline
 \newline
 3: Aftale tidspunkt og dagsorden for næste møde.
@@ -324,10 +324,10 @@ Ad punkt 1:
 Arbejdsfrekvens: Projektgruppen har aftalt at mødes hver torsdag, og mandag eller weekender om nødvendigt. 
 \newline
 \newline
-Spørgsmål til instruktor: Literaturliste? fodnoter?
+Spørgsmål til instruktor: Litteraturliste? fodnoter?
 \newline
 \newline
-Ad punkt 2: Projektgruppen har aftalt at arbejde selvstændig på spørgsmålene indtil lørdag. På lørdag diskuteres spørgsmålene yderligere. Projektgruppen har aftalt at spørgsmålene skal være skrevet helt færdig til onsdag eftermiddag. 
+Ad punkt 2: Projektgruppen har aftalt, at arbejde selvstændigt med spørgsmålene indtil lørdag. På lørdag diskuteres spørgsmålene yderligere. Projektgruppen har aftalt at spørgsmålene skal være skrevet helt færdig til onsdag eftermiddag. 
 Spørgsmålene er udeligeret som følger:   
 \newline
 \newline
@@ -346,10 +346,13 @@ Spørgsmålene er udeligeret som følger:
 (e) Amanda
 \newline
 \newline
-FACTOR-kriteriet: Aslak
+FACTOR-kriteriet: Amanda/ Aslak
 \newline
 \newline
 Referat: Amanda
+\newline
+\newline
+Korrektur/rettelser: Amanda
 \newline
 \newline
 Ad punkt 3: Projektgruppen har aftalt at næste møde er på DIKU på lørdag d. 22/3 kl 12. 
