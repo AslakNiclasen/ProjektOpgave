@@ -111,7 +111,8 @@
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="#">Home</a></li>
-                                        <li class="active">Customers</li>                                    
+                                        <li><a href="customers.php">Customers</a></li>   
+                                        <li class="active">Add customer</li>                                    
                                     </ul>
                                 </div>
                             </div>
@@ -124,10 +125,6 @@
                                     <em>a collection of all your customers</em>
                                 </div>
 
-                                <a href="customer_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add customer</a>
-                                <br>
-                                <br>
-
                                 <div class="main-content">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -137,7 +134,19 @@
                                                     <h3><i class="fa fa-edit"></i> Customers</h3>
                                                 </div>
                                                 <div class="widget-content">
-                                                    Her skal der vare noget indhold
+                                              
+                                                   <form role="form">
+                                                      <div class="form-group">
+                                                        <label for="exampleInputEmail1">Name</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
+                                                      </div>
+                                                      <div class="form-group">
+                                                        <label for="exampleInputPassword1">Url</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Url">
+                                                      </div>
+                                                      <button type="submit" class="btn btn-default">Submit</button>
+                                                    </form>
+                                                    
                                                 </div>
                                             </div>
                                             <!-- END INPUT GROUPS -->
