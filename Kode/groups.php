@@ -1,3 +1,18 @@
+<?php
+    require_once("include/session.php");
+    require_once("include/security.php");
+    require_once("include/connect.php");
+    
+    $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
+    
+    $groupname = $_POST["groupname"];
+    $customer_id = $_POST["customer_id"];
+    
+    if ($groupname && $customer_id) {
+        $conn->query("INSERT INTO groups (customer_id, name) VALUES('". $customer_id ."', '". $groupname ."')");
+        header("location: groups.php");
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -78,6 +93,7 @@
 
                             <!-- main-nav -->
                             <nav class="main-nav">
+
 <?php
      include("include/menu.php");
 ?>
@@ -108,19 +124,70 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
-                                        <li class="active"><i class="fa fa-home"></i> Home</li>                                 
+                                        <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+                                        <li class="active">Groups</li>
                                     </ul>
                                 </div>
                             </div>
-                            
+
+
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h2>Home</h2>
-                                    <em>here is an overview of your ads</em>
+                                    <h2>Groups</h2>
+                                    <em>a collection of all your groups</em>
                                 </div>
 
                                 <div class="main-content">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!-- INPUT GROUPS -->
+                                            <div class="widget">
+                                                <div class="widget-header">
+                                                    <h3><i class="fa fa-tags"></i> Groups</h3>
+                                                </div>
+                                                <div class="widget-content">
+                                                
+                                                
+                                                
+                                                
+                                                    <form role="form" method="post" action="groups.php">
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Group name</label>
+                                                            <input type="text" class="form-control" name="groupname" id="groupname" placeholder="Group name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Customer</label>
+                                                            <select class="form-control" name="customer_id">
+<?php
+    foreach($customers as $customer) {
+        echo "<option value='". $customer["id"] ."'>". $customer["name"] ."</option>";
+    }
+?>
+                                                            </select>
+                                                        </div>
+                                                        <input type="submit" class="btn btn-primary" value="Create">
+                                                    </form>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                            <!-- END INPUT GROUPS -->
+                                        </div>
+                                    </div>
+                                    <!-- /row -->
+
+
                                 </div>
                                 <!-- /main-content -->
                             </div>

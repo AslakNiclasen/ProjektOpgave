@@ -79,10 +79,9 @@
                             <!-- main-nav -->
                             <nav class="main-nav">
 
-                                <ul class="main-menu">
-                                    <li><a href="index.php"><i class="fa fa-dashboard fa-fw"></i><span class="text">Dashboard</span></a></li>
-                                    <li class="active"><a href="customers.php"><i class="fa fa-users fa-fw"></i><span class="text">Customers</span></a></li>
-                                </ul>
+<?php
+     include("include/menu.php");
+?>
                             </nav>
                             <!-- /main-nav -->
 
