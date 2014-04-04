@@ -78,9 +78,10 @@
 
                             <!-- main-nav -->
                             <nav class="main-nav">
+
                                 <ul class="main-menu">
-                                    <li class="active"><a href="index.php"><i class="fa fa-dashboard fa-fw"></i><span class="text">Dashboard</span></a></li>
-                                    <li><a href="customers.php"><i class="fa fa-users fa-fw"></i><span class="text">Customers</span></a></li>
+                                    <li><a href="index.php"><i class="fa fa-dashboard fa-fw"></i><span class="text">Dashboard</span></a></li>
+                                    <li class="active"><a href="customers.php"><i class="fa fa-users fa-fw"></i><span class="text">Customers</span></a></li>
                                 </ul>
                             </nav>
                             <!-- /main-nav -->
@@ -109,19 +110,38 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
-                                        <li class="active"><i class="fa fa-home"></i> Home</li>                                 
+                                        <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+                                        <li class="active">Customers</li>                                    
                                     </ul>
                                 </div>
                             </div>
-                            
+
+
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h2>Home</h2>
-                                    <em>here is an overview of your ads</em>
+                                    <h2>Customers</h2>
+                                    <em>a collection of all your customers</em>
                                 </div>
 
                                 <div class="main-content">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!-- INPUT GROUPS -->
+                                            <div class="widget">
+                                                <div class="widget-header">
+                                                    <h3><i class="fa fa-edit"></i> Customers</h3>
+                                                </div>
+                                                <div class="widget-content">
+                                                    Her skal der vare noget indhold
+                                                </div>
+                                            </div>
+                                            <!-- END INPUT GROUPS -->
+                                        </div>
+                                    </div>
+                                    <!-- /row -->
+
+
                                 </div>
                                 <!-- /main-content -->
                             </div>
