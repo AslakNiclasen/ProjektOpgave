@@ -1,3 +1,9 @@
+<?php
+    require_once("include/session.php");
+    require_once("include/security.php");
+    require_once("include/connect.php");
+    $ads = $conn->query("SELECT * FROM ads ORDER BY name ASC");
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -125,7 +131,7 @@
                                     <em>a collection of all your ads</em>
                                 </div>
 
-                                <a href="ad_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add ad</a>
+                                <a href="customer_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add Ad</a>
                                 <br>
                                 <br>
 
@@ -135,10 +141,27 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-picture-o"></i> Ads</h3>
+                                                    <h3><i class="fa fa-group"></i> Ads</h3>
                                                 </div>
                                                 <div class="widget-content">
-                                                    Her skal der vare noget indhold
+                                                    <table class="table">
+                                                        <tr>
+                                                            <th>
+                                                                name
+                                                            </th>
+                                                            <th>
+                                                                customer
+                                                            </th>
+                                                            <th>
+                                                                group
+                                                            </th>
+                                                        </tr>                                           
+<?php
+foreach($ads as $ad){
+ echo "<tr><td>" . $ad['ad_name'] . "</td></tr>";
+}
+?>              
+                                                    </table>
                                                 </div>
                                             </div>
                                             <!-- END INPUT GROUPS -->
