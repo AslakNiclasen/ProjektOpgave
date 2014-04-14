@@ -135,7 +135,7 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-edit"></i> Ads</h3>
+                                                    <h3><i class="fa fa-picture-o"></i> Ads</h3>
                                                 </div>
                                                 <div class="widget-content">
                                                     Her skal der vare noget indhold

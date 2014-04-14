@@ -1,3 +1,13 @@
+<?php
+    require_once("include/session.php");
+    require_once("include/security.php");
+    require_once("include/connect.php");
+    
+    $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
+
+    $groups = $conn->query("SELECT * FROM groups ORDER BY name ASC");
+    
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -130,18 +140,34 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-edit"></i> Add ad</h3>
+                                                    <h3><i class="fa fa-picture-o"></i> Add ad</h3>
                                                 </div>
                                                 <div class="widget-content">
                                               
                                                    <form role="form">
                                                         <div class="form-group">
-                                                            <label for="exampleInputEmail1">Name</label>
-                                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
+                                                            <label for="exampleInputEmail1">Ad name</label>
+                                                            <input type="text" class="form-control" name="adname" id="adname" placeholder="Ad name">
                                                         </div>
                                                         <div class="form-group">
-                                                            <label for="exampleInputPassword1">Url</label>
-                                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Url">
+                                                            <label for="exampleInputPassword1">Customer name</label>
+                                                            <select class="form-control" name="customer_id">
+<?php
+    foreach($customers as $customer) {
+        echo "<option value='". $customer["id"] ."'>". $customer["name"] ."</option>";
+    }
+?>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Group name</label>
+                                                            <select class="form-control" name="group_id">
+<?php
+    foreach($groups as $group) {
+        echo "<option value='". $group["id"] ."'>". $group["name"] ."</option>";
+    }
+?>
+                                                            </select>
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="exampleInputFile">File input</label>
