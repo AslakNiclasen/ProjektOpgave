@@ -79,9 +79,11 @@
                             <!-- main-nav -->
                             <nav class="main-nav">
 
+                                <ul class="main-menu">
 <?php
      include("include/menu.php");
 ?>
+                                </ul>
                             </nav>
                             <!-- /main-nav -->
 
@@ -110,8 +112,7 @@
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="#">Home</a></li>
-                                        <li><a href="ads.php">Ads</a></li>   
-                                        <li class="active">Add ad</li>                                    
+                                        <li class="active">Ads</li>                                    
                                     </ul>
                                 </div>
                             </div>
@@ -120,9 +121,13 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h2>Ad</h2>
-                                    <em>Add an ad</em>
+                                    <h2>Ads</h2>
+                                    <em>a collection of all your ads</em>
                                 </div>
+
+                                <a href="customer_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add ad</a>
+                                <br>
+                                <br>
 
                                 <div class="main-content">
                                     <div class="row">
@@ -130,27 +135,10 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-edit"></i> Add ad</h3>
+                                                    <h3><i class="fa fa-edit"></i> Ads</h3>
                                                 </div>
                                                 <div class="widget-content">
-                                              
-                                                   <form role="form">
-                                                        <div class="form-group">
-                                                            <label for="exampleInputEmail1">Name</label>
-                                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="exampleInputPassword1">Url</label>
-                                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Url">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="exampleInputFile">File input</label>
-                                                            <input type="file" id="exampleInputFile">
-                                                            <p class="help-block">Example block-level help text here.</p>
-                                                        </div>
-                                                        <button type="submit" class="btn btn-default">Submit</button>
-                                                    </form>
-                                                    
+                                                    Her skal der vare noget indhold
                                                 </div>
                                             </div>
                                             <!-- END INPUT GROUPS -->
