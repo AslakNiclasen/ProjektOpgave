@@ -6,6 +6,20 @@
     $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
 
     $groups = $conn->query("SELECT * FROM groups ORDER BY name ASC");
+
+    $name = $_POST["adname"];
+    $customer_id = $_POST["customer_id"];
+    $group_id = $_POST["group_id"];
+
+    
+    if ( $name && $customer_id && $group_id) {
+
+        move_uploaded_file($_FILES["ad_file"]["tmp_name"], "ads/" . $_FILES["ad_file"]["name"]);
+
+
+        $conn->query("INSERT INTO ads (ad_name, file_name, customer_id, group_id) VALUES('". $name ."', '". $_FILES["ad_file"]["name"] ."', '". $customer_id ."', '". $group_id ."')");
+        header("location: ads.php");
+    }
     
 ?>
 <!DOCTYPE html>
@@ -143,8 +157,7 @@
                                                     <h3><i class="fa fa-picture-o"></i> Add ad</h3>
                                                 </div>
                                                 <div class="widget-content">
-                                              
-                                                   <form role="form">
+                                                    <form role="form" method="post" action="ad_add.php" enctype="multipart/form-data">
                                                         <div class="form-group">
                                                             <label for="exampleInputEmail1">Ad name</label>
                                                             <input type="text" class="form-control" name="adname" id="adname" placeholder="Ad name">
@@ -171,10 +184,9 @@
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="exampleInputFile">File input</label>
-                                                            <input type="file" id="exampleInputFile">
-                                                            <p class="help-block">Example block-level help text here.</p>
+                                                            <input type="file" id="exampleInputFile" name="ad_file">
                                                         </div>
-                                                        <button type="submit" class="btn btn-default">Submit</button>
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
                                                     </form>
                                                     
                                                 </div>

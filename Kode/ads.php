@@ -2,7 +2,8 @@
     require_once("include/session.php");
     require_once("include/security.php");
     require_once("include/connect.php");
-    $ads = $conn->query("SELECT * FROM ads ORDER BY name ASC");
+
+    $ads = $conn->query("SELECT ads.*, customers.name AS customer_name, groups.name AS group_name FROM ads JOIN customers ON customers.id = ads.customer_id JOIN groups ON groups.id = ads.group_id ORDER BY ads.ad_name ASC");
 ?>
 <!DOCTYPE html>
 <html>
@@ -157,9 +158,13 @@
                                                             </th>
                                                         </tr>                                           
 <?php
-foreach($ads as $ad){
- echo "<tr><td>" . $ad['ad_name'] . "</td></tr>";
-}
+    foreach($ads as $ad){
+        echo "<tr>";
+        echo "<td>" . $ad['ad_name'] . "</td>";
+        echo "<td>" . $ad['customer_name'] . "</td>";
+        echo "<td>" . $ad['group_name'] . "</td>";
+        echo "</tr>";
+    }
 ?>              
                                                     </table>
                                                 </div>
