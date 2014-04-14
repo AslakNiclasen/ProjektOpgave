@@ -125,7 +125,7 @@
                                     <em>a collection of all your ads</em>
                                 </div>
 
-                                <a href="customer_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add ad</a>
+                                <a href="ad_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add ad</a>
                                 <br>
                                 <br>
 
