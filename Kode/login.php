@@ -1,15 +1,17 @@
 <?php
-	
 	require_once("include/session.php");
 	require_once("include/connect.php");
 
+    if ($_SESSION["login"]) {
+        header("location: index.php");
+    }
+    
 	$email = $_POST["email"];
 	$password = $_POST["password"];
 
 	if($email || $password) {
 
 		$sql = "SELECT email, password FROM admins WHERE email = '". $email ."' AND password = '". $password ."'";
-
 
 		if($admins = $conn->query($sql)) {
 			if($admins->num_rows >= 1) {
