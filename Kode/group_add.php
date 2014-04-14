@@ -3,7 +3,15 @@
     require_once("include/security.php");
     require_once("include/connect.php");
     
-    $groups = $conn->query("SELECT groups.*, customers.name as customer_name FROM groups JOIN customers ON groups.customer_id = customers.id");
+    $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
+    
+    $groupname = $_POST["groupname"];
+    $customer_id = $_POST["customer_id"];
+    
+    if ($groupname && $customer_id) {
+        $conn->query("INSERT INTO groups (customer_id, name) VALUES('". $customer_id ."', '". $groupname ."')");
+        header("location: groups.php");
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -86,11 +94,9 @@
                             <!-- main-nav -->
                             <nav class="main-nav">
 
-                                <ul class="main-menu">
 <?php
      include("include/menu.php");
 ?>
-                                </ul>
                             </nav>
                             <!-- /main-nav -->
 
@@ -118,8 +124,9 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
-                                        <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
-                                        <li class="active">Groups</li>                                    
+                                        <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+                                        <li><a href="groups.php">Groups</a></li>
+                                        <li class="active">Add group</li>
                                     </ul>
                                 </div>
                             </div>
@@ -132,10 +139,6 @@
                                     <em>a collection of all your groups</em>
                                 </div>
 
-                                <a href="group_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add group</a>
-                                <br>
-                                <br>
-
                                 <div class="main-content">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -145,26 +148,37 @@
                                                     <h3><i class="fa fa-tags"></i> Groups</h3>
                                                 </div>
                                                 <div class="widget-content">
-                                                    
-                                                    
-                                                    <table class="table">
-                                                        <tr>
-                                                            <th>
-                                                                Customer
-                                                            </th>
-                                                            <th>
-                                                                Group
-                                                            </th>
-                                                        </tr>
+                                                
+                                                
+                                                
+                                                
+                                                    <form role="form" method="post" action="groups.php">
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Group name</label>
+                                                            <input type="text" class="form-control" name="groupname" id="groupname" placeholder="Group name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Customer</label>
+                                                            <select class="form-control" name="customer_id">
 <?php
-    foreach($groups as $group) {
-        echo "<tr>";
-        echo "<td>". $group["customer_name"] ."</td>";
-        echo "<td>". $group["name"] ."</td>";
-        echo "</tr>";
+    foreach($customers as $customer) {
+        echo "<option value='". $customer["id"] ."'>". $customer["name"] ."</option>";
     }
 ?>
-                                                    </table>
+                                                            </select>
+                                                        </div>
+                                                        <input type="submit" class="btn btn-primary" value="Create">
+                                                    </form>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
                                                     
                                                     
                                                 </div>
