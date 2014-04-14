@@ -1,3 +1,19 @@
+<?php
+    require_once("include/session.php");
+    require_once("include/security.php");
+    require_once("include/connect.php");
+    
+    $customer_name = $_POST["customer_name"];
+    $url = $_POST["url"];
+    
+    if ($customer_name && $url) {
+        $conn->query("INSERT INTO customers (name, url) VALUES('". $customer_name ."', '". $url ."')");
+        header("location: customers.php");
+    }
+?>
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -130,20 +146,20 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-edit"></i> Customers</h3>
+                                                    <h3><i class="fa fa-group"></i> Customers</h3>
                                                 </div>
                                                 <div class="widget-content">
                                               
-                                                   <form role="form">
+                                                   <form role="form" method="post" action="customer_add.php">
                                                       <div class="form-group">
                                                         <label for="exampleInputEmail1">Name</label>
-                                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
+                                                        <input type="text" name="customer_name" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
                                                       </div>
                                                       <div class="form-group">
                                                         <label for="exampleInputPassword1">Url</label>
-                                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Url">
+                                                        <input type="text" name="url" class="form-control" id="exampleInputPassword1" placeholder="Url">
                                                       </div>
-                                                      <button type="submit" class="btn btn-default">Submit</button>
+                                                      <button type="submit" class="btn btn-primary">Submit</button>
                                                     </form>
                                                     
                                                 </div>

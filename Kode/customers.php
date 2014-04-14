@@ -1,3 +1,11 @@
+<?php
+    require_once("include/session.php");
+    require_once("include/security.php");
+    require_once("include/connect.php");
+    $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -135,10 +143,24 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-edit"></i> Customers</h3>
+                                                    <h3><i class="fa fa-group"></i> Customers</h3>
                                                 </div>
                                                 <div class="widget-content">
-                                                    Her skal der vare noget indhold
+                                                    <table class="table">
+                                                        <tr>
+                                                            <th>
+                                                                name
+                                                            </th>
+                                                            <th>
+                                                                url
+                                                            </th>
+                                                        </tr>                                           
+<?php
+foreach($customers as $customer){
+ echo "<tr><td>" . $customer['name'] . "</td><td>" . $customer['url'] . "</td></tr>";
+}
+?>              
+                                                    </table>
                                                 </div>
                                             </div>
                                             <!-- END INPUT GROUPS -->
