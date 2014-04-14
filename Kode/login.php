@@ -14,7 +14,7 @@
 		if($admins = $conn->query($sql)) {
 			if($admins->num_rows >= 1) {
 				$_SESSION["login"] = true;
-				header("location: blocked.php");
+				header("location: index.php");
 			} else {
 				echo "Wrong combination of email and password";
 			}
