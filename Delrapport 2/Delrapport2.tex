@@ -50,8 +50,9 @@
     linkcolor=blue,
     urlcolor=blue
 }
-\usepackage{fancyhdr}
-\pagestyle{fancy}
+\usepackage{parskip}
+\setlength{\parindent}{15pt}
+
 \begin{document}
 
 \begin{titlepage}
@@ -113,10 +114,15 @@ Aske Mottelson Clausen % Supervisor's Name
 \textbf{Funktionelle krav}
 \\
 EasyAd er et system, som gør det muligt at vedligeholde reklamer på en hjemmeside.
-\\
+
 Systemet er opbygget sådan, at det kan være ejeren der administrerer systemet, eller det er en tredje part, der administrerer systemet. Dette gør, at man altid skal kunne logge på for at få adgang til systemet og for at kunne administrere reklamerne. Når man er logget på systemet, skal man oprette en hjemmeside (eller en kunde), hvor reklamen skal vises, og derefter skal man oprette en gruppe (eller en zone), som reklamen hører til. Til sidst skal man oprette selve reklamen og tilføje den til en gruppe.
-\\
+
 Hjemmesiden (eller kunden), der oprettes kan være ens egen hjemmeside, eller det kan være kundens hjemmeside. I begge tilfælde skal hjemmesiden have adgang til systemet via en API, for at få vist en hjemmeside.
-\\
+
 Grupperne bestemmer, hvor på siden, reklamen skal vises. Hvis man f.eks. kun ønsker at få en reklame vist på en underside, kan man lave en gruppe til undersiderne, mens man har en anden gruppe til forsiden.
+\\
+\\
+\textbf{Ikke-funktionelle krav}
+\\
+Her er et nyt afsnit
 \end{document}
