@@ -2,5 +2,6 @@
 \contentsline {section}{\numberline {1}Indledning}{2}{section.1}
 \contentsline {section}{\numberline {2}Easy Ad}{2}{section.2}
 \contentsline {section}{\numberline {3}IT-projektets form\IeC {\r a}l og rammer}{3}{section.3}
-\contentsline {section}{\numberline {4}Kravspecifikation for IT-l\IeC {\o }sningen}{3}{section.4}
-\contentsline {subsection}{\numberline {4.1}Funktionelle og ikke-funktionelle krav}{3}{subsection.4.1}
+\contentsline {section}{\numberline {4}FACTOR-kriteriet}{4}{section.4}
+\contentsline {section}{\numberline {5}Kravspecifikation for IT-l\IeC {\o }sningen}{5}{section.5}
+\contentsline {subsection}{\numberline {5.1}Funktionelle og ikke-funktionelle krav}{5}{subsection.5.1}
