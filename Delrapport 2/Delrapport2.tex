@@ -107,9 +107,7 @@ Aske Mottelson Clausen % Supervisor's Name
 \clearpage %clears float-buffer - inserting those missing - and starts new page
 
 
-<<<<<<< HEAD
 \section{Abstract}
-=======
 \section{Indledning}
 Ifølge en rapport fra Danske Medier Research\footnote{\url{ http://www.fdim.dk/sites/default/files/mediearkiv/rapporter/danskernes\_brug\_af\_internettet\_2012\_rapport.pdf}} om danskernes internetforbrug er adgang til internettet fra hjemmet steget fra 83\% til 92\% på blot 4 år - fra 2007 til 2011. I takt med den stigende grad af internetforbrug anvender annoncører de digitale medier til at ramme deres målgruppe.
 
@@ -162,8 +160,6 @@ Projektet har til formål
 
 \newpage
 
->>>>>>> dbf9e16164393fe985f9a95a105d8ab3dcad35dd
-
 \section{Kravspecifikation for IT-løsningen}
 \subsection{Funktionelle og ikke-funktionelle krav}
 \textbf{Funktionelle krav}
@@ -186,12 +182,12 @@ Da ikke-funktionelle krav er et vidt begreb, har vi valgt at bruge FURPS+ modell
 Her er de ikke-funktionelle krav:
 \begin{itemize}
 	\item \textbf{Functionality:} Systemet skal kunne håndtere (oprette, ændre og vise) reklamer på en hjemmeside. Dette kræver selvfølgelig, at alle involverede parter har adgang til internettet. Det vil sige, systemet, hjemmesiden og brugeren af hjemmesiden.
-	\item \textbf{Usability:} Formålet med systemet er, at det skal være nemt at bruge for alle parter. Både administratorer, hjemmesider og brugere. Da det er meget svært at definere, hvad er "nemt" at bruge, laver vi nogle user-tests, for at sikre os, at det faktisk er nemt at bruge. Derudover skal systemet fungere på alle moderne browsere (IE8+, Safari, Chrome og Firefox).
-	\item \textbf{Reliability:} Reliability
-	\item \textbf{Performance:} Reliability
-	\item \textbf{Suuportability:} Reliability 
-  
-  \item The third etc \ldots
+	\item \textbf{Usability:} Formålet med systemet er, at det skal være nemt at bruge for alle involverede parter. Både administratorer, hjemmesider og brugere. Da det er meget svært at definere, hvad er "nemt" at bruge, laver vi nogle user-tests, for at sikre os, at det faktisk er nemt at bruge. Derudover skal systemet fungere på alle moderne browsere (IE8+, Safari, Chrome og Firefox).
+	\item \textbf{Reliability:} Systemet skal være tilgængeligt 24 timer i døgnet 365 dage om året. Med andre ord: systemet skal altid være tilgængeligt. Hvis vi antager, at serveren altid har forbindelse til internettet, så sætter dette først og fremmest krav til serveren, både hardware og software. Serveren skal være dimensioneret til at kunne håndtere trafikken og softwaren skal være designet på en hensigtsmæssig måde, så den ikke bruger unødvendige resourcer.
+	\item \textbf{Performance:} Det er et krav til systemet, at svartiden er så lav som overhoved muligt. Der er flere faktorer, der spiller ind, men først og fremmest er det internetforbindelsen, serveren og selve softwaren. Vi forventer en svartid, der ligger under 500 millisekunder.
+	\item \textbf{Supportability:} Systemet kan supporteres af enhver, da det er oben-source. Systemet bliver udviklet i PHP, hvilket også er et open-source sprog.
 \end{itemize}
+
+\textbf{Constraints:} Systemet er webbaseret og vil blive udviklet i PHP. Derudover benytter vi andre webteknologier, som f.eks. HTML, CSS, JavaScript (jQuery). Projektet er open-source, men hvis man vil udvikle, eller udvide, systemet, kan man gøre det i PHP. Databasen, derimod, kan være hvilken som helst database. Vi har dog valgt at bruge MySQL.
 
 \end{document}
