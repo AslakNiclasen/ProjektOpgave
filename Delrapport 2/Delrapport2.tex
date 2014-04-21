@@ -107,15 +107,15 @@ Aske Mottelson Clausen % Supervisor's Name
 \clearpage %clears float-buffer - inserting those missing - and starts new page
 
 
-\section{Problem 1}
+\section{Abstract}
 
 \section{Kravspecifikation for IT-løsningen}
 \subsection{Funktionelle og ikke-funktionelle krav}
 \textbf{Funktionelle krav}
 \\
-EasyAd er et system, som gør det muligt at vedligeholde reklamer på en hjemmeside.
+Funktionelle krav beskriver interaktionen mellem brugeren og systemet - uden at systemet fysisk, eller i praksis, er implementeret. Funktionelle krav siger noget om, hvordan systemet skal fungere, forventet input til systemet og forventet output fra systemet. De praktiske, eller fysiske, krav til systemet er beskrevet i ikke-funktionelle krav nedenunder.
 
-Systemet er opbygget sådan, at det kan være ejeren der administrerer systemet, eller det er en tredje part, der administrerer systemet. Dette gør, at man altid skal kunne logge på for at få adgang til systemet og for at kunne administrere reklamerne. Når man er logget på systemet, skal man oprette en hjemmeside (eller en kunde), hvor reklamen skal vises, og derefter skal man oprette en gruppe (eller en zone), som reklamen hører til. Til sidst skal man oprette selve reklamen og tilføje den til en gruppe.
+EasyAd er et system, som gør det muligt at vedligeholde reklamer på en hjemmeside. Systemet er opbygget sådan, at det kan være ejeren der administrerer systemet, eller det er en tredje part, der administrerer systemet. Dette gør, at man altid skal kunne logge på for at få adgang til systemet og for at kunne administrere reklamerne. Når man er logget på systemet, skal man oprette en hjemmeside (eller en kunde), hvor reklamen skal vises, og derefter skal man oprette en gruppe (eller en zone), som reklamen hører til. Til sidst skal man oprette selve reklamen og tilføje den til en gruppe.
 
 Hjemmesiden (eller kunden), der oprettes kan være ens egen hjemmeside, eller det kan være kundens hjemmeside. I begge tilfælde skal hjemmesiden have adgang til systemet via en API, for at få vist en hjemmeside.
 
@@ -124,5 +124,19 @@ Grupperne bestemmer, hvor på siden, reklamen skal vises. Hvis man f.eks. kun ø
 \\
 \textbf{Ikke-funktionelle krav}
 \\
-Her er et nyt afsnit
+Ikke-funktionelle krav er direkte krav til systemet, hvor og hvordan det skal fungere. Ikke-funktionelle krav bliver også kaldt kvalitets krav, det vil sige krav til kvaliteten af det system, eller program, man udvikler. Man kan f.eks. stille krav til performance, pris, sikkerhed og mange andre ting. 
+
+Da ikke-funktionelle krav er et vidt begreb, har vi valgt at bruge FURPS+ modellen, som bogen også bruger. FURPS står for Functionality, Usability, Reliability, Performance and Supportability. Plusset står for under-kategorier, som også bliver kaldt constraints.
+
+Her er de ikke-funktionelle krav:
+\begin{itemize}
+	\item \textbf{Functionality:} Systemet skal kunne håndtere (oprette, ændre og vise) reklamer på en hjemmeside. Dette kræver selvfølgelig, at alle involverede parter har adgang til internettet. Det vil sige, systemet, hjemmesiden og brugeren af hjemmesiden.
+	\item \textbf{Usability:} Formålet med systemet er, at det skal være nemt at bruge for alle parter. Både administratorer, hjemmesider og brugere. Da det er meget svært at definere, hvad er "nemt" at bruge, laver vi nogle user-tests, for at sikre os, at det faktisk er nemt at bruge. Derudover skal systemet fungere på alle moderne browsere (IE8+, Safari, Chrome og Firefox).
+	\item \textbf{Reliability:} Reliability
+	\item \textbf{Performance:} Reliability
+	\item \textbf{Suuportability:} Reliability 
+  
+  \item The third etc \ldots
+\end{itemize}
+
 \end{document}
