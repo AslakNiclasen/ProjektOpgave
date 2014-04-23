@@ -208,9 +208,10 @@ Vi har lavet en højniveau use case diagram, som viser aktørerne og systemets f
 Vi har en interessent, som er Treu Media, som har fået en ny kunde og har solgt en banner til kunden. Nu skal Treu Media oprette kunden i systemet, oprette en gruppe og oprette en reklame.
 
 \includegraphics[scale=0.5]{three_use_cases.png}
-
+\newline
+Vi starter med den første use case, hvor administrator skal oprette en kunde:
 \begin{usecase}
-\addtitle{Use case navn}{Opret kunde}
+\addtitle{Use case navn:}{Opret kunde}
 \addfield{Aktør:}{Treu Media}
 \addscenario{Flow:} {
 	\item Tryk på "Customers"
@@ -222,8 +223,9 @@ Vi har en interessent, som er Treu Media, som har fået en ny kunde og har solgt
 \addfield{Slutresultat:}{En kunde er oprettet i systemet}
 \end{usecase}
 
+Derefter tager vi en use case, hvor administrator skal oprette en gruppe, som tilhører en kunde:
 \begin{usecase}
-\addtitle{Use case navn}{Opret gruppe}
+\addtitle{Use case navn:}{Opret gruppe}
 \addfield{Aktør:}{Treu Media}
 \addscenario{Flow:} {
 	\item Opret en kunde. Se tidligere use case
@@ -232,12 +234,13 @@ Vi har en interessent, som er Treu Media, som har fået en ny kunde og har solgt
 	\item Udfyld feltet "Grup name" og vælg en kunde fra select-boksen
 	\item Tryk på "Create"
 }
-\addfield{Startbetingelser:}{Treu Media skal være logget på systemet}
+\addfield{Startbetingelser:}{Treu Media skal være logget på systemet. Der skal være oprettet en kunde}
 \addfield{Slutresultat:}{En gruppe er oprettet i systemet}
 \end{usecase}
 
+Til sidst tager vi en use case, hvor administrator skal oprette en reklame, der tilhører en gruppe.
 \begin{usecase}
-\addtitle{Use case navn}{Opret reklame}
+\addtitle{Use case navn:}{Opret reklame}
 \addfield{Aktør:}{Treu Media}
 \addscenario{Flow:} {
 	\item Opret en kunde. Se tidligere use case
@@ -248,77 +251,92 @@ Vi har en interessent, som er Treu Media, som har fået en ny kunde og har solgt
 	\item Vælg reklamen fra din computer ved at trykke på "Vælg fil"
 	\item Tryk på "Submit"
 }
-\addfield{Startbetingelser:}{Treu Media skal være logget på systemet}
+\addfield{Startbetingelser:}{Treu Media skal være logget på systemet. Der skal være oprettet en kunde og en tilhørende gruppe.}
 \addfield{Slutresultat:}{En reklame er oprettet i systemet}
 \end{usecase}
 
+\subsection{Klassediagram}
+Vores klasser er følgende: administrator, kunde, gruppe og reklame. Forholdet mellem klasserne er, at flere grupper kan tilhøre én kunde og flere reklamer kan tilhøre én gruppe. Derved kan flere reklamer også tilhøre én kunde.
+
+
+\includegraphics[scale=0.5]{klasse_diagram.png}
 
 \section{Systemdesign sammenfatning}
+Vi er nået dertil, at Treu Media kan oprette kunder, grupper og reklamer. Vi har lavet en grov skitse af systemet, men mangler at implementere nogle funktioner, som f.eks. at give Treu Media mulighed for at ændre en kunde, gruppe og reklame. Vi skal også sørge for at beskytte imod SQL-injections og sikre os, at de krævede felter faktisk bliver udfyldt, når Treu Media f.eks. opretter en reklame. Den vigtigste funktion vi mangler, er at vise en reklame på en hjemmeside. Der findes flere muligheder for, hvordan vi kan lave denne del af systemet. Vi har diskuteret fordele og ulemper ved de forskellige muligheder, og har ikke truffet en endelig beslutning. Højst sandsyneligt vælger vi en løsning, hvor kunden skal tilføjer en javascript-fil til hjemmesiden, som henter og placerer reklamerne på hjemmesiden.
 
 \section{Program- og systemtestning}
 
-\textbf{Projektgruppen ønsker at teste systemet i flere omfang. Disse omhandler både interne og eksterne kravspecifikationer.}
+Projektgruppen ønsker at teste systemet i flere omfang. Disse omhandler både interne og eksterne kravspecifikationer.
+
 \subsection{Interne test}Ved de interne testProjektgruppen ønsker at teste systemet i flere omfang. Disse omhandler både interne og eksterne kravspecifikationer. Til de interne test skal vi benytte os af en form for unit testning, som onhandler tælning. Gruppen ønsker længere fremme i projektet at teste registreringer af visninger af bannere på hjemmesider. Vi skal altså forsøge at skabe en bannervisning internt i programmet et antal gange, og så skal resultatet af dette sammenlignes med et forventet antal. En måde at gruppen vil gøre dette på, kunne være at skabe et banner, og sende fiktive requests til en hjemmeside med dette banner. Herved kunne vi aflæse om requesten bliver behandlet korrekt. Dette ville resultere i at banneret er blevet vist og vi kan dermed tælle antallet af requests som der er blevet behandlet korrekt i processen.
 
-Projektgruppen regner desuden med testning af systemets nuværende GUI. Gruppen forsøger at skabe et "tænke højt forsøg" som indebærer at interessenten benytter sig af systemet. Vi vil på forhånd give interessenten systemet i hænderne, og guide denne i en retning som tester brugervenligheden af vores GUI. Der vil på forhånd være stillet en række opgaver, som i projektgruppens øjne er set som de væsentligste faktorer for systemets kunnen. Disse små opgaver skal interessenten dernæst udføre, eller prøve at udføre på egen hånd. En form for dokumentering behøves. 
+Projektgruppen regner desuden med testning af systemets nuværende brugergrænseflade. Gruppen forsøger at skabe et "tænke højt forsøg" som indebærer at interessenten benytter sig af systemet. Vi vil på forhånd give interessenten systemet i hænderne, og guide denne i en retning som tester brugervenligheden af vores brugergrænseflade. Der vil på forhånd være stillet en række opgaver, som i projektgruppens øjne er set som de væsentligste faktorer for systemets kunnen. Disse små opgaver skal interessenten dernæst udføre, eller prøve at udføre på egen hånd. En form for dokumentering behøves. 
+
 Da projektgruppen ikke burde være til stede under testningen af programmet, ville man benytte sig af f.eks. videooptagelse så interessenten kunne afprøve systemet uden vores indflydelse eller kommentarer om systemet. Herved ville vi få et bedre overblik og en viden om hvordan mennesker håndterer systemets kunnen.
-Under dette forsøg ville de eksterne kravspecifikationer uden tvivl komme i spil. F.eks. brugervenlighed ift. overblik fra
-interessentens side. skal vi benytte os af en form for unit testning. Denne testining skal finde sit ståsted i matematikken, og vil omhandle en form for tælningsmekanisme. Gruppen ønsker længere fremme i projektet at teste antallet af visninger af bannere på hjemmesider. Vi skal altså forsøge at skabe en bannervisning internt i programmet et kendt antal gange. Vores tælningsmekanisme skal således beregne et resultat udfra vores banneres visning. Dette resultat skal herefter sammenlignes med det forventede antal visninger fra start.
-\\ 
+Under dette forsøg ville de eksterne kravspecifikationer uden tvivl komme i spil. F.eks. brugervenlighed ift. overblik fra interessentens side. skal vi benytte os af en form for unit testning. Denne testining skal finde sit ståsted i matematikken, og vil omhandle en form for tælningsmekanisme. Gruppen ønsker længere fremme i projektet at teste antallet af visninger af bannere på hjemmesider. Vi skal altså forsøge at skabe en bannervisning internt i programmet et kendt antal gange. Vores tælningsmekanisme skal således beregne et resultat udfra vores banneres visning. Dette resultat skal herefter sammenlignes med det forventede antal visninger fra start.
+
 En konkret måde at løse gruppens problem her, kunne være på følgende måde: uploade et banner, sende fiktive requests til en hjemmeside med dette banner. Herved kunne gruppens tællemekanisme aflæse om requesten bliver behandlet korrekt og dermed registrere en visning. Dette ville resultere i at man kan tælle antallet af requests som der er blevet behandlet i processen og vi gruppen ville hurtigt kunne se om det forventede resultat stemte overens med det relle resultat fra vores tællemekanisme.
 
-\subsection{Eksterne test}Projektgruppen regner desuden med testning af systemets nuværende GUI. Gruppen forsøger at skabe et "tænke højt forsøg" som indebærer at interessenten benytter sig af systemet. Vi vil på forhånd give interessenten systemet i hænderne, og guide denne i en retning med henblik på testning af brugervenligheden og korrekthed af vores GUI. Der vil på forhånd være stillet en række opgaver, som i projektgruppens øjne er set som de væsentligste faktorer for systemets kunnen (use cases). Disse små opgaver skal interessenten dernæst udføre, eller prøve at udføre på egen hånd. En form for dokumentering behøves. 
+\subsection{Eksterne test}
+Projektgruppen regner desuden med testning af systemets nuværende GUI. Gruppen forsøger at skabe et "tænke højt forsøg" som indebærer at interessenten benytter sig af systemet. Vi vil på forhånd give interessenten systemet i hænderne, og guide denne i en retning med henblik på testning af brugervenligheden og korrekthed af vores GUI. Der vil på forhånd være stillet en række opgaver, som i projektgruppens øjne er set som de væsentligste faktorer for systemets kunnen (use cases). Disse små opgaver skal interessenten dernæst udføre, eller prøve at udføre på egen hånd. En form for dokumentering behøves. 
+
 Da projektgruppen ikke burde være til stede under testningen af programmet, ville man benytte sig af f.eks. videooptagelse så interessenten kunne afprøve systemet uden vores indflydelse eller kommentarer om systemet. Herved ville vi få et bedre overblik og en viden om hvordan mennesker håndterer systemets kunnen.
 Under dette forsøg ville de eksterne kravspecifikationer uden tvivl komme i spil. F.eks. brugervenlighed ift. overblik fra
 interessentens side.
 
 \section{Brugergrænseflade og interaktionsdesign}
+Vi har lavet en demonstration af vores brugergrænseflade, som vi har uploaded til youtube:
+\newline
 \url{www.youtube.com/watch?v=RXtx08uCdH4&feature=youtu.be&hd=1}
 
 \section{Projektarbejdet}
 \subsection{Hvad går godt?}
 
-\textbf{internt}\\
+\textbf{Internt}
+\newline
 Projektgruppen har i løbet af påsken mødtes en gang om ugen, og disse har været meget produktive. Til disse møder har vi haft en dagsorden, vi har planlagt små arbejdsopgaver frem til næste mødes dagsorden og vi har planlagt opgaveskrivning individuelt. Arbejdet mellem gruppen internt, fungerer meget gnidningsfrit og alle opfylder hindandens krav, og de krav der stilles til opgaven. Alle møder velforeredte og friske, således at dagen hvor vi alle har mulighed for at mødes bliver så konstruktiv som overhoved muligt.
+
 Det var en smule kompliceret at finde en god mødefordeling i påskeferien, da alle 3 medlemmer havde personlige ærinder der skulle imødekommes. Det har gjort at vi til dels har været tvunget til at skrive anden delrapport i punkter individuelt hver for sig. Vi mødes af den grund mandagen inden aflevering til korrektur læsning, og forståelses/formidlingsmæssige usikkerheder. Alle i gruppen er blevet tildelt ca. lige meget rapportskrivning, så ingen i gruppen føler sig overbebyrdet, eller omvendt, overset. 
 \\
 \\
-\textbf{med interessent}
+\textbf{Med interessent}
 \\
-Vi har ikke haft et møde med vores interessent til dags dato, men vi har haft 2 møder og mailkorrespondance til vores mellemled mellem os og interessenten. Interessenten giver klart udtryk for et frugtbart samarbejde, med mulighed for fremtidige møder efter vores ønske - det kommer vi selvfølgelig til at benytte os af.
+Vi har ikke haft et møde med vores interessent til dags dato, men vi har haft 2 møder og mailkorrespondance til vores mellemled mellem os og interessenten. Interessenten giver klart udtryk for et frugtbart samarbejde, med mulighed for fremtidige møder efter vores ønske - det kommer vi selvfølgelig til at benytte os 
+af.
+
 Vi har på nuværende tidspunkt en GUI som fungerer efter hensigten, og dette er også grunden til at vi ikke ville mødes med interessenten inden. Projektgruppen ønskede at have noget brugbart rent fysisk at vise frem, således at det interessenten ville have nemmere ved at sætte sig ind i projektets omfang, og herunder forstå projektet. Dvs. at vi til dette møde kunne fremsætte klare retningslinier med det fokus at interessenten ville kunne udføre et "tænke højt forsøg" (testning af GUI) og hermed danne sig et billede af systemet. Vi ville af dette opnå stor viden, da vi med en kontrolleret testning af vores system kan fusionere tekniske aspekter med menneskelige input.
+
 Med denne viden kunne vi vidreudvikle vores system, således at der måske sættes fokus på brugervenlighed, eller andet. Det er op til os og interessenten i sammarbejde.
 \\
 \\
 \subsection{Hvad går mindre godt?}
 
-\textbf{internt}
+\textbf{Internt}
 \\
 Som benævnt i punktet ovenover, ville det være mere hensigtsmæssigt at mødes flere gange i påsken. Men det har desværre ike været muligt. Vi synes dog at vi har fået det optimale ud af vores sammarbejde.
 Et medlem i gruppen havde store problemer med github, eftersom hans system er Mac OS X. Det gjorde at han måtte ty til andre løsningsmidler og gruppen har således ikke mistet nogle former for data. Men man blev derfor tvunget til at sende stoffet til de andre medlemmer i gruppen således at de kunne overføre data til github som planlagt. Derfor ses det også i "contributions" fra denne person. Heldigvis burde problemet være løst med en virtuel maskine som benytter Windows på personens Mac OS X i stedet for.
 \\
 \\
-\textbf{med interessent}
+\textbf{Med interessent}
 \\
 I og med at gruppen ikke har haft møde med interessenten, er det svært at foretage en vurdering af dette punkt. Vi synes dog i og med at interessenten viser meget interesse og er nem at få kontakt til telefonisk, at vi ikke har nogen problematik her. 
 \\
 \\
 \subsection{Hvilke optimeringer i forhold til projektarbejdet kan vi foretage?}
 
-\textbf{internt}
+\textbf{Internt}
 \\
 Vi vil holde lidt flere møder fremover, alt efter behov. Gruppen arbejder velfungerende i det mønster som den har sat sig i pt. Så planlægningen og strukturen af arbjedet forbliver uændret indtil videre.
 \\ 
 \\
 \\
-\textbf{med interessent}
+\textbf{Med interessent}
 \\
 Gruppen begynder planlægning fremover telefonisk med interessenten, og så vil der fra møde til møde indgå klare dagsordner hvis projektet skal fungere optimalt når gruppen skal diskutere emner mere dybdegående med denne.  
 
 \newpage
 \pagenumbering{gobble}
-\section{Bilag}
-\subsection{Artikel 1 - A rational design process}
+\section{Bilag 1 - Review: A rational design process}
 Artiklen beskriver den rationelle design process og hvorledes denne er uopnåelig. Dette skyldes i høj grad uvished og menneskelige fejl, men problemet opstår også ved komplexiteten af store programmer. Denne komplexitet gør det svært at overskue processen og alle dens detaljer, hvilket fører til menneskelige fejl. Man kan løse dette problem med burgen af dokumentation.
 Artiklen fokuserer på hvordan man skaber en fiktiv rationel process, som man herefter følger bedst muligt.
 Dette kaldes en forfalskning af design processen.
@@ -342,7 +360,7 @@ Hvordan skaber man god dokumentation til sit program, sådan at dette kan bruges
 \\
 Artiklen kommer desuden med ideer og metoder til at svare på disse spørgsmål.
 
-\subsection{Artikel 2 - Designing for usability}
+\section{Bilag 2 - Review: Designing for usability}
 Artikelen beskriver tre principper for system design. Forfatterne mener at hvis
 hvis man overholder de tre principper, så vil man med garanti få udviklet et brugervenligt system.  
 De tre principper er følgende:
@@ -370,7 +388,7 @@ De tre hovedregler er ikke intuitive for designere.
 
 Til slut giver artiklen et eksempel på et projekt hvor forfatternes principper har været nyttige.
 
-\subsection{Commit log}
+\section{Bilag 3 - Commit log}
 \includegraphics[width=\linewidth]{log1.png}
 \newpage
 \includegraphics[width=\linewidth]{log2.png}
