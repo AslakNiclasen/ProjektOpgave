@@ -234,32 +234,33 @@ Vi har en interessent, som er Treu Media, som har fået en ny kunde og har solgt
 \addtitle{Use case navn}{Opret kunde}
 \addfield{Aktør:}{Treu Media}
 \addscenario{Flow:} {
-	\item Log ind på systemet 
 	\item Tryk på "Customers"
 	\item Tryk på "Add customer"
 	\item Udfyld felterne "Name" og "Url". Begge felter skal udfyldes
 	\item Tryk på "Submit"
 }
+\addfield{Startbetingelser:}{Treu Media skal være logget på systemet}
+\addfield{Slutresultat:}{En kunde er oprettet i systemet}
 \end{usecase}
 
 \begin{usecase}
 \addtitle{Use case navn}{Opret gruppe}
 \addfield{Aktør:}{Treu Media}
 \addscenario{Flow:} {
-	\item Log ind på systemet
 	\item Opret en kunde. Se tidligere use case
 	\item Tryk på "Grups"
 	\item Tryk på "Add group"
 	\item Udfyld feltet "Grup name" og vælg en kunde fra select-boksen
 	\item Tryk på "Create"
 }
+\addfield{Startbetingelser:}{Treu Media skal være logget på systemet}
+\addfield{Slutresultat:}{En gruppe er oprettet i systemet}
 \end{usecase}
 
 \begin{usecase}
 \addtitle{Use case navn}{Opret reklame}
 \addfield{Aktør:}{Treu Media}
 \addscenario{Flow:} {
-	\item Log ind på systemet
 	\item Opret en kunde. Se tidligere use case
 	\item Opret en gruppe. Se tidligere use case
 	\item Tryk på "Ads"
@@ -268,6 +269,8 @@ Vi har en interessent, som er Treu Media, som har fået en ny kunde og har solgt
 	\item Vælg reklamen fra din computer ved at trykke på "Vælg fil"
 	\item Tryk på "Submit"
 }
+\addfield{Startbetingelser:}{Treu Media skal være logget på systemet}
+\addfield{Slutresultat:}{En reklame er oprettet i systemet}
 \end{usecase}
 
 \section{Projektarbejdet}
