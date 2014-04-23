@@ -131,12 +131,20 @@ Projektet har til formål
 
 \large{\bf{F}}\normalsize{unctionality
 \\
-- Visning af bannere med forskellig vægtning}
+- Visning af bannere med forskellig vægtning
+\newline
+- Tidsbestemt/antalsbestemt bannervisning 
+\newline
+- Oprettelse af kunder 
+\newline
+- Oprettelse af grupper
+\newline
+- Oprettelse af bannere}
 \newline
 \newline
 \large{\bf{A}}\normalsize{pplication domain
 \\
-- afhængigt af senariet er det enten Jan eller en it-ansvarlig hos en organisation eller forening}
+- Medarbejdere tilknyttet Treu media}
 \newline
 \newline
 \large{\bf{C}}\normalsize{onditions\\
@@ -147,19 +155,40 @@ Projektet har til formål
 \newline
 \large{\bf{T}}\normalsize{echnology\\
 - Web-teknologi: html, css, php, javascript.\\
-- Databaser}
+- Databaser: MySQL\\
+- Webserver: Apache}
 \newline
 \newline
 \large{\bf{O}}\normalsize{bjects\\
-- Bannere}
+- Bannere/Reklamer
+\newline
+- Administratorer
+\newline
+- Kunder
+\newline
+- Grupper}
 \newline
 \newline
 \large{\bf{R}}\normalsize{esponsibility\\
-- Visning af bannere
 - Holder styr på banner visning}
 
 \newpage
+\section{Program- og systemtestning}
 
+\textbf{Projektgruppen ønsker at teste systemet i flere omfang. Disse omhandler både interne og eksterne kravspecifikationer.}
+\subsection{Interne test}Ved de interne testProjektgruppen ønsker at teste systemet i flere omfang. Disse omhandler både interne og eksterne kravspecifikationer. Til de interne test skal vi benytte os af en form for unit testning, som onhandler tælning. Gruppen ønsker længere fremme i projektet at teste registreringer af visninger af bannere på hjemmesider. Vi skal altså forsøge at skabe en bannervisning internt i programmet et antal gange, og så skal resultatet af dette sammenlignes med et forventet antal. En måde at gruppen vil gøre dette på, kunne være at skabe et banner, og sende fiktive requests til en hjemmeside med dette banner. Herved kunne vi aflæse om requesten bliver behandlet korrekt. Dette ville resultere i at banneret er blevet vist og vi kan dermed tælle antallet af requests som der er blevet behandlet korrekt i processen.
+
+Projektgruppen regner desuden med testning af systemets nuværende GUI. Gruppen forsøger at skabe et "tænke højt forsøg" som indebærer at interessenten benytter sig af systemet. Vi vil på forhånd give interessenten systemet i hænderne, og guide denne i en retning som tester brugervenligheden af vores GUI. Der vil på forhånd være stillet en række opgaver, som i projektgruppens øjne er set som de væsentligste faktorer for systemets kunnen. Disse små opgaver skal interessenten dernæst udføre, eller prøve at udføre på egen hånd. En form for dokumentering behøves. 
+Da projektgruppen ikke burde være til stede under testningen af programmet, ville man benytte sig af f.eks. videooptagelse så interessenten kunne afprøve systemet uden vores indflydelse eller kommentarer om systemet. Herved ville vi få et bedre overblik og en viden om hvordan mennesker håndterer systemets kunnen.
+Under dette forsøg ville de eksterne kravspecifikationer uden tvivl komme i spil. F.eks. brugervenlighed ift. overblik fra
+interessentens side. skal vi benytte os af en form for unit testning. Denne testining skal finde sit ståsted i matematikken, og vil omhandle en form for tælningsmekanisme. Gruppen ønsker længere fremme i projektet at teste antallet af visninger af bannere på hjemmesider. Vi skal altså forsøge at skabe en bannervisning internt i programmet et kendt antal gange. Vores tælningsmekanisme skal således beregne et resultat udfra vores banneres visning. Dette resultat skal herefter sammenlignes med det forventede antal visninger fra start.
+\\ 
+En konkret måde at løse gruppens problem her, kunne være på følgende måde: uploade et banner, sende fiktive requests til en hjemmeside med dette banner. Herved kunne gruppens tællemekanisme aflæse om requesten bliver behandlet korrekt og dermed registrere en visning. Dette ville resultere i at man kan tælle antallet af requests som der er blevet behandlet i processen og vi gruppen ville hurtigt kunne se om det forventede resultat stemte overens med det relle resultat fra vores tællemekanisme.
+
+\subsection{Eksterne test}Projektgruppen regner desuden med testning af systemets nuværende GUI. Gruppen forsøger at skabe et "tænke højt forsøg" som indebærer at interessenten benytter sig af systemet. Vi vil på forhånd give interessenten systemet i hænderne, og guide denne i en retning med henblik på testning af brugervenligheden og korrekthed af vores GUI. Der vil på forhånd være stillet en række opgaver, som i projektgruppens øjne er set som de væsentligste faktorer for systemets kunnen (use cases). Disse små opgaver skal interessenten dernæst udføre, eller prøve at udføre på egen hånd. En form for dokumentering behøves. 
+Da projektgruppen ikke burde være til stede under testningen af programmet, ville man benytte sig af f.eks. videooptagelse så interessenten kunne afprøve systemet uden vores indflydelse eller kommentarer om systemet. Herved ville vi få et bedre overblik og en viden om hvordan mennesker håndterer systemets kunnen.
+Under dette forsøg ville de eksterne kravspecifikationer uden tvivl komme i spil. F.eks. brugervenlighed ift. overblik fra
+interessentens side.
 \section{Kravspecifikation for IT-løsningen}
 \subsection{Funktionelle og ikke-funktionelle krav}
 \textbf{Funktionelle krav}
@@ -189,5 +218,48 @@ Her er de ikke-funktionelle krav:
 \end{itemize}
 
 \textbf{Constraints:} Systemet er webbaseret og vil blive udviklet i PHP. Derudover benytter vi andre webteknologier, som f.eks. HTML, CSS, JavaScript (jQuery). Projektet er open-source, men hvis man vil udvikle, eller udvide, systemet, kan man gøre det i PHP. Databasen, derimod, kan være hvilken som helst database. Vi har dog valgt at bruge MySQL.
+
+
+\newpage
+
+\section{Projektarbejdet}
+\subsection{Hvad går godt?}
+
+\textbf{internt}\\
+Projektgruppen har i løbet af påsken mødtes en gang om ugen, og disse har været meget produktive. Til disse møder har vi haft en dagsorden, vi har planlagt små arbejdsopgaver frem til næste mødes dagsorden og vi har planlagt opgaveskrivning individuelt. Arbejdet mellem gruppen internt, fungerer meget gnidningsfrit og alle opfylder hindandens krav, og de krav der stilles til opgaven. Alle møder velforeredte og friske, således at dagen hvor vi alle har mulighed for at mødes bliver så konstruktiv som overhoved muligt.
+Det var en smule kompliceret at finde en god mødefordeling i påskeferien, da alle 3 medlemmer havde personlige ærinder der skulle imødekommes. Det har gjort at vi til dels har været tvunget til at skrive anden delrapport i punkter individuelt hver for sig. Vi mødes af den grund mandagen inden aflevering til korrektur læsning, og forståelses/formidlingsmæssige usikkerheder. Alle i gruppen er blevet tildelt ca. lige meget rapportskrivning, så ingen i gruppen føler sig overbebyrdet, eller omvendt, overset. 
+\\
+\\
+\textbf{med interessent}
+\\
+Vi har ikke haft et møde med vores interessent til dags dato, men vi har haft 2 møder og mailkorrespondance til vores mellemled mellem os og interessenten. Interessenten giver klart udtryk for et frugtbart samarbejde, med mulighed for fremtidige møder efter vores ønske - det kommer vi selvfølgelig til at benytte os af.
+Vi har på nuværende tidspunkt en GUI som fungerer efter hensigten, og dette er også grunden til at vi ikke ville mødes med interessenten inden. Projektgruppen ønskede at have noget brugbart rent fysisk at vise frem, således at det interessenten ville have nemmere ved at sætte sig ind i projektets omfang, og herunder forstå projektet. Dvs. at vi til dette møde kunne fremsætte klare retningslinier med det fokus at interessenten ville kunne udføre et "tænke højt forsøg" (testning af GUI) og hermed danne sig et billede af systemet. Vi ville af dette opnå stor viden, da vi med en kontrolleret testning af vores system kan fusionere tekniske aspekter med menneskelige input.
+Med denne viden kunne vi vidreudvikle vores system, således at der måske sættes fokus på brugervenlighed, eller andet. Det er op til os og interessenten i sammarbejde.
+\\
+\\
+\subsection{Hvad går mindre godt?}
+
+\textbf{internt}
+\\
+Som benævnt i punktet ovenover, ville det være mere hensigtsmæssigt at mødes flere gange i påsken. Men det har desværre ike været muligt. Vi synes dog at vi har fået det optimale ud af vores sammarbejde.
+Et medlem i gruppen havde store problemer med github, eftersom hans system er Mac OS X. Det gjorde at han måtte ty til andre løsningsmidler og gruppen har således ikke mistet nogle former for data. Men man blev derfor tvunget til at sende stoffet til de andre medlemmer i gruppen således at de kunne overføre data til github som planlagt. Derfor ses det også i "contributions" fra denne person. Heldigvis burde problemet være løst med en virtuel maskine som benytter Windows på personens Mac OS X i stedet for.
+\\
+\\
+\textbf{med interessent}
+\\
+I og med at gruppen ikke har haft møde med interessenten, er det svært at foretage en vurdering af dette punkt. Vi synes dog i og med at interessenten viser meget interesse og er nem at få kontakt til telefonisk, at vi ikke har nogen problematik her. 
+\\
+\\
+\subsection{Hvilke optimeringer i forhold til projektarbejdet kan vi foretage?}
+
+\textbf{internt}
+\\
+Vi vil holde lidt flere møder fremover, alt efter behov. Gruppen arbejder velfungerende i det mønster som den har sat sig i pt. Så planlægningen og strukturen af arbjedet forbliver uændret indtil videre.
+\\ 
+\\
+\\
+\textbf{med interessent}
+\\
+Gruppen begynder planlægning fremover telefonisk med interessenten, og så vil der fra møde til møde indgå klare dagsordner hvis projektet skal fungere optimalt når gruppen skal diskutere emner mere dybdegående med denne.  
 
 \end{document}

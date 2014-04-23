@@ -1,8 +1,0 @@
-\select@language {danish}
-\contentsline {section}{\numberline {1}Abstract}{2}{section.1}
-\contentsline {section}{\numberline {2}Indledning}{2}{section.2}
-\contentsline {section}{\numberline {3}Easy Ad}{2}{section.3}
-\contentsline {section}{\numberline {4}IT-projektets form\IeC {\r a}l og rammer}{3}{section.4}
-\contentsline {section}{\numberline {5}FACTOR-kriteriet}{4}{section.5}
-\contentsline {section}{\numberline {6}Kravspecifikation for IT-l\IeC {\o }sningen}{5}{section.6}
-\contentsline {subsection}{\numberline {6.1}Funktionelle og ikke-funktionelle krav}{5}{subsection.6.1}
