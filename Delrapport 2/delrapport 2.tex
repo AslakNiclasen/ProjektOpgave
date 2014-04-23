@@ -233,9 +233,42 @@ Vi har en interessent, som er Treu Media, som har fået en ny kunde og har solgt
 \begin{usecase}
 \addtitle{Use case navn}{Opret kunde}
 \addfield{Aktør:}{Treu Media}
-\addscenario{Flow:} {\item Log ind på systemet}
+\addscenario{Flow:} {
+	\item Log ind på systemet 
+	\item Tryk på "Customers"
+	\item Tryk på "Add customer"
+	\item Udfyld felterne "Name" og "Url". Begge felter skal udfyldes
+	\item Tryk på "Submit"
+}
 \end{usecase}
 
+\begin{usecase}
+\addtitle{Use case navn}{Opret gruppe}
+\addfield{Aktør:}{Treu Media}
+\addscenario{Flow:} {
+	\item Log ind på systemet
+	\item Opret en kunde. Se tidligere use case
+	\item Tryk på "Grups"
+	\item Tryk på "Add group"
+	\item Udfyld feltet "Grup name" og vælg en kunde fra select-boksen
+	\item Tryk på "Create"
+}
+\end{usecase}
+
+\begin{usecase}
+\addtitle{Use case navn}{Opret reklame}
+\addfield{Aktør:}{Treu Media}
+\addscenario{Flow:} {
+	\item Log ind på systemet
+	\item Opret en kunde. Se tidligere use case
+	\item Opret en gruppe. Se tidligere use case
+	\item Tryk på "Ads"
+	\item Tryk på "Add ad"
+	\item Udfyld feltet "Ad name" og vælg en kunde fra select-boksen og vælg siden, hvilken gruppe reklamen skal høre til fra select-boksen
+	\item Vælg reklamen fra din computer ved at trykke på "Vælg fil"
+	\item Tryk på "Submit"
+}
+\end{usecase}
 
 \section{Projektarbejdet}
 \subsection{Hvad går godt?}
