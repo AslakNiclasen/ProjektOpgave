@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.2)  27 MAR 2014 10:37
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.2)  18 APR 2014 10:04
 entering extended mode
 **delrapport1.tex
 
@@ -824,13 +824,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--223
 
 [3] [4 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpgave/Delrappo
 rt 1/WorkBreakdownStructure.jpg>] [5]
-<architecture_diagram.png, id=81, 895.345pt x 682.55pt>
-File: architecture_diagram.png Graphic file (type png)
 
-<use architecture_diagram.png>
-Package pdftex.def Info: architecture_diagram.png used on input line 226.
-(pdftex.def)             Requested size: 390.00475pt x 297.31303pt.
- [6]
+LaTeX Warning: File `architecture_diagram.png' not found on input line 226.
+
+
+! Package pdftex.def Error: File `architecture_diagram.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226 ...eepaspectratio]{architecture_diagram.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (0.10751pt too wide) in paragraph at lines 226--227
+[] 
+ []
+
+[6] [7]
 Underfull \hbox (badness 10000) in paragraph at lines 235--254
 
  []
@@ -866,8 +881,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 235--254
 
  []
 
-[7 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpgave/Delrapport 1
-/architecture_diagram.png>] [8]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 256--284
 
  []
@@ -892,7 +906,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--284
 
  []
 
-[9]
+[9] [10]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 364.
 
 Underfull \hbox (badness 10000) in paragraph at lines 292--364
@@ -1029,7 +1043,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--364
 
  []
 
-[10] [11]
+[11] [12]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
 
 ("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 1\d
@@ -1041,31 +1055,32 @@ Package rerunfilecheck Info: File `delrapport1.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 364.
  ) 
 Here is how much of TeX's memory you used:
- 9240 strings out of 493921
- 135609 string characters out of 3147279
+ 9239 strings out of 493921
+ 135519 string characters out of 3147279
  224225 words of memory out of 3000000
- 12394 multiletter control sequences out of 15000+200000
- 18555 words of font info for 40 fonts, out of 3000000 for 9000
+ 12391 multiletter control sequences out of 15000+200000
+ 18868 words of font info for 41 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,11n,43p,664b,413s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ecti1200.pk> <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\ectt1000.pk> <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Amanda\AppData\Local\M
-iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Amanda\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\
-Amanda\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk>
+\ectt1200.pk> <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
+n\ec\dpi600\ecti1200.pk> <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\ectt1000.pk> <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\Amanda\AppData\Local\M
+iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Amanda\AppD
+ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\
+Amanda\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk>
  <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-crm1440.pk> <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecti1440.pk> <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Amanda\AppData\Local\MiK
-TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk> <C:\Users\Amanda\AppDat
-a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc2074.pk>
-Output written on delrapport1.pdf (12 pages, 224721 bytes).
+crm1200.pk> <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecrm1440.pk> <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
+r\jknappen\ec\dpi600\ecti1440.pk> <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\Amanda\AppData\Local\MiK
+TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Amanda\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1728.pk> <C:\Users\Am
+anda\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc2074.pk>
+Output written on delrapport1.pdf (13 pages, 176964 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 67 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 491 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
+ 62 words of extra memory for PDF output out of 10000 (max. 10000000)
 
