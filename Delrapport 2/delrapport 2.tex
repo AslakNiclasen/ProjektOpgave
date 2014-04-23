@@ -4,6 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[pdftex]{graphicx}
 \usepackage{subfigure}
+\usepackage{usecases}
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{upquote}
@@ -219,8 +220,22 @@ Her er de ikke-funktionelle krav:
 
 \textbf{Constraints:} Systemet er webbaseret og vil blive udviklet i PHP. Derudover benytter vi andre webteknologier, som f.eks. HTML, CSS, JavaScript (jQuery). Projektet er open-source, men hvis man vil udvikle, eller udvide, systemet, kan man gøre det i PHP. Databasen, derimod, kan være hvilken som helst database. Vi har dog valgt at bruge MySQL.
 
+\subsection{Højniveau use case model}
+Vi har lavet en højniveau use case diagram, som viser aktørerne og systemets funktionalitet. Treu Media har mulighed for at administrere kunder, grupper og reklamer, mens kunden (som også kan være en besøgende på en hjemmeside), får vist en reklame.
 
-\newpage
+\includegraphics[width=\linewidth]{use_case.png}
+
+\subsection{Tre use case modeller}
+Vi har en interessent, som er Treu Media, som har fået en ny kunde og har solgt en banner til kunden. Nu skal Treu Media oprette kunden i systemet, oprette en gruppe og oprette en reklame.
+
+\includegraphics[scale=0.5]{three_use_cases.png}
+
+\begin{usecase}
+\addtitle{Use case navn}{Opret kunde}
+\addfield{Aktør:}{Treu Media}
+\addscenario{Flow:} {\item Log ind på systemet}
+\end{usecase}
+
 
 \section{Projektarbejdet}
 \subsection{Hvad går godt?}

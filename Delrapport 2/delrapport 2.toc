@@ -1,0 +1,17 @@
+\select@language {danish}
+\contentsline {section}{\numberline {1}Abstract}{2}{section.1}
+\contentsline {section}{\numberline {2}Indledning}{2}{section.2}
+\contentsline {section}{\numberline {3}Easy Ad}{2}{section.3}
+\contentsline {section}{\numberline {4}IT-projektets form\IeC {\r a}l og rammer}{3}{section.4}
+\contentsline {section}{\numberline {5}FACTOR-kriteriet}{4}{section.5}
+\contentsline {section}{\numberline {6}Program- og systemtestning}{5}{section.6}
+\contentsline {subsection}{\numberline {6.1}Interne test}{5}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Eksterne test}{6}{subsection.6.2}
+\contentsline {section}{\numberline {7}Kravspecifikation for IT-l\IeC {\o }sningen}{7}{section.7}
+\contentsline {subsection}{\numberline {7.1}Funktionelle og ikke-funktionelle krav}{7}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}H\IeC {\o }jniveau use case model}{9}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Tre use case modeller}{10}{subsection.7.3}
+\contentsline {section}{\numberline {8}Projektarbejdet}{10}{section.8}
+\contentsline {subsection}{\numberline {8.1}Hvad g\IeC {\r a}r godt?}{10}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Hvad g\IeC {\r a}r mindre godt?}{12}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Hvilke optimeringer i forhold til projektarbejdet kan vi foretage?}{12}{subsection.8.3}
