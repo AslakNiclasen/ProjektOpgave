@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.2)  23 APR 2014 14:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.2)  23 APR 2014 15:07
 entering extended mode
 **delrapport*2.tex
 
@@ -798,126 +798,202 @@ s / mediearkiv / rapporter /$
 
 [2
 
-] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 131--173
+]
+Underfull \hbox (badness 10000) in paragraph at lines 129--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--173
+Underfull \hbox (badness 10000) in paragraph at lines 129--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--173
+Underfull \hbox (badness 10000) in paragraph at lines 129--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--173
+Underfull \hbox (badness 10000) in paragraph at lines 129--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--173
+Underfull \hbox (badness 10000) in paragraph at lines 129--171
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 184--190
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 182--188
 
  []
 
-[5]
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 195.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 193.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [6]
-<use_case.png, id=135, 568.1225pt x 404.51125pt>
+) [5]
+<use_case.png, id=145, 568.1225pt x 404.51125pt>
 File: use_case.png Graphic file (type png)
  <use use_case.png>
-Package pdftex.def Info: use_case.png used on input line 207.
+Package pdftex.def Info: use_case.png used on input line 205.
 (pdftex.def)             Requested size: 390.0pt x 277.69342pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 207--208
+Overfull \hbox (15.0pt too wide) in paragraph at lines 205--206
 [][] 
  []
 
-[7 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpgave/Delrapport 2
-/use_case.png>] <three_use_cases.png, id=142, 361.35pt x 368.37625pt>
+[6] <three_use_cases.png, id=152, 361.35pt x 368.37625pt>
 File: three_use_cases.png Graphic file (type png)
 
 <use three_use_cases.png>
-Package pdftex.def Info: three_use_cases.png used on input line 212.
+Package pdftex.def Info: three_use_cases.png used on input line 210.
 (pdftex.def)             Requested size: 180.67456pt x 184.18767pt.
-
-Underfull \vbox (badness 10000) detected at line 225
+ [7 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpgave/Delrapport 
+2/use_case.png>]
+Underfull \vbox (badness 10000) detected at line 223
  []
 
 
-Underfull \vbox (badness 10000) detected at line 239
+Underfull \vbox (badness 10000) detected at line 237
  []
 
 [8 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpgave/Delrapport 2
 /three_use_cases.png>]
-Underfull \vbox (badness 10000) detected at line 255
+Underfull \vbox (badness 10000) detected at line 253
  []
 
 [9] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 283--295
+Underfull \hbox (badness 10000) in paragraph at lines 281--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--295
+Underfull \hbox (badness 10000) in paragraph at lines 281--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--295
+Underfull \hbox (badness 10000) in paragraph at lines 281--293
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 297--308
+Underfull \hbox (badness 10000) in paragraph at lines 295--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--308
+Underfull \hbox (badness 10000) in paragraph at lines 295--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--308
+Underfull \hbox (badness 10000) in paragraph at lines 295--306
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 310--319
+Underfull \hbox (badness 10000) in paragraph at lines 308--317
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--319
+Underfull \hbox (badness 10000) in paragraph at lines 308--317
 
  []
 
-[14] <log1.png, id=194, 635.37375pt x 703.62875pt>
+[14]
+Overfull \hbox (11.12361pt too wide) in paragraph at lines 322--328
+\OT1/cmr/m/n/12 Artiklen be-skri-ver den ra-tio-nel-le de-sign pro-cess og hvor
+-le-des den-ne er uopnaelig.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--344
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--344
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--344
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--344
+
+ []
+
+
+Overfull \hbox (4.66118pt too wide) in paragraph at lines 329--344
+\OT1/cmr/m/n/12 Artiklen kom-mer des-u-den med ide-er og me-to-der til at sva-r
+e pa dis-se sprgsmal. 
+ []
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 346--370
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--370
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--370
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--370
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--370
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--370
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--370
+
+ []
+
+<log1.png, id=213, 635.37375pt x 703.62875pt>
 File: log1.png Graphic file (type png)
  <use log1.png>
-Package pdftex.def Info: log1.png used on input line 323.
+Package pdftex.def Info: log1.png used on input line 374.
 (pdftex.def)             Requested size: 390.0pt x 431.90778pt.
- [1 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpgave/Delrapport 
-2/log1.png>]
-<log2.png, id=199, 548.0475pt x 706.64pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.375 \newpage
+               [2]pdfTeX warning (ext4): destination with the same identifier (
+name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.375 \newpage
+               [3 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
+ve/Delrapport 2/log1.png>] <log2.png, id=220, 548.0475pt x 706.64pt>
 File: log2.png Graphic file (type png)
- <use log2.png>
-Package pdftex.def Info: log2.png used on input line 325.
+
+<use log2.png>
+Package pdftex.def Info: log2.png used on input line 376.
 (pdftex.def)             Requested size: 390.0pt x 502.86086pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 325--326
+Overfull \hbox (15.0pt too wide) in paragraph at lines 376--377
 [][] 
  []
 
@@ -925,16 +1001,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.326 \newpage
-               [2 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
-ve/Delrapport 2/log2.png>] <log3.png, id=203, 627.34375pt x 692.5875pt>
+l.377 \newpage
+               [4 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
+ve/Delrapport 2/log2.png>] <log3.png, id=225, 627.34375pt x 692.5875pt>
 File: log3.png Graphic file (type png)
 
 <use log3.png>
-Package pdftex.def Info: log3.png used on input line 327.
+Package pdftex.def Info: log3.png used on input line 378.
 (pdftex.def)             Requested size: 390.0pt x 430.57286pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 327--328
+Overfull \hbox (15.0pt too wide) in paragraph at lines 378--379
 [][] 
  []
 
@@ -942,16 +1018,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.328 \newpage
-               [3 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
-ve/Delrapport 2/log3.png>] <log4.png, id=207, 576.1525pt x 713.66624pt>
+l.379 \newpage
+               [5 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
+ve/Delrapport 2/log3.png>] <log4.png, id=229, 576.1525pt x 713.66624pt>
 File: log4.png Graphic file (type png)
 
 <use log4.png>
-Package pdftex.def Info: log4.png used on input line 329.
+Package pdftex.def Info: log4.png used on input line 380.
 (pdftex.def)             Requested size: 390.0pt x 483.0978pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 329--330
+Overfull \hbox (15.0pt too wide) in paragraph at lines 380--381
 [][] 
  []
 
@@ -959,42 +1035,42 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.330 \newpage
-               [4 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
-ve/Delrapport 2/log4.png>] <log5.png, id=212, 643.40375pt x 445.665pt>
+l.381 \newpage
+               [6 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
+ve/Delrapport 2/log4.png>] <log5.png, id=233, 643.40375pt x 445.665pt>
 File: log5.png Graphic file (type png)
 
 <use log5.png>
-Package pdftex.def Info: log5.png used on input line 331.
+Package pdftex.def Info: log5.png used on input line 382.
 (pdftex.def)             Requested size: 390.0pt x 270.14838pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 331--332
+Overfull \hbox (15.0pt too wide) in paragraph at lines 382--383
 [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 333.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.333 \end{document}
-                     [5 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/Proje
+l.384 \end{document}
+                     [7 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/Proje
 ktOpgave/Delrapport 2/log5.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 333.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
 
 ("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\d
 elrapport 2.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 333.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 333.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
 Package rerunfilecheck Info: File `delrapport*2.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 333.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 384.
  ) 
 Here is how much of TeX's memory you used:
- 9191 strings out of 493921
- 136188 string characters out of 3147279
- 222496 words of memory out of 3000000
- 12311 multiletter control sequences out of 15000+200000
+ 9198 strings out of 493921
+ 136293 string characters out of 3147279
+ 221496 words of memory out of 3000000
+ 12315 multiletter control sequences out of 15000+200000
  10472 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,8n,38p,906b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1007,9 +1083,9 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmtt12.pfb>
-Output written on "delrapport 2.pdf" (20 pages, 514997 bytes).
+Output written on "delrapport 2.pdf" (22 pages, 519765 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 180 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 282 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 204 words of extra memory for PDF output out of 10000 (max. 10000000)
 
