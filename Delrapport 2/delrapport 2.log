@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.28)  23 APR 2014 12:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.23)  23 APR 2014 13:51
 entering extended mode
 **delrapport*2.tex
-("C:\server\apache\htdocs\ProjektOpgave\Delrapport 2\delrapport 2.tex"
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -298,7 +298,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip43
 \subfigcapskip=\skip44
@@ -314,11 +314,12 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
 \subfig@top=\skip47
 \subfig@bottom=\skip48
-) ("C:\server\apache\htdocs\ProjektOpgave\Delrapport 2\usecases.sty"
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
+)
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\usecases.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen108
 \lightrulewidth=\dimen109
@@ -359,10 +360,10 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count101
 \LT@p@ftn=\toks17
 ))
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\latex\upquote\upquote.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\upquote\upquote.sty"
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
@@ -374,7 +375,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count102
 \lst@gtempboxa=\box30
 \lst@token=\toks18
@@ -388,21 +389,21 @@ Package color Info: Driver file: pdftex.def on input line 130.
 \lst@lineno=\count107
 \lst@maxwidth=\dimen126
 
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
 \c@lstnumber=\count108
 \lst@skipnumbers=\count109
 \lst@framebox=\box31
 )
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
 Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen127
@@ -417,7 +418,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: subfigure package is loaded.
@@ -426,7 +427,7 @@ Package caption Info: subfigure package is loaded.
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks19
 )
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip53
 \bibsep=\skip54
@@ -513,7 +514,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count115
 
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -555,7 +556,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 53.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-("C:\server\apache\htdocs\ProjektOpgave\Delrapport 2\delrapport 2.aux")
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
@@ -571,7 +572,7 @@ LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 
-(C:\Users\Signar\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen138
@@ -758,14 +759,13 @@ LaTeX Info: Redefining \ref on input line 57.
 LaTeX Info: Redefining \pageref on input line 57.
 LaTeX Info: Redefining \nameref on input line 57.
 
-("C:\server\apache\htdocs\ProjektOpgave\Delrapport 2\delrapport 2.out")
-("C:\server\apache\htdocs\ProjektOpgave\Delrapport 2\delrapport 2.out")
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.out")
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.out")
 \@outlinefile=\write3
+ [1
 
-[1
-
-{C:/Users/Signar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("C:\server\apache\htdocs\ProjektOpgave\Delrapport 2\delrapport 2.toc"
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 8.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -819,107 +819,157 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--175
  []
 
 [4] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 203--209
+Underfull \hbox (badness 10000) in paragraph at lines 205--211
 
  []
 
 [7]
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 214.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 216.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [8]
-<use_case.png, id=133, 568.1225pt x 404.51125pt>
+<use_case.png, id=145, 568.1225pt x 404.51125pt>
 File: use_case.png Graphic file (type png)
  <use use_case.png>
-Package pdftex.def Info: use_case.png used on input line 226.
+Package pdftex.def Info: use_case.png used on input line 228.
 (pdftex.def)             Requested size: 390.0pt x 277.69342pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 226--227
+Overfull \hbox (15.0pt too wide) in paragraph at lines 228--229
 [][] 
  []
 
-[9 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/use_case.png>]
-<three_use_cases.png, id=140, 361.35pt x 368.37625pt>
+[9 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/use_case.png>]
+<three_use_cases.png, id=152, 361.35pt x 368.37625pt>
 File: three_use_cases.png Graphic file (type png)
 
 <use three_use_cases.png>
-Package pdftex.def Info: three_use_cases.png used on input line 231.
+Package pdftex.def Info: three_use_cases.png used on input line 233.
 (pdftex.def)             Requested size: 180.67456pt x 184.18767pt.
 
-Underfull \vbox (badness 10000) detected at line 237
+Underfull \vbox (badness 10000) detected at line 239
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--255
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--255
+Underfull \hbox (badness 10000) in paragraph at lines 245--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--255
-
- []
-
-[10 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/three_use_cases.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 257--268
+Underfull \hbox (badness 10000) in paragraph at lines 245--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--268
+Underfull \hbox (badness 10000) in paragraph at lines 245--257
+
+ []
+
+[10 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/three_use_cases.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 259--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--268
+Underfull \hbox (badness 10000) in paragraph at lines 259--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--270
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 270--279
+Underfull \hbox (badness 10000) in paragraph at lines 272--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--279
+Underfull \hbox (badness 10000) in paragraph at lines 272--281
 
  []
 
-[12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 280.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 280.
- ("C:\server\apache\htdocs\ProjektOpgave\Delrapport 2\delrapport 2.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 280.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
+[12] <log1.png, id=169, 635.37375pt x 703.62875pt>
+File: log1.png Graphic file (type png)
+ <use log1.png>
+Package pdftex.def Info: log1.png used on input line 283.
+(pdftex.def)             Requested size: 390.0pt x 431.90778pt.
+ [13 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log1.png>]
+<log2.png, id=174, 548.0475pt x 706.64pt>
+File: log2.png Graphic file (type png)
+ <use log2.png>
+Package pdftex.def Info: log2.png used on input line 285.
+(pdftex.def)             Requested size: 390.0pt x 502.86086pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 285--286
+[][] 
+ []
+
+[14 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log2.png>]
+<log3.png, id=179, 627.34375pt x 692.5875pt>
+File: log3.png Graphic file (type png)
+ <use log3.png>
+Package pdftex.def Info: log3.png used on input line 287.
+(pdftex.def)             Requested size: 390.0pt x 430.57286pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 287--288
+[][] 
+ []
+
+[15 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log3.png>]
+<log4.png, id=184, 576.1525pt x 713.66624pt>
+File: log4.png Graphic file (type png)
+ <use log4.png>
+Package pdftex.def Info: log4.png used on input line 289.
+(pdftex.def)             Requested size: 390.0pt x 483.0978pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 289--290
+[][] 
+ []
+
+[16 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log4.png>]
+<log5.png, id=189, 643.40375pt x 445.665pt>
+File: log5.png Graphic file (type png)
+ <use log5.png>
+Package pdftex.def Info: log5.png used on input line 291.
+(pdftex.def)             Requested size: 390.0pt x 270.14838pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 291--292
+[][] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 293.
+[17 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log5.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 293.
+
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 293.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 293.
 Package rerunfilecheck Info: File `delrapport*2.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 280.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 293.
  ) 
 Here is how much of TeX's memory you used:
- 9127 strings out of 493921
- 136266 string characters out of 3144873
+ 9162 strings out of 493921
+ 136184 string characters out of 3144876
  219428 words of memory out of 3000000
- 12273 multiletter control sequences out of 15000+200000
- 10303 words of font info for 36 fonts, out of 3000000 for 9000
+ 12296 multiletter control sequences out of 15000+200000
+ 10472 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  36i,8n,38p,906b,403s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Signar\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\tcrm1200.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-csc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "delrapport 2.pdf" (14 pages, 146833 bytes).
+ <C:\Users\Aslak\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+tcrm1200.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmc
+sc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "delrapport 2.pdf" (18 pages, 510576 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 139 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 

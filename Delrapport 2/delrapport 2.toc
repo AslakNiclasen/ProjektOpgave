@@ -7,11 +7,13 @@
 \contentsline {section}{\numberline {6}Program- og systemtestning}{5}{section.6}
 \contentsline {subsection}{\numberline {6.1}Interne test}{5}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Eksterne test}{6}{subsection.6.2}
-\contentsline {section}{\numberline {7}Kravspecifikation for IT-l\IeC {\o }sningen}{7}{section.7}
-\contentsline {subsection}{\numberline {7.1}Funktionelle og ikke-funktionelle krav}{7}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}H\IeC {\o }jniveau use case model}{9}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Tre use case modeller}{10}{subsection.7.3}
-\contentsline {section}{\numberline {8}Projektarbejdet}{10}{section.8}
-\contentsline {subsection}{\numberline {8.1}Hvad g\IeC {\r a}r godt?}{10}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Hvad g\IeC {\r a}r mindre godt?}{12}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Hvilke optimeringer i forhold til projektarbejdet kan vi foretage?}{12}{subsection.8.3}
+\contentsline {section}{\numberline {7}Brugergr\IeC {\ae }nseflade og interaktionsdesign}{7}{section.7}
+\contentsline {section}{\numberline {8}Kravspecifikation for IT-l\IeC {\o }sningen}{7}{section.8}
+\contentsline {subsection}{\numberline {8.1}Funktionelle og ikke-funktionelle krav}{7}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}H\IeC {\o }jniveau use case model}{9}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Tre use case modeller}{10}{subsection.8.3}
+\contentsline {section}{\numberline {9}Projektarbejdet}{10}{section.9}
+\contentsline {subsection}{\numberline {9.1}Hvad g\IeC {\r a}r godt?}{10}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Hvad g\IeC {\r a}r mindre godt?}{12}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Hvilke optimeringer i forhold til projektarbejdet kan vi foretage?}{12}{subsection.9.3}
+\contentsline {section}{\numberline {10}Bilag}{13}{section.10}
