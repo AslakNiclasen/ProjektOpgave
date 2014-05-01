@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.2)  1 MAY 2014 10:48
 entering extended mode
 **delrapport*2.tex
 
 ("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\d
 elrapport 2.tex"
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.23)  1 MAY 2014 12:12
+entering extended mode
+**delrapport*2.tex
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.tex"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -300,7 +307,11 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip43
 \subfigcapskip=\skip44
@@ -316,12 +327,21 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
 \subfig@top=\skip47
 \subfig@bottom=\skip48
 )
 ("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\u
 secases.sty" ("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip47
+\subfig@bottom=\skip48
+)
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\usecases.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen108
 \lightrulewidth=\dimen109
@@ -362,10 +382,17 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count101
 \LT@p@ftn=\toks17
 ))
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\upquote\upquote.sty"
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\upquote\upquote.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
@@ -377,7 +404,11 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 \lst@mode=\count102
 \lst@gtempboxa=\box30
 \lst@token=\toks18
@@ -391,21 +422,36 @@ Package color Info: Driver file: pdftex.def on input line 130.
 \lst@lineno=\count107
 \lst@maxwidth=\dimen126
 
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
 \c@lstnumber=\count108
 \lst@skipnumbers=\count109
 \lst@framebox=\box31
 )
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
 Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen127
@@ -420,7 +466,11 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: subfigure package is loaded.
@@ -429,7 +479,11 @@ Package caption Info: subfigure package is loaded.
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks19
 )
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip53
 \bibsep=\skip54
@@ -516,7 +570,11 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count115
 
+<<<<<<< HEAD
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
@@ -558,8 +616,12 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 53.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
+<<<<<<< HEAD
 ("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\d
 elrapport 2.aux")
+=======
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.aux")
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
@@ -574,7 +636,12 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
+<<<<<<< HEAD
  ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+=======
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen138
@@ -761,16 +828,25 @@ LaTeX Info: Redefining \ref on input line 57.
 LaTeX Info: Redefining \pageref on input line 57.
 LaTeX Info: Redefining \nameref on input line 57.
 
+<<<<<<< HEAD
 ("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\d
 elrapport 2.out")
 ("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\d
 elrapport 2.out")
+=======
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.out")
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.out")
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 \@outlinefile=\write3
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<<<<<<< HEAD
 ("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\d
 elrapport 2.toc"
+=======
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.toc"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -849,8 +925,12 @@ File: three_use_cases.png Graphic file (type png)
 <use three_use_cases.png>
 Package pdftex.def Info: three_use_cases.png used on input line 210.
 (pdftex.def)             Requested size: 180.67456pt x 184.18767pt.
+<<<<<<< HEAD
  [7 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpgave/Delrapport 
 2/use_case.png>]
+=======
+ [7 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/use_case.png>]
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Underfull \vbox (badness 10000) detected at line 224
  []
 
@@ -858,8 +938,12 @@ Underfull \vbox (badness 10000) detected at line 224
 Underfull \vbox (badness 10000) detected at line 239
  []
 
+<<<<<<< HEAD
 [8 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpgave/Delrapport 2
 /three_use_cases.png>]
+=======
+[8 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/three_use_cases.png>]
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Underfull \vbox (badness 10000) detected at line 256
  []
 
@@ -869,128 +953,134 @@ File: klasse_diagram.png Graphic file (type png)
 <use klasse_diagram.png>
 Package pdftex.def Info: klasse_diagram.png used on input line 262.
 (pdftex.def)             Requested size: 307.14674pt x 139.01903pt.
+<<<<<<< HEAD
  [10 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpgave/Delrapport
  2/klasse_diagram.png>] [11] [12]
 Underfull \hbox (badness 10000) in paragraph at lines 299--306
+=======
+ [10 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/klasse_diagram.png>] [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 295--302
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 309--312
+Underfull \hbox (badness 10000) in paragraph at lines 305--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--312
+Underfull \hbox (badness 10000) in paragraph at lines 305--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--325
+Underfull \hbox (badness 10000) in paragraph at lines 310--321
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--325
+Underfull \hbox (badness 10000) in paragraph at lines 310--321
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--325
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 327--336
+Underfull \hbox (badness 10000) in paragraph at lines 310--321
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--336
+Underfull \hbox (badness 10000) in paragraph at lines 323--332
 
  []
 
-[15]
-Overfull \hbox (11.12361pt too wide) in paragraph at lines 340--346
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--332
+
+ []
+
+[14] [15]
+Overfull \hbox (11.12361pt too wide) in paragraph at lines 336--342
 \OT1/cmr/m/n/12 Artiklen be-skri-ver den ra-tio-nel-le de-sign pro-cess og hvor
 -le-des den-ne er uopnaelig.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--362
+Underfull \hbox (badness 10000) in paragraph at lines 343--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--362
+Underfull \hbox (badness 10000) in paragraph at lines 343--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--362
+Underfull \hbox (badness 10000) in paragraph at lines 343--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--362
+Underfull \hbox (badness 10000) in paragraph at lines 343--359
 
  []
 
 
-Overfull \hbox (4.66118pt too wide) in paragraph at lines 347--362
+Overfull \hbox (4.66118pt too wide) in paragraph at lines 343--359
 \OT1/cmr/m/n/12 Artiklen kom-mer des-u-den med ide-er og me-to-der til at sva-r
 e pa dis-se sprgsmal. 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 364--388
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 364--388
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 361--385
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--388
+Underfull \hbox (badness 10000) in paragraph at lines 361--385
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--388
+Underfull \hbox (badness 10000) in paragraph at lines 361--385
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--388
+Underfull \hbox (badness 10000) in paragraph at lines 361--385
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--388
+Underfull \hbox (badness 10000) in paragraph at lines 361--385
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--388
+Underfull \hbox (badness 10000) in paragraph at lines 361--385
 
  []
 
-[1] <log1.png, id=219, 635.37375pt x 703.62875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--385
+
+ []
+
+<log1.png, id=219, 635.37375pt x 703.62875pt>
 File: log1.png Graphic file (type png)
  <use log1.png>
-Package pdftex.def Info: log1.png used on input line 392.
+Package pdftex.def Info: log1.png used on input line 389.
 (pdftex.def)             Requested size: 390.0pt x 431.90778pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.393 \newpage
+l.390 \newpage
                [2]pdfTeX warning (ext4): destination with the same identifier (
 name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
+<<<<<<< HEAD
 l.393 \newpage
                [3 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
 ve/Delrapport 2/log1.png>] <log2.png, id=227, 548.0475pt x 706.64pt>
@@ -998,9 +1088,17 @@ File: log2.png Graphic file (type png)
 
 <use log2.png>
 Package pdftex.def Info: log2.png used on input line 394.
+=======
+l.390 \newpage
+               [3 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log1.png>]
+<log2.png, id=227, 548.0475pt x 706.64pt>
+File: log2.png Graphic file (type png)
+ <use log2.png>
+Package pdftex.def Info: log2.png used on input line 391.
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 (pdftex.def)             Requested size: 390.0pt x 502.86086pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 394--395
+Overfull \hbox (15.0pt too wide) in paragraph at lines 391--392
 [][] 
  []
 
@@ -1008,6 +1106,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
+<<<<<<< HEAD
 l.395 \newpage
                [4 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
 ve/Delrapport 2/log2.png>] <log3.png, id=231, 627.34375pt x 692.5875pt>
@@ -1015,9 +1114,17 @@ File: log3.png Graphic file (type png)
 
 <use log3.png>
 Package pdftex.def Info: log3.png used on input line 396.
+=======
+l.392 \newpage
+               [4 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log2.png>]
+<log3.png, id=231, 627.34375pt x 692.5875pt>
+File: log3.png Graphic file (type png)
+ <use log3.png>
+Package pdftex.def Info: log3.png used on input line 393.
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 (pdftex.def)             Requested size: 390.0pt x 430.57286pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 396--397
+Overfull \hbox (15.0pt too wide) in paragraph at lines 393--394
 [][] 
  []
 
@@ -1025,6 +1132,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
+<<<<<<< HEAD
 l.397 \newpage
                [5 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
 ve/Delrapport 2/log3.png>] <log4.png, id=235, 576.1525pt x 713.66624pt>
@@ -1032,9 +1140,17 @@ File: log4.png Graphic file (type png)
 
 <use log4.png>
 Package pdftex.def Info: log4.png used on input line 398.
+=======
+l.394 \newpage
+               [5 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log3.png>]
+<log4.png, id=235, 576.1525pt x 713.66624pt>
+File: log4.png Graphic file (type png)
+ <use log4.png>
+Package pdftex.def Info: log4.png used on input line 395.
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 (pdftex.def)             Requested size: 390.0pt x 483.0978pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 398--399
+Overfull \hbox (15.0pt too wide) in paragraph at lines 395--396
 [][] 
  []
 
@@ -1042,6 +1158,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
+<<<<<<< HEAD
 l.399 \newpage
                [6 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
 ve/Delrapport 2/log4.png>] <log5.png, id=239, 643.40375pt x 445.665pt>
@@ -1049,17 +1166,26 @@ File: log5.png Graphic file (type png)
 
 <use log5.png>
 Package pdftex.def Info: log5.png used on input line 400.
+=======
+l.396 \newpage
+               [6 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log4.png>]
+<log5.png, id=239, 643.40375pt x 445.665pt>
+File: log5.png Graphic file (type png)
+ <use log5.png>
+Package pdftex.def Info: log5.png used on input line 397.
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 (pdftex.def)             Requested size: 390.0pt x 270.14838pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 400--401
+Overfull \hbox (15.0pt too wide) in paragraph at lines 397--398
 [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 402.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 399.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
+<<<<<<< HEAD
 l.402 \end{document}
                      [7 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/Proje
 ktOpgave/Delrapport 2/log5.png>]
@@ -1069,11 +1195,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
 elrapport 2.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 402.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 402.
+=======
+l.399 \end{document}
+                     [7 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log5.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 399.
+
+("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 399.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 399.
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package rerunfilecheck Info: File `delrapport*2.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 402.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 399.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  9205 strings out of 493921
  136401 string characters out of 3147279
  222496 words of memory out of 3000000
@@ -1091,6 +1227,25 @@ nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmtt12.pfb>
 Output written on "delrapport 2.pdf" (23 pages, 529146 bytes).
+=======
+ 9206 strings out of 493921
+ 136697 string characters out of 3144876
+ 222498 words of memory out of 3000000
+ 12320 multiletter control sequences out of 15000+200000
+ 10472 words of font info for 37 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 36i,8n,38p,849b,467s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Aslak\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+tcrm1200.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmc
+sc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "delrapport 2.pdf" (23 pages, 535982 bytes).
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 PDF statistics:
  288 PDF objects out of 1000 (max. 8388607)
  59 named destinations out of 1000 (max. 500000)
