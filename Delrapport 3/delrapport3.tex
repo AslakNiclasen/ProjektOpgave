@@ -1,0 +1,186 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[danish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{subfigure}
+\usepackage{usecases}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{upquote}
+\usepackage{color}
+\definecolor{listinggray}{gray}{0.9}
+\usepackage{listings}
+\lstset{
+	language=,
+	literate=
+		{æ}{{\ae}}1
+		{ø}{{\o}}1
+		{å}{{\aa}}1
+		{Æ}{{\AE}}1
+		{Ø}{{\O}}1
+		{Å}{{\AA}}1,
+	backgroundcolor=\color{listinggray},
+	tabsize=3,
+	rulecolor=,
+	basicstyle=\scriptsize,
+	aboveskip={1.5\baselineskip},
+	columns=fixed,
+	showstringspaces=false,
+	extendedchars=true,
+	breaklines=true,
+	prebreak =\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	frame=single,
+	showtabs=false,
+	showspaces=false,
+	showstringspaces=false,
+	identifierstyle=\ttfamily,
+	keywordstyle=\color[rgb]{0,0,1},
+	commentstyle=\color[rgb]{0.133,0.545,0.133},
+	stringstyle=\color[rgb]{0.627,0.126,0.941},
+}
+\usepackage[center,font=small,labelfont=bf,textfont=it]{caption}
+\usepackage{enumerate}
+\usepackage[numbers]{natbib}
+\usepackage{hyperref}
+\hypersetup{
+	pdfborder = {0 0 0},
+    colorlinks,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue
+}
+\usepackage{parskip}
+\setlength{\parindent}{15pt}
+
+\begin{document}
+
+\begin{titlepage}
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+\textsc{\LARGE Københavns Universitet}\\[1.5cm] % Name of your university/college
+\textsc{\Large Projektkursus Systemudvikling 2014}\\[0.5cm] % Major heading such as course name
+
+\HRule \\[0.4cm]
+{  \bfseries \large Open Source Bannerreklamesystem \\ \huge EasyAd}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+\begin{minipage}[t]{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Projektgruppe:}
+
+
+Signar Nielsen % Your name
+\\
+060585
+\newline
+\\
+Aslak Niclasen
+\\
+060693
+\newline
+\\
+Amanda Bergqvist
+\\
+171090
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}[t]{0.4\textwidth}
+\begin{flushright} \large
+\emph{Instruktor:} \\
+Aske Mottelson Clausen % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[4cm]
+
+{\large 14. maj 2014}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+\end{titlepage}
+
+\tableofcontents %generate table of content
+
+
+\clearpage %clears float-buffer - inserting those missing - and starts new page
+
+\section{Indledning}
+
+Ifølge en rapport fra Danske Medier Research\footnote{\url{ http://www.fdim.dk/sites/default/files/mediearkiv/rapporter/danskernes\_brug\_af\_internettet\_2012\_rapport.pdf}} om danskernes internetforbrug er adgang til internettet fra hjemmet steget fra 83\% til 92\% på blot 4 år - fra 2007 til 2011. I takt med den stigende grad af internetforbrug anvender annoncører de digitale medier til at ramme deres målgruppe.
+
+Flere og flere virksomheder, interesseorganisationer og foreninger bliver derfor synlige på internettet med en hjemmeside eller profil på de sociale medier. De står alle overfor samme udfordring, nemlig hvordan man tjener penge på nettet. Den mest udbredte forretningsmodel er salg af annoncer på nettet. Der er to udfordringer ved at annoncere på nettet; den ene er den tekniske udfordring ved at selv skulle vedligeholde et bannersystem, og den anden er den økonomiske udfordring ved at skulle købe sig adgang til et bannersystem eller den nødvendige tekniske viden. Vores system er et forsøg på at løse disse to problemer.
+
+\section{Abstract}
+
+
+\section{IT-projektets formål og rammer}
+
+
+\subsection{FACTOR-kriteriet}
+
+\large{\bf{F}}\normalsize{unctionality
+\\
+- Visning af bannere med forskellig vægtning
+\newline
+- Tidsbestemt/antalsbestemt bannervisning 
+\newline
+- Oprettelse af kunder 
+\newline
+- Oprettelse af grupper
+\newline
+- Oprettelse af bannere}
+\newline
+\newline
+\large{\bf{A}}\normalsize{pplication domain
+\\
+- Medarbejdere tilknyttet Treu media}
+\newline
+\newline
+\large{\bf{C}}\normalsize{onditions\\
+- Skal kunne bruges på tværs af browsere\\
+- Skjult for brugere af hjemmesider\\
+- Open source}
+\newline
+\newline
+\large{\bf{T}}\normalsize{echnology\\
+- Web-teknologi: html, css, php, javascript.\\
+- Databaser: MySQL\\
+- Webserver: Apache}
+\newline
+\newline
+\large{\bf{O}}\normalsize{bjects\\
+- Bannere/Reklamer
+\newline
+- Administratorer
+\newline
+- Kunder
+\newline
+- Grupper}
+\newline
+\newline
+\large{\bf{R}}\normalsize{esponsibility\\
+- Holder styr på banner visning}
+
+\section{Kravspecifikation for IT-løsningen}
+
+\section{Systemdesign sammenfatning}
+
+\section{Program- og systemtest}
+
+\section{Brugergrænseflade og interaktionsdesign}
+
+\section{Versionstyring}
+
+\section{Projektsamarbejdet}
+
+\newpage
+\pagenumbering{gobble}
+\section{Bilag 1 - Review: No silver bullet}
+
+\section{Bilag 2 - Review: Mocking-it-up or hands-on the future}
+
+
+\end{document}
