@@ -3,12 +3,7 @@
     <head>
         <title>Ulandsnyt.dk</title>
         <script src="//code.jquery.com/jquery-latest.min.js"></script>
-        <script src="//namnam.fo/controller/controller.js"></script>
-        <script>
-            $(document).ready(function() {
-                console.log("Her er noget!");
-            });
-        </script>
+        <script src="//localhost/ProjektOpgave/kode/ad_controller/controller.js"></script>
         <style type="text/css">
             body {
                 background-color: #fff;

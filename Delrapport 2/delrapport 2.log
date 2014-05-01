@@ -1,21 +1,30 @@
+<<<<<<< HEAD
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.2)  1 MAY 2014 10:48
+entering extended mode
+**delrapport*2.tex
+
+("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\d
+elrapport 2.tex"
+=======
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.23)  1 MAY 2014 12:12
 entering extended mode
 **delrapport*2.tex
 ("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.tex"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
 ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
  lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,38 +39,38 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\danish.ldf"
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\danish.ldf"
 Language: danish 2009/09/19 v1.3r Danish support from the babel system
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
 Package babel Info: Making " an active character on input line 82.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -211,7 +220,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -242,7 +251,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -266,31 +275,31 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -298,7 +307,11 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
+<<<<<<< HEAD
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+=======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip43
 \subfigcapskip=\skip44
@@ -314,12 +327,21 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
+<<<<<<< HEAD
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip47
+\subfig@bottom=\skip48
+)
+("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\u
+secases.sty" ("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+=======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
 \subfig@top=\skip47
 \subfig@bottom=\skip48
 )
 ("C:\Users\Aslak\ProjektOpgave\Delrapport 2\usecases.sty"
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen108
 \lightrulewidth=\dimen109
@@ -339,10 +361,10 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count96
 \@thisrulewidth=\dimen120
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen121
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip49
 \LTright=\skip50
@@ -360,22 +382,33 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count101
 \LT@p@ftn=\toks17
 ))
+<<<<<<< HEAD
+("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\upquote\upquote.sty"
+=======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\upquote\upquote.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
+<<<<<<< HEAD
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+=======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 \lst@mode=\count102
 \lst@gtempboxa=\box30
 \lst@token=\toks18
@@ -389,21 +422,36 @@ Package color Info: Driver file: pdftex.def on input line 130.
 \lst@lineno=\count107
 \lst@maxwidth=\dimen126
 
+<<<<<<< HEAD
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+=======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
 \c@lstnumber=\count108
 \lst@skipnumbers=\count109
 \lst@framebox=\box31
 )
+<<<<<<< HEAD
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+=======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
 Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
+<<<<<<< HEAD
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+=======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen127
@@ -418,30 +466,38 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
+<<<<<<< HEAD
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
+=======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: subfigure package is loaded.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks19
 )
+<<<<<<< HEAD
+("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+=======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip53
 \bibsep=\skip54
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count111
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -482,27 +538,27 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen134
 \Hy@linkcounter=\count112
 \Hy@pagecounter=\count113
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count114
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -514,9 +570,13 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count115
 
+<<<<<<< HEAD
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+=======
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 \Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen135
@@ -539,12 +599,12 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count120
 \c@bookmark@seq@number=\count121
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -553,10 +613,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 53.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
+<<<<<<< HEAD
+("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\d
+elrapport 2.aux")
+=======
 ("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.aux")
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
@@ -571,8 +636,12 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
+<<<<<<< HEAD
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+=======
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen138
@@ -585,7 +654,7 @@ LaTeX Font Info:    ... okay on input line 57.
 \MPnumerator=\count126
 \makeMPintoPDFobject=\count127
 \everyMPtoPDFconversion=\toks21
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -600,12 +669,12 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
 File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -747,10 +816,10 @@ Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box33
 Package hyperref Info: Link coloring ON on input line 57.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count129
@@ -759,13 +828,25 @@ LaTeX Info: Redefining \ref on input line 57.
 LaTeX Info: Redefining \pageref on input line 57.
 LaTeX Info: Redefining \nameref on input line 57.
 
+<<<<<<< HEAD
+("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\d
+elrapport 2.out")
+("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\d
+elrapport 2.out")
+=======
 ("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.out")
 ("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.out")
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 \@outlinefile=\write3
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<<<<<<< HEAD
+("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\d
+elrapport 2.toc"
+=======
 ("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.toc"
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -825,7 +906,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--188
 
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 193.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [5]
 <use_case.png, id=145, 568.1225pt x 404.51125pt>
@@ -844,7 +925,12 @@ File: three_use_cases.png Graphic file (type png)
 <use three_use_cases.png>
 Package pdftex.def Info: three_use_cases.png used on input line 210.
 (pdftex.def)             Requested size: 180.67456pt x 184.18767pt.
+<<<<<<< HEAD
+ [7 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpgave/Delrapport 
+2/use_case.png>]
+=======
  [7 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/use_case.png>]
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Underfull \vbox (badness 10000) detected at line 224
  []
 
@@ -852,7 +938,12 @@ Underfull \vbox (badness 10000) detected at line 224
 Underfull \vbox (badness 10000) detected at line 239
  []
 
+<<<<<<< HEAD
+[8 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpgave/Delrapport 2
+/three_use_cases.png>]
+=======
 [8 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/three_use_cases.png>]
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Underfull \vbox (badness 10000) detected at line 256
  []
 
@@ -862,8 +953,14 @@ File: klasse_diagram.png Graphic file (type png)
 <use klasse_diagram.png>
 Package pdftex.def Info: klasse_diagram.png used on input line 262.
 (pdftex.def)             Requested size: 307.14674pt x 139.01903pt.
+<<<<<<< HEAD
+ [10 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpgave/Delrapport
+ 2/klasse_diagram.png>] [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 299--306
+=======
  [10 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/klasse_diagram.png>] [11] [12]
 Underfull \hbox (badness 10000) in paragraph at lines 295--302
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 
  []
 
@@ -983,12 +1080,22 @@ l.390 \newpage
 name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
+<<<<<<< HEAD
+l.393 \newpage
+               [3 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
+ve/Delrapport 2/log1.png>] <log2.png, id=227, 548.0475pt x 706.64pt>
+File: log2.png Graphic file (type png)
+
+<use log2.png>
+Package pdftex.def Info: log2.png used on input line 394.
+=======
 l.390 \newpage
                [3 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log1.png>]
 <log2.png, id=227, 548.0475pt x 706.64pt>
 File: log2.png Graphic file (type png)
  <use log2.png>
 Package pdftex.def Info: log2.png used on input line 391.
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 (pdftex.def)             Requested size: 390.0pt x 502.86086pt.
 
 Overfull \hbox (15.0pt too wide) in paragraph at lines 391--392
@@ -999,12 +1106,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
+<<<<<<< HEAD
+l.395 \newpage
+               [4 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
+ve/Delrapport 2/log2.png>] <log3.png, id=231, 627.34375pt x 692.5875pt>
+File: log3.png Graphic file (type png)
+
+<use log3.png>
+Package pdftex.def Info: log3.png used on input line 396.
+=======
 l.392 \newpage
                [4 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log2.png>]
 <log3.png, id=231, 627.34375pt x 692.5875pt>
 File: log3.png Graphic file (type png)
  <use log3.png>
 Package pdftex.def Info: log3.png used on input line 393.
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 (pdftex.def)             Requested size: 390.0pt x 430.57286pt.
 
 Overfull \hbox (15.0pt too wide) in paragraph at lines 393--394
@@ -1015,12 +1132,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
+<<<<<<< HEAD
+l.397 \newpage
+               [5 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
+ve/Delrapport 2/log3.png>] <log4.png, id=235, 576.1525pt x 713.66624pt>
+File: log4.png Graphic file (type png)
+
+<use log4.png>
+Package pdftex.def Info: log4.png used on input line 398.
+=======
 l.394 \newpage
                [5 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log3.png>]
 <log4.png, id=235, 576.1525pt x 713.66624pt>
 File: log4.png Graphic file (type png)
  <use log4.png>
 Package pdftex.def Info: log4.png used on input line 395.
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 (pdftex.def)             Requested size: 390.0pt x 483.0978pt.
 
 Overfull \hbox (15.0pt too wide) in paragraph at lines 395--396
@@ -1031,12 +1158,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
+<<<<<<< HEAD
+l.399 \newpage
+               [6 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/ProjektOpga
+ve/Delrapport 2/log4.png>] <log5.png, id=239, 643.40375pt x 445.665pt>
+File: log5.png Graphic file (type png)
+
+<use log5.png>
+Package pdftex.def Info: log5.png used on input line 400.
+=======
 l.396 \newpage
                [6 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log4.png>]
 <log5.png, id=239, 643.40375pt x 445.665pt>
 File: log5.png Graphic file (type png)
  <use log5.png>
 Package pdftex.def Info: log5.png used on input line 397.
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 (pdftex.def)             Requested size: 390.0pt x 270.14838pt.
 
 Overfull \hbox (15.0pt too wide) in paragraph at lines 397--398
@@ -1048,6 +1185,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
+<<<<<<< HEAD
+l.402 \end{document}
+                     [7 <C:/Users/Amanda/Documents/DIKU/Semester2/Projekt/Proje
+ktOpgave/Delrapport 2/log5.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
+
+("C:\Users\Amanda\Documents\DIKU\Semester2\Projekt\ProjektOpgave\Delrapport 2\d
+elrapport 2.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 402.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 402.
+=======
 l.399 \end{document}
                      [7 <C:/Users/Aslak/ProjektOpgave/Delrapport 2/log5.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 399.
@@ -1055,11 +1203,31 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 399.
 ("C:\Users\Aslak\ProjektOpgave\Delrapport 2\delrapport 2.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 399.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 399.
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 Package rerunfilecheck Info: File `delrapport*2.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 399.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
+ 9205 strings out of 493921
+ 136401 string characters out of 3147279
+ 222496 words of memory out of 3000000
+ 12320 multiletter control sequences out of 15000+200000
+ 10472 words of font info for 37 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 36i,8n,38p,906b,467s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Amanda\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmtt12.pfb>
+Output written on "delrapport 2.pdf" (23 pages, 529146 bytes).
+=======
  9206 strings out of 493921
  136697 string characters out of 3144876
  222498 words of memory out of 3000000
@@ -1077,6 +1245,7 @@ b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
 Output written on "delrapport 2.pdf" (23 pages, 535982 bytes).
+>>>>>>> dccf3559090443d187dd07f7ebdf4c4044514bc6
 PDF statistics:
  288 PDF objects out of 1000 (max. 8388607)
  59 named destinations out of 1000 (max. 500000)
