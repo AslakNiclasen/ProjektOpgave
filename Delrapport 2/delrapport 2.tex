@@ -114,9 +114,9 @@ Flere og flere virksomheder, interesseorganisationer og foreninger bliver derfor
 
 \section{Abstract}
 
-Projektet Easy Ad er et open source bannerreklamesystem. Formålet med Easy Ad er at udvikle et systemet der er nemt og gratis at bruge. Systemet skal kunne downloades af mindre ikke-kommercielle foreninger og interesseorganisationer, der hverken har de fornødne midler til at købe dyre systemer eller den tekniskeviden til at vedligeholde et sådan system.
+Projektet Easy Ad er et open source bannerreklamesystem. Formålet med Easy Ad er at udvikle et systemet der er nemt og gratis at bruge. Systemet skal kunne downloades af mindre ikke-kommercielle foreninger og interesseorganisationer, der hverken har de fornødne midler til at købe dyre systemer eller den tekniske viden til at vedligeholde et sådan system.
 
-Easy Ad skal udvikles til et firma ved navn Treu Media. Treu Media er specialiceret indenfor annoncesalg og en lang række andre medieudgivelser. Easy Ad skal gøre det nemt for Treu Media at administrer annoncer til deres mange kunder. Systemet skal derudover løse en lang række tekniske udfordringer som f.eks. hvordan man sikre med hvilken vægtning et banner bliver vist? Eller hvordan man undgår at samme banner bliver vist flere gang på samme hjemmeside.
+Easy Ad skal udvikles til et firma ved navn Treu Media. Treu Media er specialiceret indenfor annoncesalg og en lang række andre medieudgivelser. Easy Ad skal gøre det nemt for Treu Media at administrere annoncer til deres mange kunder. Systemet skal derudover løse en lang række tekniske udfordringer, som f.eks. hvordan man sikrer med hvilken vægtning et banner bliver vist. Eller hvordan man undgår at samme banner bliver vist flere gang på samme hjemmeside.
 
 Simon Shine er den tekniske kontaktperson og det er ham der sætter de tekniske krav til systemet. Jan Treu-Nielsen, Treu Media's ejer, vil være kontaktperson ved aftestning og opsætning af systemet. Projektet vil løbe fra marts og indtil ultimo juni. Systemet er en prototype og vil muligvis ikke være færdig udviklet ved projektets udgang. 
 
@@ -194,13 +194,13 @@ Her er de ikke-funktionelle krav:
 	\item \textbf{Usability:} Formålet med systemet er, at det skal være nemt at bruge for alle involverede parter. Både administratorer, hjemmesider og brugere. Da det er meget svært at definere, hvad er "nemt" at bruge, laver vi nogle user-tests, for at sikre os, at det faktisk er nemt at bruge. Derudover skal systemet fungere på alle moderne browsere (IE8+, Safari, Chrome og Firefox).
 	\item \textbf{Reliability:} Systemet skal være tilgængeligt 24 timer i døgnet 365 dage om året. Med andre ord: systemet skal altid være tilgængeligt. Hvis vi antager, at serveren altid har forbindelse til internettet, så sætter dette først og fremmest krav til serveren, både hardware og software. Serveren skal være dimensioneret til at kunne håndtere trafikken og softwaren skal være designet på en hensigtsmæssig måde, så den ikke bruger unødvendige resourcer.
 	\item \textbf{Performance:} Det er et krav til systemet, at svartiden er så lav som overhoved muligt. Der er flere faktorer, der spiller ind, men først og fremmest er det internetforbindelsen, serveren og selve softwaren. Vi forventer en svartid, der ligger under 500 millisekunder.
-	\item \textbf{Supportability:} Systemet kan supporteres af enhver, da det er oben-source. Systemet bliver udviklet i PHP, hvilket også er et open-source sprog.
+	\item \textbf{Supportability:} Systemet kan understøttes af enhver, da det er open-source. Systemet bliver udviklet i PHP, hvilket også er et open-source sprog.
 \end{itemize}
 
 \textbf{Constraints:} Systemet er webbaseret og vil blive udviklet i PHP. Derudover benytter vi andre webteknologier, som f.eks. HTML, CSS, JavaScript (jQuery). Projektet er open-source, men hvis man vil udvikle, eller udvide, systemet, kan man gøre det i PHP. Databasen, derimod, kan være hvilken som helst database. Vi har dog valgt at bruge MySQL.
 
 \subsection{Højniveau use case model}
-Vi har lavet en højniveau use case diagram, som viser aktørerne og systemets funktionalitet. Treu Media har mulighed for at administrere kunder, grupper og reklamer, mens kunden (som også kan være en besøgende på en hjemmeside), får vist en reklame.
+Vi har lavet et højniveau use case diagram, som viser aktørerne og systemets funktionalitet. Treu Media har mulighed for at administrere kunder, grupper og reklamer, mens kunden (som også kan være en besøgende på en hjemmeside), får vist en reklame.
 
 \includegraphics[width=\linewidth]{use_case.png}
 
@@ -229,9 +229,9 @@ Derefter tager vi en use case, hvor administrator skal oprette en gruppe, som ti
 \addfield{Aktør:}{Treu Media}
 \addscenario{Flow:} {
 	\item Opret en kunde. Se tidligere use case
-	\item Tryk på "Grups"
+	\item Tryk på "Groups"
 	\item Tryk på "Add group"
-	\item Udfyld feltet "Grup name" og vælg en kunde fra select-boksen
+	\item Udfyld feltet "Group name" og vælg en kunde fra select-boksen
 	\item Tryk på "Create"
 }
 \addfield{Startbetingelser:}{Treu Media skal være logget på systemet. Der skal være oprettet en kunde}
@@ -262,20 +262,16 @@ Vores klasser er følgende: administrator, kunde, gruppe og reklame. Forholdet m
 \includegraphics[scale=0.5]{klasse_diagram.png}
 
 \section{Systemdesign sammenfatning}
-Vi er nået dertil, at Treu Media kan oprette kunder, grupper og reklamer. Vi har lavet en grov skitse af systemet, men mangler at implementere nogle funktioner, som f.eks. at give Treu Media mulighed for at ændre en kunde, gruppe og reklame. Vi skal også sørge for at beskytte imod SQL-injections og sikre os, at de krævede felter faktisk bliver udfyldt, når Treu Media f.eks. opretter en reklame. Den vigtigste funktion vi mangler, er at vise en reklame på en hjemmeside. Der findes flere muligheder for, hvordan vi kan lave denne del af systemet. Vi har diskuteret fordele og ulemper ved de forskellige muligheder, og har ikke truffet en endelig beslutning. Højst sandsyneligt vælger vi en løsning, hvor kunden skal tilføjer en javascript-fil til hjemmesiden, som henter og placerer reklamerne på hjemmesiden.
+Vi er nået dertil, at Treu Media kan oprette kunder, grupper og reklamer. Vi har lavet en grov skitse af systemet, men mangler at implementere nogle funktioner, som f.eks. at give Treu Media mulighed for at ændre en kunde, gruppe og reklame. Vi skal også sørge for at beskytte imod SQL-injections og sikre os, at de krævede felter faktisk bliver udfyldt, når Treu Media f.eks. opretter en reklame. Den vigtigste funktion vi mangler, er at vise en reklame på en hjemmeside. Der findes flere muligheder for, hvordan vi kan lave denne del af systemet. Vi har diskuteret fordele og ulemper ved de forskellige muligheder, og har ikke truffet en endelig beslutning. Højst sandsynligt vælger vi en løsning, hvor kunden skal tilføje en javascript-fil til hjemmesiden, som henter og placerer reklamerne på hjemmesiden.
 
 \section{Program- og systemtestning}
 
 Projektgruppen ønsker at teste systemet i flere omfang. Disse omhandler både interne og eksterne kravspecifikationer.
 
-\subsection{Interne test}Ved de interne testProjektgruppen ønsker at teste systemet i flere omfang. Disse omhandler både interne og eksterne kravspecifikationer. Til de interne test skal vi benytte os af en form for unit testning, som onhandler tælning. Gruppen ønsker længere fremme i projektet at teste registreringer af visninger af bannere på hjemmesider. Vi skal altså forsøge at skabe en bannervisning internt i programmet et antal gange, og så skal resultatet af dette sammenlignes med et forventet antal. En måde at gruppen vil gøre dette på, kunne være at skabe et banner, og sende fiktive requests til en hjemmeside med dette banner. Herved kunne vi aflæse om requesten bliver behandlet korrekt. Dette ville resultere i at banneret er blevet vist og vi kan dermed tælle antallet af requests som der er blevet behandlet korrekt i processen.
+\subsection{Interne test}
+Ved de interne test skal vi benytte os af en form for unit testning. Denne testining skal finde sit ståsted i matematikken, og vil omhandle en form for tælningsmekanisme. Gruppen ønsker længere fremme i projektet at teste antallet af visninger af bannere på hjemmesider. Vi skal altså forsøge at skabe en bannervisning internt i programmet et kendt antal gange. Vores tælningsmekanisme skal således beregne et resultat udfra vores banneres visning. Dette resultat skal herefter sammenlignes med det forventede antal visninger fra start.
 
-Projektgruppen regner desuden med testning af systemets nuværende brugergrænseflade. Gruppen forsøger at skabe et "tænke højt forsøg" som indebærer at interessenten benytter sig af systemet. Vi vil på forhånd give interessenten systemet i hænderne, og guide denne i en retning som tester brugervenligheden af vores brugergrænseflade. Der vil på forhånd være stillet en række opgaver, som i projektgruppens øjne er set som de væsentligste faktorer for systemets kunnen. Disse små opgaver skal interessenten dernæst udføre, eller prøve at udføre på egen hånd. En form for dokumentering behøves. 
-
-Da projektgruppen ikke burde være til stede under testningen af programmet, ville man benytte sig af f.eks. videooptagelse så interessenten kunne afprøve systemet uden vores indflydelse eller kommentarer om systemet. Herved ville vi få et bedre overblik og en viden om hvordan mennesker håndterer systemets kunnen.
-Under dette forsøg ville de eksterne kravspecifikationer uden tvivl komme i spil. F.eks. brugervenlighed ift. overblik fra interessentens side. skal vi benytte os af en form for unit testning. Denne testining skal finde sit ståsted i matematikken, og vil omhandle en form for tælningsmekanisme. Gruppen ønsker længere fremme i projektet at teste antallet af visninger af bannere på hjemmesider. Vi skal altså forsøge at skabe en bannervisning internt i programmet et kendt antal gange. Vores tælningsmekanisme skal således beregne et resultat udfra vores banneres visning. Dette resultat skal herefter sammenlignes med det forventede antal visninger fra start.
-
-En konkret måde at løse gruppens problem her, kunne være på følgende måde: uploade et banner, sende fiktive requests til en hjemmeside med dette banner. Herved kunne gruppens tællemekanisme aflæse om requesten bliver behandlet korrekt og dermed registrere en visning. Dette ville resultere i at man kan tælle antallet af requests som der er blevet behandlet i processen og vi gruppen ville hurtigt kunne se om det forventede resultat stemte overens med det relle resultat fra vores tællemekanisme.
+En konkret måde at løse gruppens problem her, kunne være på følgende måde: uploade et banner, sende fiktive requests til en hjemmeside med dette banner. Herved kunne gruppens tællemekanisme aflæse om requesten bliver behandlet korrekt og dermed registrere en visning. Dette ville resultere i at man kan tælle antallet af requests som der er blevet behandlet i processen og gruppen ville hurtigt kunne se om det forventede resultat stemte overens med det relle resultat fra vores tællemekanisme.
 
 \subsection{Eksterne test}
 Projektgruppen regner desuden med testning af systemets nuværende GUI. Gruppen forsøger at skabe et "tænke højt forsøg" som indebærer at interessenten benytter sig af systemet. Vi vil på forhånd give interessenten systemet i hænderne, og guide denne i en retning med henblik på testning af brugervenligheden og korrekthed af vores GUI. Der vil på forhånd være stillet en række opgaver, som i projektgruppens øjne er set som de væsentligste faktorer for systemets kunnen (use cases). Disse små opgaver skal interessenten dernæst udføre, eller prøve at udføre på egen hånd. En form for dokumentering behøves. 
@@ -288,13 +284,13 @@ interessentens side.
 Vi har lavet en demonstration af vores brugergrænseflade, som vi har uploaded til youtube:
 \newline
 \url{www.youtube.com/watch?v=RXtx08uCdH4&feature=youtu.be&hd=1}
-
+\newpage
 \section{Projektarbejdet}
 \subsection{Hvad går godt?}
 
 \textbf{Internt}
 \newline
-Projektgruppen har i løbet af påsken mødtes en gang om ugen, og disse har været meget produktive. Til disse møder har vi haft en dagsorden, vi har planlagt små arbejdsopgaver frem til næste mødes dagsorden og vi har planlagt opgaveskrivning individuelt. Arbejdet mellem gruppen internt, fungerer meget gnidningsfrit og alle opfylder hindandens krav, og de krav der stilles til opgaven. Alle møder velforeredte og friske, således at dagen hvor vi alle har mulighed for at mødes bliver så konstruktiv som overhoved muligt.
+Projektgruppen har i løbet af påsken mødtes en gang om ugen, og disse har været meget produktive. Til disse møder har vi haft en dagsorden, vi har planlagt små arbejdsopgaver frem til næste mødes dagsorden og vi har planlagt opgaveskrivning individuelt. Arbejdet mellem gruppen internt, fungerer meget gnidningsfrit og alle opfylder hindandens krav, og de krav der stilles til opgaven. Alle møder velforberedte og friske, således at dagen hvor vi alle har mulighed for at mødes bliver så konstruktiv som overhoved muligt.
 
 Det var en smule kompliceret at finde en god mødefordeling i påskeferien, da alle 3 medlemmer havde personlige ærinder der skulle imødekommes. Det har gjort at vi til dels har været tvunget til at skrive anden delrapport i punkter individuelt hver for sig. Vi mødes af den grund mandagen inden aflevering til korrektur læsning, og forståelses/formidlingsmæssige usikkerheder. Alle i gruppen er blevet tildelt ca. lige meget rapportskrivning, så ingen i gruppen føler sig overbebyrdet, eller omvendt, overset. 
 \\
@@ -304,7 +300,7 @@ Det var en smule kompliceret at finde en god mødefordeling i påskeferien, da a
 Vi har ikke haft et møde med vores interessent til dags dato, men vi har haft 2 møder og mailkorrespondance til vores mellemled mellem os og interessenten. Interessenten giver klart udtryk for et frugtbart samarbejde, med mulighed for fremtidige møder efter vores ønske - det kommer vi selvfølgelig til at benytte os 
 af.
 
-Vi har på nuværende tidspunkt en GUI som fungerer efter hensigten, og dette er også grunden til at vi ikke ville mødes med interessenten inden. Projektgruppen ønskede at have noget brugbart rent fysisk at vise frem, således at det interessenten ville have nemmere ved at sætte sig ind i projektets omfang, og herunder forstå projektet. Dvs. at vi til dette møde kunne fremsætte klare retningslinier med det fokus at interessenten ville kunne udføre et "tænke højt forsøg" (testning af GUI) og hermed danne sig et billede af systemet. Vi ville af dette opnå stor viden, da vi med en kontrolleret testning af vores system kan fusionere tekniske aspekter med menneskelige input.
+Vi har på nuværende tidspunkt en GUI som fungerer efter hensigten, og dette er også grunden til at vi ikke ville mødes med interessenten inden. Projektgruppen ønskede at have noget brugbart rent fysisk at vise frem, således at interessenten ville have nemmere ved at sætte sig ind i projektets omfang, og herunder forstå projektet. Dvs. at vi til dette møde kunne fremsætte klare retningslinier med det fokus at interessenten ville kunne udføre et "tænke højt forsøg" (testning af GUI) og hermed danne sig et billede af systemet. Vi ville af dette opnå stor viden, da vi med en kontrolleret testning af vores system kan fusionere tekniske aspekter med menneskelige input.
 
 Med denne viden kunne vi vidreudvikle vores system, således at der måske sættes fokus på brugervenlighed, eller andet. Det er op til os og interessenten i sammarbejde.
 \\
@@ -313,7 +309,7 @@ Med denne viden kunne vi vidreudvikle vores system, således at der måske sætt
 
 \textbf{Internt}
 \\
-Som benævnt i punktet ovenover, ville det være mere hensigtsmæssigt at mødes flere gange i påsken. Men det har desværre ike været muligt. Vi synes dog at vi har fået det optimale ud af vores sammarbejde.
+Som benævnt i punktet ovenover, ville det være mere hensigtsmæssigt at mødes flere gange i påsken. Men det har desværre ikke været muligt. Vi synes dog at vi har fået det optimale ud af vores sammarbejde.
 Et medlem i gruppen havde store problemer med github, eftersom hans system er Mac OS X. Det gjorde at han måtte ty til andre løsningsmidler og gruppen har således ikke mistet nogle former for data. Men man blev derfor tvunget til at sende stoffet til de andre medlemmer i gruppen således at de kunne overføre data til github som planlagt. Derfor ses det også i "contributions" fra denne person. Heldigvis burde problemet være løst med en virtuel maskine som benytter Windows på personens Mac OS X i stedet for.
 \\
 \\
@@ -348,11 +344,12 @@ Til sidst i artiklen sættes der fokus på en diskussion omkring esencen i at do
 \\
 \\
 Der rejser sig følgende tanker omkring artiklen:
-Hvorfor er det så svært at lave en perfekt "opskrift"
+Hvorfor er det så svært at lave en perfekt design process
+\\
 "we will never find a process that allows us to design software in a perfectly rational way"
 \\
 \\
-hvorfor opstår der redundans i kode når man har lagt klare retningslinier for et projekt?
+hvorfor opstår der redundans i kode når man har lagt klare retningslinier fra start i et projekt?
 \\
 \\
 Hvordan skaber man god dokumentation til sit program, sådan at dette kan bruges til fremtidige vedligeholdere.
