@@ -2,12 +2,22 @@
     require_once("include/session.php");
     require_once("include/security.php");
     require_once("include/connect.php");
+
+    function generateRandomString($length = 20) {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#¤%&/()=?.,-_+';
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, strlen($characters) - 1)];
+        }
+        return $randomString;
+    }
     
     $customer_name = $_POST["customer_name"];
     $url = $_POST["url"];
+    $access_token = generateRandomString();
     
     if ($customer_name && $url) {
-        $conn->query("INSERT INTO customers (name, url) VALUES('". $customer_name ."', '". $url ."')");
+        $conn->query("INSERT INTO customers (name, url, access_token) VALUES('". $customer_name ."', '". $url ."', '". $access_token ."')");
         header("location: customers.php");
     }
 ?>

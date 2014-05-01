@@ -10,7 +10,7 @@
     
     if ($groupname && $customer_id) {
         $conn->query("INSERT INTO groups (customer_id, name) VALUES('". $customer_id ."', '". $groupname ."')");
-        header("location: groups.php");
+       header("location: groups.php");
     }
 ?>
 <!DOCTYPE html>
@@ -152,7 +152,7 @@
                                                 
                                                 
                                                 
-                                                    <form role="form" method="post" action="groups.php">
+                                                    <form role="form" method="post" action="group_add.php">
                                                         <div class="form-group">
                                                             <label for="exampleInputEmail1">Group name</label>
                                                             <input type="text" class="form-control" name="groupname" id="groupname" placeholder="Group name">
