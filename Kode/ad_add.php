@@ -2,22 +2,36 @@
     require_once("include/session.php");
     require_once("include/security.php");
     require_once("include/connect.php");
+
+
+    function generateRandomString($length = 30) {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-';
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, strlen($characters) - 1)];
+        }
+        return $randomString;
+    }
     
     $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
 
     $groups = $conn->query("SELECT * FROM groups ORDER BY name ASC");
 
+
     $name = $_POST["adname"];
     $customer_id = $_POST["customer_id"];
     $group_id = $_POST["group_id"];
-
+    $file_name_extensions = explode(".", $_FILES["ad_file"]["name"]);
+    $length_of_array = count($file_name_extensions);
+    $file_type = $file_name_extensions[$length_of_array-1];
+    $new_file_name = generateRandomString() .".". $file_type;  
     
     if ( $name && $customer_id && $group_id) {
 
-        move_uploaded_file($_FILES["ad_file"]["tmp_name"], "ads/" . $_FILES["ad_file"]["name"]);
+        move_uploaded_file($_FILES["ad_file"]["tmp_name"], "ads/" . $new_file_name);
 
 
-        $conn->query("INSERT INTO ads (ad_name, file_name, customer_id, group_id) VALUES('". $name ."', '". $_FILES["ad_file"]["name"] ."', '". $customer_id ."', '". $group_id ."')");
+        $conn->query("INSERT INTO ads (ad_name, file_name, customer_id, group_id) VALUES('". $name ."', '". $new_file_name ."', '". $customer_id ."', '". $group_id ."')");
         header("location: ads.php");
     }
     
