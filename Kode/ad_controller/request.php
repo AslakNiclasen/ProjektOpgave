@@ -3,9 +3,13 @@
     require_once("../include/timezone.php");
  
     //Declaring all variables used in system
-    $access_token = "4NP/4LjRcJA8oc3C0ygR";
-    $site_name = "";
-    $referer = @$_SERVER["HTTP_REFERER"];    
+    $access_token = $_GET["access_token"];
+    if (!$access_token || $access_token = "" || strlen($access_token) != 20) {
+        //Set temporary access token
+        $access_token = "WvcZA&ulOhOjk3M5ZxHH";
+        //$access_token = "4NP/4LjRcJA8oc3C0ygR";
+    }
+    
     $ads_array = array();
     $today_timestamp = date("Y-m-d H:i:s", time());
     
@@ -24,17 +28,22 @@
     }
 
     
-    
+    //Constructing JSON-response
     if ($ads->num_rows <= 0) {
-        echo "No ads found<br>";
+        $status = array("status" => "NO_ADS");
     } else {
-        echo "A lot of ads found<br>";
+        $status = array("status" => "MANY_ADS");
+        
+        $ads_array = array();
+        foreach ($ads as $ad) {
+            array_push($ads_array, array("file_name" => $ad["file_name"], "group_id" => $ad["group_id"], "customer_id" => $ad["customer_id"]));
+        }
     }
     
-    foreach ($ads as $ad) {
-        array_push($ads_array, $ad["file_name"]);
-    }
+    $response_array = array($status, $ads_array);
     
+    $site_name = "";
+    $referer = @$_SERVER["HTTP_REFERER"];
     if (substr($referer, 0, 6) == "http://") {
         $slash_pos = strpos($referer, "/", 7);
         $site_name = substr($referer, 7, $slash_pos);
@@ -48,5 +57,15 @@
         echo "wrong source path<br>";   
     }
 
-    echo json_encode($ads_array);
+    echo "<pre>";
+    print_r($response_array);
+    echo "</pre>";
+    
+    echo "<pre>";
+    print_r(json_encode($response_array));
+    echo "</pre>";
+    
+    echo "<pre>";
+    print_r(json_decode(json_encode($response_array)));
+    echo "</pre>";
 ?>

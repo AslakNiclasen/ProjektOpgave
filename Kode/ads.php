@@ -15,6 +15,7 @@
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css">
     </head>
     <body class="dashboard">
         <div class="wrapper">
@@ -89,6 +90,9 @@
                                                             <th>
                                                                 Deadline
                                                             </th>
+                                                            <th>
+                                                                &nbsp;
+                                                            </th>
                                                         </tr>                                           
 <?php
                 foreach($ads as $ad){
@@ -107,6 +111,14 @@
                     } else {
                         echo "<td>". date("d-m-Y", strtotime($ad['ad_deadline'])) . "</td>";
                     }
+                    
+                    if ($ad["ad_active"] == 1) {
+                        echo "<td><input type='checkbox' class='switch-demo switch-mini' data-on='success' data-off='default' id='ad_active_". $ad["id"] ."' checked></td>";
+                    } else {
+                        echo "<td><input type='checkbox' class='switch-demo switch-mini' data-on='success' data-off='default' id='ad_active_". $ad["id"] ."'></td>";
+                    }
+                    
+                    
                     echo "</tr>";
                 }
 ?>              
@@ -152,5 +164,26 @@
         <script type="text/javascript" src="assets/js/king-chart-stat.js"></script>
         <script type="text/javascript" src="assets/js/king-table.js"></script>
         <script type="text/javascript" src="assets/js/king-components.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap-switch.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                 $(".switch-demo").bootstrapSwitch();
+                 
+                 $(".switch-demo").on("switch-change", function(event, state) {
+                     var on_or_off = state.value;
+                     var ad_id = $(this).attr("id").split("_")[2];
+                     
+                     if (on_or_off) {
+                         on_or_off = 1;
+                     } else {
+                         on_or_off = 0;
+                     }
+                     
+                     $.post("ajax_ad_activate.php", { ad_id: ad_id, on_or_off: on_or_off }, function(response) {
+                        console.log(response);
+                     });
+                 });
+            });
+        </script>
     </body>
 </html>
