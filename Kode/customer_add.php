@@ -2,6 +2,7 @@
     require_once("include/session.php");
     require_once("include/security.php");
     require_once("include/connect.php");
+    require_once("include/timezone.php");
 
     function generateRandomString($length = 20) {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#¤%&/()=?.,-_+';
@@ -12,8 +13,8 @@
         return $randomString;
     }
     
-    $customer_name = $_POST["customer_name"];
-    $url = $_POST["url"];
+    $customer_name = @$_POST["customer_name"];
+    $url = @$_POST["url"];
     $access_token = generateRandomString();
     
     if ($customer_name && $url) {
@@ -166,10 +167,10 @@
                                                         <input type="text" name="customer_name" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
                                                       </div>
                                                       <div class="form-group">
-                                                        <label for="exampleInputPassword1">Url</label>
-                                                        <input type="text" name="url" class="form-control" id="exampleInputPassword1" placeholder="Url">
+                                                        <label for="exampleInputPassword1">URL (Customer's website)</label>
+                                                        <input type="text" name="url" class="form-control" id="exampleInputPassword1" placeholder="URL">
                                                       </div>
-                                                      <button type="submit" class="btn btn-primary">Submit</button>
+                                                      <button type="submit" class="btn btn-primary">Create customer now</button>
                                                     </form>
                                                     
                                                 </div>

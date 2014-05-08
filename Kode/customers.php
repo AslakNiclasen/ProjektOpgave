@@ -2,6 +2,8 @@
     require_once("include/session.php");
     require_once("include/security.php");
     require_once("include/connect.php");
+    require_once("include/timezone.php");
+    
     $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
 ?>
 
@@ -146,21 +148,30 @@
                                                     <h3><i class="fa fa-group"></i> Customers</h3>
                                                 </div>
                                                 <div class="widget-content">
+<?php
+    if ($customers->num_rows <= 0) {
+        echo "No customer created yet. Create your first customer by clicking <a href='customer_add.php'>here</a>";
+    } else {
+?>
                                                     <table class="table">
+
                                                         <tr>
                                                             <th>
-                                                                name
+                                                                Name
                                                             </th>
                                                             <th>
-                                                                url
+                                                                URL
                                                             </th>
                                                         </tr>                                           
 <?php
-foreach($customers as $customer){
- echo "<tr><td>" . $customer['name'] . "</td><td>" . $customer['url'] . "</td></tr>";
-}
+        foreach($customers as $customer){
+            echo "<tr><td>" . $customer['name'] . "</td><td>" . $customer['url'] . "</td></tr>";
+        }
 ?>              
                                                     </table>
+<?php
+    }
+?>
                                                 </div>
                                             </div>
                                             <!-- END INPUT GROUPS -->

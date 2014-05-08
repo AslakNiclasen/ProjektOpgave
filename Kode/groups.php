@@ -2,7 +2,9 @@
     require_once("include/session.php");
     require_once("include/security.php");
     require_once("include/connect.php");
+    require_once("include/timezone.php");
     
+    $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
     $groups = $conn->query("SELECT groups.*, customers.name as customer_name FROM groups JOIN customers ON groups.customer_id = customers.id");
 ?>
 <!DOCTYPE html>
@@ -146,25 +148,36 @@
                                                 </div>
                                                 <div class="widget-content">
                                                     
-                                                    
+<?php
+    if ($customers->num_rows <= 0) {
+        echo "No customer created yet. Create your first customer by clicking <a href='customer_add.php'>here</a>";
+    } else {
+        if ($groups->num_rows <= 0) {
+            echo "No group created yet. Create your first group by clicking <a href='group_add.php'>here</a>";
+        } else {
+?>
                                                     <table class="table">
                                                         <tr>
                                                             <th>
-                                                                Customer
+                                                                Group description
                                                             </th>
                                                             <th>
-                                                                Group
+                                                                Belongs to customer
                                                             </th>
                                                         </tr>
 <?php
-    foreach($groups as $group) {
-        echo "<tr>";
-        echo "<td>". $group["customer_name"] ."</td>";
-        echo "<td>". $group["name"] ."</td>";
-        echo "</tr>";
-    }
+            foreach($groups as $group) {
+                echo "<tr>";
+                echo "<td>". $group["name"] ."</td>";
+                echo "<td>". $group["customer_name"] ."</td>";
+                echo "</tr>";
+            }
 ?>
                                                     </table>
+<?php
+        }
+    }
+?>
                                                     
                                                     
                                                 </div>

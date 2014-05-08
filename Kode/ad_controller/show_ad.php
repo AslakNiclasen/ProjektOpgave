@@ -1,5 +1,4 @@
 <?php
-    
     //$access_token = $_GET["access_token"];
 
 	$access_token = "S#0#7,SIdRf#HS%1nhBd";

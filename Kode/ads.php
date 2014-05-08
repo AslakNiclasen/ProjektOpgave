@@ -2,8 +2,11 @@
     require_once("include/session.php");
     require_once("include/security.php");
     require_once("include/connect.php");
+    require_once("include/timezone.php");
 
     $ads = $conn->query("SELECT ads.*, customers.name AS customer_name, groups.name AS group_name FROM ads JOIN customers ON customers.id = ads.customer_id JOIN groups ON groups.id = ads.group_id ORDER BY ads.ad_name ASC");
+    $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
+    $groups = $conn->query("SELECT groups.*, customers.name as customer_name FROM groups JOIN customers ON groups.customer_id = customers.id");
 ?>
 <!DOCTYPE html>
 <html>
@@ -145,6 +148,17 @@
                                                     <h3><i class="fa fa-group"></i> Ads</h3>
                                                 </div>
                                                 <div class="widget-content">
+<?php
+    if ($customers->num_rows <= 0) {
+        echo "You haven't created a customer yet. Create your first customer by clicking <a href='customer_add.php'>here</a>";
+    } else {
+        if ($groups->num_rows <= 0) {
+            echo "No group created yet. Create your first group by clicking <a href='group_add.php'>here</a>";
+        } else {
+            if ($ads->num_rows <= 0) {
+                echo "No ad created yet. Create your first ad by clicking <a href='ad_add.php'>here</a>";
+            } else {
+?>
                                                     <table class="table">
                                                         <tr>
                                                             <th>
@@ -158,15 +172,20 @@
                                                             </th>
                                                         </tr>                                           
 <?php
-    foreach($ads as $ad){
-        echo "<tr>";
-        echo "<td>" . $ad['ad_name'] . "</td>";
-        echo "<td>" . $ad['customer_name'] . "</td>";
-        echo "<td>" . $ad['group_name'] . "</td>";
-        echo "</tr>";
-    }
+                foreach($ads as $ad){
+                    echo "<tr>";
+                    echo "<td>" . $ad['ad_name'] . "</td>";
+                    echo "<td>" . $ad['customer_name'] . "</td>";
+                    echo "<td>" . $ad['group_name'] . "</td>";
+                    echo "</tr>";
+                }
 ?>              
                                                     </table>
+<?php
+            }
+        }
+    }     
+?>
                                                 </div>
                                             </div>
                                             <!-- END INPUT GROUPS -->

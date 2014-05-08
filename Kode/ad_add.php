@@ -2,7 +2,10 @@
     require_once("include/session.php");
     require_once("include/security.php");
     require_once("include/connect.php");
+    require_once("include/timezone.php");
 
+    $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
+    $groups = $conn->query("SELECT * FROM groups ORDER BY name ASC");
 
     function generateRandomString($length = 30) {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-';
@@ -12,29 +15,29 @@
         }
         return $randomString;
     }
-    
-    $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
 
-    $groups = $conn->query("SELECT * FROM groups ORDER BY name ASC");
-
-
-    $name = $_POST["adname"];
-    $customer_id = $_POST["customer_id"];
-    $group_id = $_POST["group_id"];
-    $file_name_extensions = explode(".", $_FILES["ad_file"]["name"]);
+    $name = @$_POST["adname"];
+    $customer_id = @$_POST["customer_id"];
+    $group_id = @$_POST["group_id"];
+    $max_impressions = @$_POST["maxImpressions"];
+    $ad_deadline = @$_POST["adDeadline"];
+    $file_name_extensions = @explode(".", $_FILES["ad_file"]["name"]);
     $length_of_array = count($file_name_extensions);
-    $file_type = $file_name_extensions[$length_of_array-1];
+    $file_type = @$file_name_extensions[$length_of_array-1];
     $new_file_name = generateRandomString() .".". $file_type;  
     
-    if ( $name && $customer_id && $group_id) {
-
-        move_uploaded_file($_FILES["ad_file"]["tmp_name"], "ads/" . $new_file_name);
-
-
-        $conn->query("INSERT INTO ads (ad_name, file_name, customer_id, group_id) VALUES('". $name ."', '". $new_file_name ."', '". $customer_id ."', '". $group_id ."')");
-        header("location: ads.php");
+    if (strtotime(@$ad_deadline) > 10000) {
+        $timestamp = @date("Y-m-d H:i:s", strtotime($ad_deadline));
+    } else {
+        $timestamp = NULL;
     }
     
+    if ( $name && $customer_id && $group_id) {
+        move_uploaded_file($_FILES["ad_file"]["tmp_name"], "ads/" . $new_file_name);
+
+        $conn->query("INSERT INTO ads (ad_name, file_name, max_impressions, ad_deadline, customer_id, group_id) VALUES('". $name ."', '". $new_file_name ."', '". $max_impressions ."', '". $timestamp ."', '". $customer_id ."', '". $group_id ."')");
+        header("location: ads.php");
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -171,38 +174,63 @@
                                                     <h3><i class="fa fa-picture-o"></i> Add ad</h3>
                                                 </div>
                                                 <div class="widget-content">
-                                                    <form role="form" method="post" action="ad_add.php" enctype="multipart/form-data">
+<?php
+    if ($customers->num_rows <= 0) {
+        echo "No customer created yet. Create your first customer by clicking <a href='customer_add.php'>here</a>";
+    } else {
+        if ($groups->num_rows <= 0) {
+            echo "No group created yet. Create your first group by clicking <a href='group_add.php'>here</a>";
+        } else {
+?>                                                
+                                                    <form role="form" method="post" action="ad_add.php" enctype="multipart/form-data" id="ad_form">
                                                         <div class="form-group">
-                                                            <label for="exampleInputEmail1">Ad name</label>
+                                                            <label for="exampleInputEmail1">Ad name *</label>
                                                             <input type="text" class="form-control" name="adname" id="adname" placeholder="Ad name">
                                                         </div>
+                                                        
                                                         <div class="form-group">
-                                                            <label for="exampleInputPassword1">Customer name</label>
-                                                            <select class="form-control" name="customer_id">
+                                                            <label for="maxImpressions">Max impressions</label>
+                                                            <input type="text" class="form-control" id="maxImpressions" name="maxImpressions" value="0">
+                                                        </div>
+                                                        
+                                                        <div class="form-group">
+                                                            <label for="adDeadline">Deadline for ad</label>
+                                                            <input type="text" class="form-control" id="adDeadline" name="adDeadline" placeholder="DD/MM/YYYY">
+                                                        </div>
+                                                        
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Customer name *</label>
+                                                            <select class="form-control" name="customer_id" id="customer_id">
+                                                                <option value="" disabled selected>Please choose a customer</option>
 <?php
-    foreach($customers as $customer) {
-        echo "<option value='". $customer["id"] ."'>". $customer["name"] ."</option>";
-    }
+            foreach($customers as $customer) {
+                echo "<option value='". $customer["id"] ."'>". $customer["name"] ."</option>";
+            }
 ?>
+                                                            </select>
+                                                        </div>                                                        
+                                                        
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Group name *</label>
+                                                            <select class="form-control" name="group_id" id="group_id" disabled>
+                                                                <option value="" disabled selected>Please choose a customer</option>
                                                             </select>
                                                         </div>
                                                         <div class="form-group">
-                                                            <label for="exampleInputPassword1">Group name</label>
-                                                            <select class="form-control" name="group_id">
-<?php
-    foreach($groups as $group) {
-        echo "<option value='". $group["id"] ."'>". $group["name"] ."</option>";
-    }
-?>
-                                                            </select>
+                                                            <label for="exampleInputFile">Choose file to upload *</label>
+                                                            <input type="file" id="ad_file" name="ad_file">
                                                         </div>
-                                                        <div class="form-group">
-                                                            <label for="exampleInputFile">File input</label>
-                                                            <input type="file" id="exampleInputFile" name="ad_file">
-                                                        </div>
-                                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-primary" id="create_submit">Create ad now</button>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        * Required field
                                                     </form>
-                                                    
+<?php
+        }
+    }
+?>
                                                 </div>
                                             </div>
                                             <!-- END INPUT GROUPS -->
@@ -239,5 +267,45 @@
         <script type="text/javascript" src="assets/js/king-chart-stat.js"></script>
         <script type="text/javascript" src="assets/js/king-table.js"></script>
         <script type="text/javascript" src="assets/js/king-components.js"></script>
+        <script type="text/javascript" src="datepicker/js/bootstrap-datepicker.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#adDeadline").datepicker();
+                
+                $("#customer_id").change(function() {
+                    var customer_id = $(this).val();
+                    
+                    $("#group_id").prop("disabled", "true");
+                    $("#group_id option:first").html("Please wait...");
+                    
+                    $.get("ajax_get_groups.php", { customer_id: customer_id }, function(response) {
+                        $("#group_id").append(response);
+                        $("#group_id option:first").html("Please choose a group");
+                        $("#group_id").removeAttr("disabled");
+                    });
+                });
+
+                $("#create_submit").click(function(e) {
+                    e.preventDefault();
+                    
+                    var adname = $("#adname").val();
+                    var customer_id = $("#customer_id").val();
+                    var group_id = $("#group_id").val();
+                    var ad_file = $("#ad_file").val();
+                    
+                    if (!adname || adname == "") {
+                        alert("Please write an ad name");
+                    } else if (!customer_id || customer_id <= 0) {
+                        alert("Please choose a customer");
+                    } else if (!group_id || group_id <= 0) {
+                        alert("Please choose a group");
+                    } else if (!ad_file || ad_file == "") {
+                        alert("Please choose an ad to upload");
+                    } else {
+                        $("#ad_form").submit();
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

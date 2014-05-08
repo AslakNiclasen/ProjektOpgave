@@ -2,11 +2,12 @@
     require_once("include/session.php");
     require_once("include/security.php");
     require_once("include/connect.php");
+    require_once("include/timezone.php");
     
     $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
     
-    $groupname = $_POST["groupname"];
-    $customer_id = $_POST["customer_id"];
+    $groupname = @$_POST["groupname"];
+    $customer_id = @$_POST["customer_id"];
     
     if ($groupname && $customer_id) {
         $conn->query("INSERT INTO groups (customer_id, name) VALUES('". $customer_id ."', '". $groupname ."')");
@@ -148,39 +149,31 @@
                                                     <h3><i class="fa fa-tags"></i> Groups</h3>
                                                 </div>
                                                 <div class="widget-content">
-                                                
-                                                
-                                                
-                                                
+<?php
+    if ($customers->num_rows <= 0) {
+        echo "<td>No customer created yet. Create your first customer by clicking <a href='customer_add.php'>here</a></td>";
+    } else {
+?>
                                                     <form role="form" method="post" action="group_add.php">
                                                         <div class="form-group">
-                                                            <label for="exampleInputEmail1">Group name</label>
+                                                            <label for="exampleInputEmail1">Group description</label>
                                                             <input type="text" class="form-control" name="groupname" id="groupname" placeholder="Group name">
                                                         </div>
                                                         <div class="form-group">
-                                                            <label for="exampleInputPassword1">Customer</label>
+                                                            <label for="exampleInputPassword1">Group belongs to customer</label>
                                                             <select class="form-control" name="customer_id">
 <?php
-    foreach($customers as $customer) {
-        echo "<option value='". $customer["id"] ."'>". $customer["name"] ."</option>";
-    }
+        foreach($customers as $customer) {
+            echo "<option value='". $customer["id"] ."'>". $customer["name"] ."</option>";
+        }
 ?>
                                                             </select>
                                                         </div>
-                                                        <input type="submit" class="btn btn-primary" value="Create">
+                                                        <button type="submit" class="btn btn-primary">Create group now</button>
                                                     </form>
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
+<?php
+    }
+?>
                                                 </div>
                                             </div>
                                             <!-- END INPUT GROUPS -->

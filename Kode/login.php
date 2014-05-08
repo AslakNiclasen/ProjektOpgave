@@ -11,7 +11,7 @@
 
 	if($email || $password) {
 
-		$sql = "SELECT email, password FROM admins WHERE email = '". $email ."' AND password = '". $password ."'";
+		$sql = "SELECT id, email, password FROM admins WHERE email = '". $email ."' AND password = '". $password ."'";
 
 		if($admins = $conn->query($sql)) {
 			if($admins->num_rows >= 1) {
