@@ -3,9 +3,26 @@
     require_once("include/security.php");
     require_once("include/connect.php");
     require_once("include/timezone.php");
+
+    function generateRandomString($length = 20) {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#Â¤%&/()=?.,-_+';
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, strlen($characters) - 1)];
+        }
+        return $randomString;
+    }
     
-    $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
+    $admin_name = @$_POST["admin_name"];
+    $admin_email = @$_POST["admin_email"];
+    $admin_password = @$_POST["admin_password"];
+    
+    if ($admin_name && $admin_email && $admin_password) {
+        $conn->query("INSERT INTO admins (name, email, password) VALUES('". $admin_name ."', '". $admin_email ."', '". $admin_password ."')");
+        header("location: admins.php");
+    }
 ?>
+
 
 
 <!DOCTYPE html>
@@ -36,7 +53,8 @@
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="#">Home</a></li>
-                                        <li class="active">Customers</li>                                    
+                                        <li><a href="admins.php">Admins</a></li>   
+                                        <li class="active">Add admin</li>                                    
                                     </ul>
                                 </div>
                             </div>
@@ -45,13 +63,9 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h2>Customers</h2>
-                                    <em>a collection of all your customers</em>
+                                    <h2>Admins</h2>
+                                    <em>a collection of all admins</em>
                                 </div>
-
-                                <a href="customer_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add customer</a>
-                                <br>
-                                <br>
 
                                 <div class="main-content">
                                     <div class="row">
@@ -59,40 +73,29 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-group"></i> Customers</h3>
+                                                    <h3><i class="fa fa-user"></i> Admins</h3>
                                                 </div>
                                                 <div class="widget-content">
-<?php
-    if ($customers->num_rows <= 0) {
-        echo "No customer created yet. Create your first customer by clicking <a href='customer_add.php'>here</a>";
-    } else {
-?>
-                                                    <table class="table">
-
-                                                        <tr>
-                                                            <th>
-                                                                Name
-                                                            </th>
-                                                            <th>
-                                                                URL
-                                                            </th>
-                                                            <th>
-                                                                Access Token
-                                                            </th>
-                                                        </tr>                                           
-<?php
-        foreach($customers as $customer){
-            echo "<tr>";
-            echo "<td>" . $customer["name"] . "</td>";
-            echo "<td>" . $customer["url"] . "</td>";
-            echo "<td>" . $customer["access_token"] . "</td>";
-            echo "</tr>";
-        }
-?>              
-                                                    </table>
-<?php
-    }
-?>
+                                              
+                                                   <form role="form" method="post" action="admin_add.php">
+                                                      <div class="form-group">
+                                                        <label for="admin_name">Name</label>
+                                                        <input type="text" name="admin_name" class="form-control" id="admin_name" placeholder="Admin Name">
+                                                      </div>
+                                                      
+                                                      <div class="form-group">
+                                                        <label for="admin_email">Email</label>
+                                                        <input type="text" name="admin_email" class="form-control" id="admin_email" placeholder="Admin email">
+                                                      </div>
+                                                      
+                                                      <div class="form-group">
+                                                        <label for="admin_password">Password</label>
+                                                        <input type="text" name="admin_password" class="form-control" id="admin_password" placeholder="Admin password">
+                                                      </div>
+                                                      
+                                                      <button type="submit" class="btn btn-primary">Create admin now</button>
+                                                    </form>
+                                                    
                                                 </div>
                                             </div>
                                             <!-- END INPUT GROUPS -->

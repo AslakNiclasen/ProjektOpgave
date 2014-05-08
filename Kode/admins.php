@@ -4,7 +4,7 @@
     require_once("include/connect.php");
     require_once("include/timezone.php");
     
-    $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
+    $admins = $conn->query("SELECT * FROM admins ORDER BY name ASC");
 ?>
 
 
@@ -36,7 +36,7 @@
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="#">Home</a></li>
-                                        <li class="active">Customers</li>                                    
+                                        <li class="active">Admins</li>                                    
                                     </ul>
                                 </div>
                             </div>
@@ -45,11 +45,11 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h2>Customers</h2>
-                                    <em>a collection of all your customers</em>
+                                    <h2>Admins</h2>
+                                    <em>a collection of all admins</em>
                                 </div>
 
-                                <a href="customer_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add customer</a>
+                                <a href="admin_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add admin</a>
                                 <br>
                                 <br>
 
@@ -59,12 +59,12 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-group"></i> Customers</h3>
+                                                    <h3><i class="fa fa-user"></i> Admins</h3>
                                                 </div>
                                                 <div class="widget-content">
 <?php
-    if ($customers->num_rows <= 0) {
-        echo "No customer created yet. Create your first customer by clicking <a href='customer_add.php'>here</a>";
+    if ($admins->num_rows <= 0) {
+        echo "No admins created yet. Create your first admin by clicking <a href='admin_add.php'>here</a>";
     } else {
 ?>
                                                     <table class="table">
@@ -74,18 +74,18 @@
                                                                 Name
                                                             </th>
                                                             <th>
-                                                                URL
+                                                                Email
                                                             </th>
                                                             <th>
-                                                                Access Token
+                                                                Last login
                                                             </th>
                                                         </tr>                                           
 <?php
-        foreach($customers as $customer){
+        foreach($admins as $admin){
             echo "<tr>";
-            echo "<td>" . $customer["name"] . "</td>";
-            echo "<td>" . $customer["url"] . "</td>";
-            echo "<td>" . $customer["access_token"] . "</td>";
+            echo "<td>" . $admin["name"] . "</td>";
+            echo "<td>" . $admin["email"] . "</td>";
+            echo "<td>" . date("d-m-Y H:i:s", strtotime($admin["last_login"])) . "</td>";
             echo "</tr>";
         }
 ?>              

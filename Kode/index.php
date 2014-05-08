@@ -4,7 +4,8 @@
     require_once("include/connect.php");
     require_once("include/timezone.php");
 
-    $ads = $conn->query("SELECT * FROM ads");
+    $ads = $conn->query("SELECT * FROM ads WHERE customer_id = '7'");
+    $customers = $conn->query("SELECT * FROM customers ORDER BY name DESC");
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,10 +19,51 @@
             google.load("visualization", "1", {packages:["corechart"]});
             google.setOnLoadCallback(drawChart);
             function drawChart() {
+                var options = {
+                    title: 'Ads impressions',
+                    'height': 300,
+                    'legend': {
+                        'position': 'bottom'
+                    }
+                };
+
+<?php
+    foreach($customers as $customer) {
+        $groups = $conn->query("SELECT * FROM groups WHERE customer_id = '". $customer["id"] ."'");
+        
+        foreach($groups as $group) {
+            $ads = $conn->query("SELECT * FROM ads WHERE customer_id = '". $customer["id"] ."' AND group_id = '". $group["id"] ."'");
+            
+            if ($ads->num_rows > 0) {
+                
+                echo "var data = google.visualization.arrayToDataTable([\n";
+                echo "['Ad name', 'Number of impressions', 'Remaining impressions'],\n";
+                
+                $i = 0;
+                foreach ($ads as $ad) {
+                    if ($i == count($ads)+1) {
+                        echo "['". $ad["ad_name"] ."', ". $ad["number_of_impressions"] ." , ". $ad["max_impressions"] ."] \n";
+                    } else {
+                        echo "['". $ad["ad_name"] ."', ". $ad["number_of_impressions"] ." , ". $ad["max_impressions"] ."], \n";
+                    }
+                    
+                    $i++;
+                }
+                echo "]);\n";
+                
+                echo "var chart = new google.visualization.ColumnChart(document.getElementById('chart_div_". $group["id"] ."_". $customer["id"] ."'));\n";
+                echo "chart.draw(data, options);\n\n";
+            }
+        }
+    }
+?>
+                
+                
                 var data = google.visualization.arrayToDataTable([
                     ['Ad name',     'Number of impressions',    'Remaining impressions'],
                     
 <?php
+    $ads = $conn->query("SELECT * FROM ads WHERE customer_id = '7'");
     $i = 0;
     foreach ($ads as $ad) {
         if ($i == count($ads)+1) {
@@ -35,15 +77,7 @@
                     
                 ]);
 
-                var options = {
-                    title: 'Ads impressions',
-                    'height': 500,
-                    'legend': {
-                        'position': 'bottom'
-                    }
-                };
-
-                var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+                var chart = new google.visualization.ColumnChart(document.getElementById('chart_div_7_7'));
                 chart.draw(data, options);
             }
         </script>
@@ -51,100 +85,17 @@
     <body class="dashboard">
         <div class="wrapper">
             <!-- TOP BAR -->
-            <div class="top-bar">
-                <div class="container">
-                    <div class="row">
-                        <!-- logo -->
-                        <div class="col-md-2 logo">
-                            <a href="index.php">
-                                Open Source banner
-                            </a>
-                            <h1 class="sr-only">Open Source admin</h1>
-                        </div>
-                        <!-- end logo -->
-
-                        <div class="col-md-10">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="top-bar-right">
-                                        <!-- logged user and the menu -->
-                                        <div class="logged-user">
-                                            <div class="btn-group">
-                                                <a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                                                    <span class="name">Signar Nielsen</span>
-                                                    <span class="caret"></span>
-                                                </a>
-                                                <ul class="dropdown-menu" role="menu">
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="fa fa-user"></i>
-                                                            <span class="text">Profile</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="fa fa-cog"></i>
-                                                            <span class="text">Settings</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="fa fa-power-off"></i>
-                                                            <span class="text">Logout</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- end logged user and the menu -->
-                                    </div>
-                                    <!-- /top-bar-right -->
-                                </div>
-                            </div>
-                            <!-- /row -->
-                        </div>
-                    </div>
-                    <!-- /row -->
-                </div>
-                <!-- /container -->
-            </div>
-            <!-- /top -->
-
-
+<?php
+    include("sections/top.php");
+?>
             <!-- BOTTOM: LEFT NAV AND RIGHT MAIN CONTENT -->
             <div class="bottom">
                 <div class="container">
                     <div class="row">
                         <!-- left sidebar -->
-                        <div class="col-md-2 left-sidebar">
-
-                            <!-- main-nav -->
-                            <nav class="main-nav">
 <?php
-     include("include/menu.php");
+    include("sections/left_sidebar.php");
 ?>
-                            </nav>
-                            <!-- /main-nav -->
-
-                            <div class="sidebar-minified js-toggle-minified">
-                                <i class="fa fa-angle-left"></i>
-                            </div>
-
-                            <!-- sidebar content -->
-                            <div class="sidebar-content">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h5><i class="fa fa-lightbulb-o"></i> Tips</h5>
-                                    </div>
-                                    <div class="panel-body">
-                                        <p>You can do live search to the widget at search box located at top bar. It's very useful if your dashboard is full of widget.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end sidebar content -->
-                        </div>
-                        <!-- end left sidebar -->
-
                         <!-- content-wrapper -->
                         <div class="col-md-10 content-wrapper">
                             <div class="row">
@@ -165,15 +116,38 @@
                                 <div class="main-content">
                                     <div class="row">
                                         <div class="col-md-12">
+<?php
+    foreach ($customers as $customer) {
+        $groups = $conn->query("SELECT * FROM groups WHERE customer_id = '". $customer["id"] ."'");
+?>
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-bar-chart-o"></i> Statistics</h3>
+                                                    <h3><i class="fa fa-bar-chart-o"></i> Statistics for <?php echo $customer["name"]; ?></h3>
                                                 </div>
                                                 <div class="widget-content">
-                                                    <div id="chart_div"></div>
+<?php
+        foreach($groups as $group) {
+            $ads = $conn->query("SELECT * FROM ads WHERE customer_id = '". $customer["id"] ."' AND group_id = '". $group["id"] ."'");
+            if ($ads->num_rows > 0) {
+?>
+                                                    <div class="widget">
+                                                        <div class="widget-header">
+                                                            <h3><i class="fa fa-tags"></i> <?php echo $group["name"]; ?></h3>
+                                                        </div>
+                                                        <div class="widget-content">
+                                                            <div id="chart_div_<?php echo $group["id"]; ?>_<?php echo $customer["id"]; ?>"></div>
+                                                        </div>
+                                                    </div>
+<?php
+            }
+        }
+?>
+                                                    <div id="chart_div_<?php echo $customer["id"]; ?>"></div>
                                                 </div>
                                             </div>
-                                            <!-- END INPUT GROUPS -->
+<?php
+    }
+?>
                                         </div>
                                     </div>
                                     <!-- /row -->

@@ -36,101 +36,17 @@
     <body class="dashboard">
         <div class="wrapper">
             <!-- TOP BAR -->
-            <div class="top-bar">
-                <div class="container">
-                    <div class="row">
-                        <!-- logo -->
-                        <div class="col-md-2 logo">
-                            <a href="index.php">
-                                Open Source banner
-                            </a>
-                            <h1 class="sr-only">Open Source admin</h1>
-                        </div>
-                        <!-- end logo -->
-
-                        <div class="col-md-10">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="top-bar-right">
-                                        <!-- logged user and the menu -->
-                                        <div class="logged-user">
-                                            <div class="btn-group">
-                                                <a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-                                                    <span class="name">Signar Nielsen</span>
-                                                    <span class="caret"></span>
-                                                </a>
-                                                <ul class="dropdown-menu" role="menu">
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="fa fa-user"></i>
-                                                            <span class="text">Profile</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="fa fa-cog"></i>
-                                                            <span class="text">Settings</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="fa fa-power-off"></i>
-                                                            <span class="text">Logout</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- end logged user and the menu -->
-                                    </div>
-                                    <!-- /top-bar-right -->
-                                </div>
-                            </div>
-                            <!-- /row -->
-                        </div>
-                    </div>
-                    <!-- /row -->
-                </div>
-                <!-- /container -->
-            </div>
-            <!-- /top -->
-
-
+<?php
+    include("sections/top.php");
+?>
             <!-- BOTTOM: LEFT NAV AND RIGHT MAIN CONTENT -->
             <div class="bottom">
                 <div class="container">
                     <div class="row">
                         <!-- left sidebar -->
-                        <div class="col-md-2 left-sidebar">
-
-                            <!-- main-nav -->
-                            <nav class="main-nav">
-
 <?php
-     include("include/menu.php");
+    include("sections/left_sidebar.php");
 ?>
-                            </nav>
-                            <!-- /main-nav -->
-
-                            <div class="sidebar-minified js-toggle-minified">
-                                <i class="fa fa-angle-left"></i>
-                            </div>
-
-                            <!-- sidebar content -->
-                            <div class="sidebar-content">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h5><i class="fa fa-lightbulb-o"></i> Tips</h5>
-                                    </div>
-                                    <div class="panel-body">
-                                        <p>You can do live search to the widget at search box located at top bar. It's very useful if your dashboard is full of widget.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end sidebar content -->
-                        </div>
-                        <!-- end left sidebar -->
-
                         <!-- content-wrapper -->
                         <div class="col-md-10 content-wrapper">
                             <div class="row">
