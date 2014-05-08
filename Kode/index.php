@@ -57,28 +57,6 @@
         }
     }
 ?>
-                
-                
-                var data = google.visualization.arrayToDataTable([
-                    ['Ad name',     'Number of impressions',    'Remaining impressions'],
-                    
-<?php
-    $ads = $conn->query("SELECT * FROM ads WHERE customer_id = '7'");
-    $i = 0;
-    foreach ($ads as $ad) {
-        if ($i == count($ads)+1) {
-            echo "['". $ad["ad_name"] ."', ". $ad["number_of_impressions"] ." , ". $ad["max_impressions"] ."] \n";
-        } else {
-            echo "['". $ad["ad_name"] ."', ". $ad["number_of_impressions"] ." , ". $ad["max_impressions"] ."], \n";
-        }
-        $i++;
-    }
-?>
-                    
-                ]);
-
-                var chart = new google.visualization.ColumnChart(document.getElementById('chart_div_7_7'));
-                chart.draw(data, options);
             }
         </script>
     </head>
@@ -109,8 +87,7 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h2>Statistics</h2>
-                                    <em>how are your ads performing?</em>
+                                    <h1>Statistics</h1>
                                 </div>
 
                                 <div class="main-content">

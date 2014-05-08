@@ -35,7 +35,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
-                                        <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+                                        <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
                                         <li class="active">Ads</li>                                    
                                     </ul>
                                 </div>
@@ -45,8 +45,7 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h2>Ads</h2>
-                                    <em>a collection of all your ads</em>
+                                    <h1>Ads</h1>
                                 </div>
 
                                 <a href="ad_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add Ad</a>

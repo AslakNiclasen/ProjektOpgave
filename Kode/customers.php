@@ -35,8 +35,8 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
-                                        <li><i class="fa fa-home"></i><a href="#">Home</a></li>
-                                        <li class="active">Customers</li>                                    
+                                        <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
+                                        <li class="active">Customers</li>                             
                                     </ul>
                                 </div>
                             </div>
@@ -45,8 +45,7 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h2>Customers</h2>
-                                    <em>a collection of all your customers</em>
+                                    <h1>Customers</h1>
                                 </div>
 
                                 <a href="customer_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add customer</a>

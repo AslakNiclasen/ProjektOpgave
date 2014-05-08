@@ -44,8 +44,7 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h2>Groups</h2>
-                                    <em>a collection of all your groups</em>
+                                    <h1>Groups</h1>
                                 </div>
 
                                 <a href="group_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add group</a>

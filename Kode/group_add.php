@@ -41,7 +41,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
-                                        <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+                                        <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
                                         <li><a href="groups.php">Groups</a></li>
                                         <li class="active">Add group</li>
                                     </ul>
@@ -52,8 +52,7 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h2>Groups</h2>
-                                    <em>a collection of all your groups</em>
+                                    <h1>Groups</h1>
                                 </div>
 
                                 <div class="main-content">

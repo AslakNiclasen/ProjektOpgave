@@ -6,6 +6,7 @@
             <li><a href="customers.php"><i class="fa fa-users fa-fw"></i><span class="text">Customers</span></a></li>
             <li><a href="groups.php"><i class="fa fa-tags fa-fw"></i><span class="text">Groups</span></a></li>
             <li><a href="ads.php"><i class="fa fa-picture-o fa-fw"></i><span class="text">Ads</span></a></li>
+            <li><a hreF="statistics.php"><i class="fa fa-bar-chart-o fa-fw"></i><span class="text">Statistics</span></a></li>
             <li><a href="admins.php"><i class="fa fa-user fa-fw"></i><span class="text">Admins</span></a></li>
         </ul>
     </nav>

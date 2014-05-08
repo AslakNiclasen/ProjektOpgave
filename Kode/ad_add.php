@@ -66,7 +66,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
-                                        <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+                                        <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
                                         <li><a href="ads.php">Ads</a></li>   
                                         <li class="active">Add ad</li>                                    
                                     </ul>
@@ -77,8 +77,7 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h2>Ad</h2>
-                                    <em>Add an ad</em>
+                                    <h1>Ad</h1>
                                 </div>
 
                                 <div class="main-content">

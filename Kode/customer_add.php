@@ -52,7 +52,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
-                                        <li><i class="fa fa-home"></i><a href="#">Home</a></li>
+                                        <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
                                         <li><a href="customers.php">Customers</a></li>   
                                         <li class="active">Add customer</li>                                    
                                     </ul>
@@ -63,8 +63,7 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h2>Customers</h2>
-                                    <em>a collection of all your customers</em>
+                                    <h1>Customers</h1>
                                 </div>
 
                                 <div class="main-content">

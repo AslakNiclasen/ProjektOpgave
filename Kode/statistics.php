@@ -3,11 +3,10 @@
     require_once("include/security.php");
     require_once("include/connect.php");
     require_once("include/timezone.php");
-    
-    $admins = $conn->query("SELECT * FROM admins ORDER BY name ASC");
+
+    $ads = $conn->query("SELECT * FROM ads WHERE customer_id = '7'");
+    $customers = $conn->query("SELECT * FROM customers ORDER BY name DESC");
 ?>
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,6 +14,51 @@
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("visualization", "1", {packages:["corechart"]});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var options = {
+                    title: 'Ads impressions',
+                    'height': 300,
+                    'legend': {
+                        'position': 'bottom'
+                    }
+                };
+
+<?php
+    foreach($customers as $customer) {
+        $groups = $conn->query("SELECT * FROM groups WHERE customer_id = '". $customer["id"] ."'");
+        
+        foreach($groups as $group) {
+            $ads = $conn->query("SELECT * FROM ads WHERE customer_id = '". $customer["id"] ."' AND group_id = '". $group["id"] ."'");
+            
+            if ($ads->num_rows > 0) {
+                
+                echo "var data = google.visualization.arrayToDataTable([\n";
+                echo "['Ad name', 'Number of impressions', 'Remaining impressions'],\n";
+                
+                $i = 0;
+                foreach ($ads as $ad) {
+                    if ($i == count($ads)+1) {
+                        echo "['". $ad["ad_name"] ."', ". $ad["number_of_impressions"] ." , ". $ad["max_impressions"] ."] \n";
+                    } else {
+                        echo "['". $ad["ad_name"] ."', ". $ad["number_of_impressions"] ." , ". $ad["max_impressions"] ."], \n";
+                    }
+                    
+                    $i++;
+                }
+                echo "]);\n";
+                
+                echo "var chart = new google.visualization.ColumnChart(document.getElementById('chart_div_". $group["id"] ."_". $customer["id"] ."'));\n";
+                echo "chart.draw(data, options);\n\n";
+            }
+        }
+    }
+?>
+            }
+        </script>
     </head>
     <body class="dashboard">
         <div class="wrapper">
@@ -36,65 +80,52 @@
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
-                                        <li class="active">Admins</li>                                    
+                                        <li class="active">Statistics</li>                               
                                     </ul>
                                 </div>
                             </div>
-
-
+                            
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h1>Admins</h1>
+                                    <h1>Statistics</h1>
                                 </div>
-
-                                <a href="admin_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add admin</a>
-                                <br>
-                                <br>
 
                                 <div class="main-content">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <!-- INPUT GROUPS -->
+<?php
+    foreach ($customers as $customer) {
+        $groups = $conn->query("SELECT * FROM groups WHERE customer_id = '". $customer["id"] ."'");
+?>
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-user"></i> Admins</h3>
+                                                    <h3><i class="fa fa-bar-chart-o"></i> Statistics for <?php echo $customer["name"]; ?></h3>
                                                 </div>
                                                 <div class="widget-content">
 <?php
-    if ($admins->num_rows <= 0) {
-        echo "No admins created yet. Create your first admin by clicking <a href='admin_add.php'>here</a>";
-    } else {
+        foreach($groups as $group) {
+            $ads = $conn->query("SELECT * FROM ads WHERE customer_id = '". $customer["id"] ."' AND group_id = '". $group["id"] ."'");
+            if ($ads->num_rows > 0) {
 ?>
-                                                    <table class="table">
-
-                                                        <tr>
-                                                            <th>
-                                                                Name
-                                                            </th>
-                                                            <th>
-                                                                Email
-                                                            </th>
-                                                            <th>
-                                                                Last login
-                                                            </th>
-                                                        </tr>                                           
+                                                    <div class="widget">
+                                                        <div class="widget-header">
+                                                            <h3><i class="fa fa-tags"></i> <?php echo $group["name"]; ?></h3>
+                                                        </div>
+                                                        <div class="widget-content">
+                                                            <div id="chart_div_<?php echo $group["id"]; ?>_<?php echo $customer["id"]; ?>"></div>
+                                                        </div>
+                                                    </div>
 <?php
-        foreach($admins as $admin){
-            echo "<tr>";
-            echo "<td>" . $admin["name"] . "</td>";
-            echo "<td>" . $admin["email"] . "</td>";
-            echo "<td>" . date("d-m-Y H:i:s", strtotime($admin["last_login"])) . "</td>";
-            echo "</tr>";
+            }
         }
-?>              
-                                                    </table>
+?>
+                                                    <div id="chart_div_<?php echo $customer["id"]; ?>"></div>
+                                                </div>
+                                            </div>
 <?php
     }
 ?>
-                                                </div>
-                                            </div>
-                                            <!-- END INPUT GROUPS -->
                                         </div>
                                     </div>
                                     <!-- /row -->
