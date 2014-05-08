@@ -1,3 +1,11 @@
+<?php
+    require_once("include/session.php");
+    require_once("include/security.php");
+    require_once("include/connect.php");
+    require_once("include/timezone.php");
+
+    $ads = $conn->query("SELECT * FROM ads");
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,6 +13,40 @@
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("visualization", "1", {packages:["corechart"]});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Ad name',     'Number of impressions',    'Remaining impressions'],
+                    
+<?php
+    $i = 0;
+    foreach ($ads as $ad) {
+        if ($i == count($ads)+1) {
+            echo "['". $ad["ad_name"] ."', ". $ad["number_of_impressions"] ." , ". $ad["max_impressions"] ."] \n";
+        } else {
+            echo "['". $ad["ad_name"] ."', ". $ad["number_of_impressions"] ." , ". $ad["max_impressions"] ."], \n";
+        }
+        $i++;
+    }
+?>
+                    
+                ]);
+
+                var options = {
+                    title: 'Ads impressions',
+                    'height': 500,
+                    'legend': {
+                        'position': 'bottom'
+                    }
+                };
+
+                var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+                chart.draw(data, options);
+            }
+        </script>
     </head>
     <body class="dashboard">
         <div class="wrapper">
@@ -116,11 +158,27 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h2>Home</h2>
-                                    <em>here is an overview of your ads</em>
+                                    <h2>Statistics</h2>
+                                    <em>how are your ads performing?</em>
                                 </div>
 
                                 <div class="main-content">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="widget">
+                                                <div class="widget-header">
+                                                    <h3><i class="fa fa-bar-chart-o"></i> Statistics</h3>
+                                                </div>
+                                                <div class="widget-content">
+                                                    <div id="chart_div"></div>
+                                                </div>
+                                            </div>
+                                            <!-- END INPUT GROUPS -->
+                                        </div>
+                                    </div>
+                                    <!-- /row -->
+
+
                                 </div>
                                 <!-- /main-content -->
                             </div>

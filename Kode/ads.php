@@ -162,21 +162,38 @@
                                                     <table class="table">
                                                         <tr>
                                                             <th>
-                                                                name
+                                                                Name
                                                             </th>
                                                             <th>
-                                                                customer
+                                                                Customer
                                                             </th>
                                                             <th>
-                                                                group
+                                                                Group
+                                                            </th>
+                                                            <th>
+                                                                Impressions
+                                                            </th>
+                                                            <th>
+                                                                Deadline
                                                             </th>
                                                         </tr>                                           
 <?php
                 foreach($ads as $ad){
                     echo "<tr>";
-                    echo "<td>" . $ad['ad_name'] . "</td>";
-                    echo "<td>" . $ad['customer_name'] . "</td>";
-                    echo "<td>" . $ad['group_name'] . "</td>";
+                    echo "<td>". $ad['ad_name'] ."</td>";
+                    echo "<td>". $ad['customer_name'] . "</td>";
+                    echo "<td>". $ad['group_name'] . "</td>";
+                    if ($ad["max_impressions"] == 0) {
+                        echo "<td>". $ad["number_of_impressions"] ."</td>";
+                    } else {
+                        echo "<td>". $ad['max_impressions'] ." / ". $ad['number_of_impressions'] . "</td>";
+                    }
+                    
+                    if ($ad["ad_deadline"] == "0000-00-00 00:00:00") {
+                        echo "<td>no deadline</td>";
+                    } else {
+                        echo "<td>". date("d-m-Y", strtotime($ad['ad_deadline'])) . "</td>";
+                    }
                     echo "</tr>";
                 }
 ?>              
