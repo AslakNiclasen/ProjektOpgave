@@ -1,25 +1,25 @@
 \select@language {danish}
-\contentsline {section}{\numberline {1}Indledning}{2}{section.1}
-\contentsline {section}{\numberline {2}Abstract}{2}{section.2}
+\contentsline {section}{\numberline {1}Abstract}{2}{section.1}
+\contentsline {section}{\numberline {2}Indledning}{3}{section.2}
 \contentsline {section}{\numberline {3}IT-projektets form\IeC {\r a}l og rammer}{3}{section.3}
 \contentsline {subsection}{\numberline {3.1}FACTOR-kriteriet}{3}{subsection.3.1}
 \contentsline {section}{\numberline {4}Kravspecifikation for IT-l\IeC {\o }sningen}{4}{section.4}
 \contentsline {subsection}{\numberline {4.1}Funktionelle og ikke-funktionelle krav}{4}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}H\IeC {\o }jniveau use case model}{7}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Tre use case modeller}{7}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.3}Tre use case modeller}{8}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Klassediagram}{10}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Sekvensdiagram}{11}{subsection.4.5}
 \contentsline {section}{\numberline {5}Systemdesign sammenfatning}{12}{section.5}
 \contentsline {section}{\numberline {6}Program- og systemtesting}{13}{section.6}
 \contentsline {subsection}{\numberline {6.1}Interne test}{13}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Eksterne test}{13}{subsection.6.2}
-\contentsline {section}{\numberline {7}Brugergr\IeC {\ae }nseflade og interaktionsdesign}{14}{section.7}
-\contentsline {section}{\numberline {8}Versionstyring}{17}{section.8}
-\contentsline {section}{\numberline {9}Projektsamarbejdet}{17}{section.9}
-\contentsline {subsection}{\numberline {9.1}Hvad g\IeC {\r a}r godt?}{17}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Hvad g\IeC {\r a}r mindre godt?}{18}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Hvilke optimeringer i forhold til projektarbejdet kan vi foretage?}{19}{subsection.9.3}
-\contentsline {section}{\numberline {10}Reviews}{20}{section.10}
-\contentsline {subsection}{\numberline {10.1}Review: A rational design process}{20}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Review: Designing for usability}{21}{subsection.10.2}
-\contentsline {section}{\numberline {11}Litteraturliste}{24}{section.11}
+\contentsline {section}{\numberline {7}Brugergr\IeC {\ae }nseflade og interaktionsdesign}{15}{section.7}
+\contentsline {section}{\numberline {8}Versionstyring}{18}{section.8}
+\contentsline {section}{\numberline {9}Projektsamarbejdet}{18}{section.9}
+\contentsline {subsection}{\numberline {9.1}Hvad g\IeC {\r a}r godt?}{18}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Hvad g\IeC {\r a}r mindre godt?}{19}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Hvilke optimeringer i forhold til projektarbejdet kan vi foretage?}{20}{subsection.9.3}
+\contentsline {section}{\numberline {10}Reviews}{21}{section.10}
+\contentsline {subsection}{\numberline {10.1}Review: A rational design process}{21}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Review: Designing for usability}{22}{subsection.10.2}
+\contentsline {section}{\numberline {11}Litteraturliste}{25}{section.11}
