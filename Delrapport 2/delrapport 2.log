@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.28)  11 MAY 2014 15:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.28)  11 MAY 2014 15:08
 entering extended mode
 **delrapport*2.tex
 ("C:\server\apache\htdocs\ProjektOpgave\Delrapport 2\delrapport 2.tex"
@@ -922,135 +922,135 @@ Underfull \hbox (badness 10000) in paragraph at lines 339--348
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 358--365
+Underfull \hbox (badness 10000) in paragraph at lines 357--364
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--371
+Underfull \hbox (badness 10000) in paragraph at lines 367--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--371
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 373--384
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 373--384
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 373--384
+Underfull \hbox (badness 10000) in paragraph at lines 367--370
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 386--395
+Underfull \hbox (badness 10000) in paragraph at lines 372--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--395
+Underfull \hbox (badness 10000) in paragraph at lines 372--383
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--383
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--394
 
  []
 
 [17] [18]
-Overfull \hbox (11.12361pt too wide) in paragraph at lines 399--405
+Overfull \hbox (11.12361pt too wide) in paragraph at lines 398--404
 \OT1/cmr/m/n/12 Artiklen be-skri-ver den ra-tio-nel-le de-sign pro-cess og hvor
 -le-des den-ne er uopnaelig.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--422
+Underfull \hbox (badness 10000) in paragraph at lines 405--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--422
+Underfull \hbox (badness 10000) in paragraph at lines 405--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--422
+Underfull \hbox (badness 10000) in paragraph at lines 405--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--422
+Underfull \hbox (badness 10000) in paragraph at lines 405--421
 
  []
 
 
-Overfull \hbox (4.66118pt too wide) in paragraph at lines 406--422
+Overfull \hbox (4.66118pt too wide) in paragraph at lines 405--421
 \OT1/cmr/m/n/12 Artiklen kom-mer des-u-den med ide-er og me-to-der til at sva-r
 e pa dis-se sprgsmal. 
  []
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 424--448
+Underfull \hbox (badness 10000) in paragraph at lines 423--447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--448
+Underfull \hbox (badness 10000) in paragraph at lines 423--447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--448
+Underfull \hbox (badness 10000) in paragraph at lines 423--447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--448
+Underfull \hbox (badness 10000) in paragraph at lines 423--447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--448
+Underfull \hbox (badness 10000) in paragraph at lines 423--447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--448
+Underfull \hbox (badness 10000) in paragraph at lines 423--447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--448
+Underfull \hbox (badness 10000) in paragraph at lines 423--447
 
  []
 
 <log1.png, id=256, 635.37375pt x 703.62875pt>
 File: log1.png Graphic file (type png)
  <use log1.png>
-Package pdftex.def Info: log1.png used on input line 452.
+Package pdftex.def Info: log1.png used on input line 451.
 (pdftex.def)             Requested size: 390.0pt x 431.90778pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.453 \newpage
+l.452 \newpage
                [2]pdfTeX warning (ext4): destination with the same identifier (
 name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.453 \newpage
+l.452 \newpage
                [3 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/log1.png>
 ] <log2.png, id=263, 548.0475pt x 706.64pt>
 File: log2.png Graphic file (type png)
  <use log2.png>
-Package pdftex.def Info: log2.png used on input line 454.
+Package pdftex.def Info: log2.png used on input line 453.
 (pdftex.def)             Requested size: 390.0pt x 502.86086pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 454--455
+Overfull \hbox (15.0pt too wide) in paragraph at lines 453--454
 [][] 
  []
 
@@ -1058,15 +1058,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.455 \newpage
+l.454 \newpage
                [4 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/log2.png>
 ] <log3.png, id=267, 627.34375pt x 692.5875pt>
 File: log3.png Graphic file (type png)
  <use log3.png>
-Package pdftex.def Info: log3.png used on input line 456.
+Package pdftex.def Info: log3.png used on input line 455.
 (pdftex.def)             Requested size: 390.0pt x 430.57286pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 456--457
+Overfull \hbox (15.0pt too wide) in paragraph at lines 455--456
 [][] 
  []
 
@@ -1074,15 +1074,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.457 \newpage
+l.456 \newpage
                [5 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/log3.png>
 ] <log4.png, id=271, 576.1525pt x 713.66624pt>
 File: log4.png Graphic file (type png)
  <use log4.png>
-Package pdftex.def Info: log4.png used on input line 458.
+Package pdftex.def Info: log4.png used on input line 457.
 (pdftex.def)             Requested size: 390.0pt x 483.0978pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 458--459
+Overfull \hbox (15.0pt too wide) in paragraph at lines 457--458
 [][] 
  []
 
@@ -1090,33 +1090,33 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.459 \newpage
+l.458 \newpage
                [6 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/log4.png>
 ] <log5.png, id=276, 643.40375pt x 445.665pt>
 File: log5.png Graphic file (type png)
  <use log5.png>
-Package pdftex.def Info: log5.png used on input line 460.
+Package pdftex.def Info: log5.png used on input line 459.
 (pdftex.def)             Requested size: 390.0pt x 270.14838pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 460--461
+Overfull \hbox (15.0pt too wide) in paragraph at lines 459--460
 [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 462.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 461.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.462 \end{document}
+l.461 \end{document}
                      [7 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/log
 5.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 462.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 461.
  ("C:\server\apache\htdocs\ProjektOpgave\Delrapport 2\delrapport 2.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 462.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 462.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 461.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 461.
 Package rerunfilecheck Info: File `delrapport*2.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 462.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 461.
  ) 
 Here is how much of TeX's memory you used:
  9255 strings out of 493921
@@ -1137,7 +1137,7 @@ c10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "delrapport 2.pdf" (26 pages, 684638 bytes).
+Output written on "delrapport 2.pdf" (26 pages, 684771 bytes).
 PDF statistics:
  335 PDF objects out of 1000 (max. 8388607)
  74 named destinations out of 1000 (max. 500000)
