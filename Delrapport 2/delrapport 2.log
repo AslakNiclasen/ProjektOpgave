@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.28)  11 MAY 2014 15:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.28)  11 MAY 2014 16:54
 entering extended mode
 **delrapport*2.tex
 ("C:\server\apache\htdocs\ProjektOpgave\Delrapport 2\delrapport 2.tex"
@@ -828,13 +828,13 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 193.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [5] [6]
-<use_case.png, id=155, 568.1225pt x 404.51125pt>
+<use_case.png, id=165, 568.1225pt x 404.51125pt>
 File: use_case.png Graphic file (type png)
  <use use_case.png>
 Package pdftex.def Info: use_case.png used on input line 207.
 (pdftex.def)             Requested size: 284.06055pt x 202.25513pt.
 
-<three_use_cases.png, id=157, 361.35pt x 368.37625pt>
+<three_use_cases.png, id=167, 361.35pt x 368.37625pt>
 File: three_use_cases.png Graphic file (type png)
 
 <use three_use_cases.png>
@@ -857,275 +857,180 @@ Underfull \vbox (badness 10000) detected at line 264
  []
 
 [9 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/three_use_cases.png>]
-<klasse_diagram.png, id=195, 614.295pt x 278.03876pt>
+<klasse_diagram.png, id=205, 614.295pt x 278.03876pt>
 File: klasse_diagram.png Graphic file (type png)
  <use klasse_diagram.png>
 Package pdftex.def Info: klasse_diagram.png used on input line 271.
 (pdftex.def)             Requested size: 307.14674pt x 139.01903pt.
 
+<sekvensdiagram1.png, id=206, 967.615pt x 554.07pt>
+File: sekvensdiagram1.png Graphic file (type png)
+ <use sekvensdiagram1.png>
+Package pdftex.def Info: sekvensdiagram1.png used on input line 278.
+(pdftex.def)             Requested size: 390.0pt x 223.32341pt.
+
+<sekvensdiagram2.png, id=207, 967.615pt x 554.07pt>
+File: sekvensdiagram2.png Graphic file (type png)
+ <use sekvensdiagram2.png>
+Package pdftex.def Info: sekvensdiagram2.png used on input line 283.
+(pdftex.def)             Requested size: 390.0pt x 223.32341pt.
+
+<sekvensdiagram3.png, id=208, 967.615pt x 554.07pt>
+File: sekvensdiagram3.png Graphic file (type png)
+ <use sekvensdiagram3.png>
+Package pdftex.def Info: sekvensdiagram3.png used on input line 288.
+(pdftex.def)             Requested size: 390.0pt x 223.32341pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--289
+
+ []
+
 [10 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/klasse_diagram.png>]
-[11] <customers.png, id=206, 1204.5pt x 511.9125pt>
+[11 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/sekvensdiagram1.png> <C
+:/server/apache/htdocs/ProjektOpgave/Delrapport 2/sekvensdiagram2.png>]
+[12 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/sekvensdiagram3.png>]
+[13] <customers.png, id=231, 1204.5pt x 511.9125pt>
 File: customers.png Graphic file (type png)
  <use customers.png>
-Package pdftex.def Info: customers.png used on input line 299.
+Package pdftex.def Info: customers.png used on input line 314.
 (pdftex.def)             Requested size: 390.0pt x 165.7525pt.
 
-<customer_add.png, id=207, 1204.5pt x 511.9125pt>
+<customer_add.png, id=232, 1204.5pt x 511.9125pt>
 File: customer_add.png Graphic file (type png)
  <use customer_add.png>
-Package pdftex.def Info: customer_add.png used on input line 305.
+Package pdftex.def Info: customer_add.png used on input line 320.
 (pdftex.def)             Requested size: 390.0pt x 165.7525pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ads.png, id=208, 1204.5pt x 511.9125pt>
+<ads.png, id=233, 1204.5pt x 511.9125pt>
 File: ads.png Graphic file (type png)
  <use ads.png>
-Package pdftex.def Info: ads.png used on input line 312.
+Package pdftex.def Info: ads.png used on input line 327.
 (pdftex.def)             Requested size: 390.0pt x 165.7525pt.
- [12 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/customers.png (PNG cop
-y)>]
-<ad_add.png, id=216, 1204.5pt x 821.0675pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<ad_add.png, id=234, 1204.5pt x 821.0675pt>
 File: ad_add.png Graphic file (type png)
  <use ad_add.png>
-Package pdftex.def Info: ad_add.png used on input line 318.
+Package pdftex.def Info: ad_add.png used on input line 333.
 (pdftex.def)             Requested size: 390.0pt x 265.85403pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<statistics.png, id=217, 1186.4325pt x 632.3625pt>
+<statistics.png, id=235, 1186.4325pt x 632.3625pt>
 File: statistics.png Graphic file (type png)
  <use statistics.png>
-Package pdftex.def Info: statistics.png used on input line 325.
+Package pdftex.def Info: statistics.png used on input line 340.
 (pdftex.def)             Requested size: 390.0pt x 207.86975pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/customer_add.png (PNG c
-opy)> <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/ads.png (PNG copy)>]
+[14 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/customers.png (PNG copy
+)>] [15 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/customer_add.png (P
+NG copy)> <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/ads.png (PNG copy
+)>]
 Overfull \vbox (17.65991pt too high) has occurred while \output is active []
 
 
-[14 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/ad_add.png (PNG copy)> 
+[16 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/ad_add.png (PNG copy)> 
 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/statistics.png (PNG copy)>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--348
+Underfull \hbox (badness 10000) in paragraph at lines 354--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--348
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 357--364
+Underfull \hbox (badness 10000) in paragraph at lines 354--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--370
+Underfull \hbox (badness 10000) in paragraph at lines 372--379
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 382--385
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--370
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 372--383
+Underfull \hbox (badness 10000) in paragraph at lines 382--385
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--383
+Underfull \hbox (badness 10000) in paragraph at lines 387--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--383
+Underfull \hbox (badness 10000) in paragraph at lines 387--398
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--394
+Underfull \hbox (badness 10000) in paragraph at lines 387--398
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 400--409
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--394
+Underfull \hbox (badness 10000) in paragraph at lines 400--409
 
  []
 
-[17] [18]
-Overfull \hbox (11.12361pt too wide) in paragraph at lines 398--404
+
+Overfull \hbox (11.12361pt too wide) in paragraph at lines 412--418
 \OT1/cmr/m/n/12 Artiklen be-skri-ver den ra-tio-nel-le de-sign pro-cess og hvor
 -le-des den-ne er uopnaelig.
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--421
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--421
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 419--423
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--421
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--421
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 426--438
 
  []
 
+[21] [22] [23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 471.
+ [24]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 471.
 
-Overfull \hbox (4.66118pt too wide) in paragraph at lines 405--421
-\OT1/cmr/m/n/12 Artiklen kom-mer des-u-den med ide-er og me-to-der til at sva-r
-e pa dis-se sprgsmal. 
- []
-
-[1]
-Underfull \hbox (badness 10000) in paragraph at lines 423--447
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--447
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--447
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--447
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--447
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--447
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--447
-
- []
-
-<log1.png, id=256, 635.37375pt x 703.62875pt>
-File: log1.png Graphic file (type png)
- <use log1.png>
-Package pdftex.def Info: log1.png used on input line 451.
-(pdftex.def)             Requested size: 390.0pt x 431.90778pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.452 \newpage
-               [2]pdfTeX warning (ext4): destination with the same identifier (
-name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.452 \newpage
-               [3 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/log1.png>
-] <log2.png, id=263, 548.0475pt x 706.64pt>
-File: log2.png Graphic file (type png)
- <use log2.png>
-Package pdftex.def Info: log2.png used on input line 453.
-(pdftex.def)             Requested size: 390.0pt x 502.86086pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 453--454
-[][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.454 \newpage
-               [4 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/log2.png>
-] <log3.png, id=267, 627.34375pt x 692.5875pt>
-File: log3.png Graphic file (type png)
- <use log3.png>
-Package pdftex.def Info: log3.png used on input line 455.
-(pdftex.def)             Requested size: 390.0pt x 430.57286pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 455--456
-[][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.456 \newpage
-               [5 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/log3.png>
-] <log4.png, id=271, 576.1525pt x 713.66624pt>
-File: log4.png Graphic file (type png)
- <use log4.png>
-Package pdftex.def Info: log4.png used on input line 457.
-(pdftex.def)             Requested size: 390.0pt x 483.0978pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 457--458
-[][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.458 \newpage
-               [6 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/log4.png>
-] <log5.png, id=276, 643.40375pt x 445.665pt>
-File: log5.png Graphic file (type png)
- <use log5.png>
-Package pdftex.def Info: log5.png used on input line 459.
-(pdftex.def)             Requested size: 390.0pt x 270.14838pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 459--460
-[][] 
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 461.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.461 \end{document}
-                     [7 <C:/server/apache/htdocs/ProjektOpgave/Delrapport 2/log
-5.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 461.
- ("C:\server\apache\htdocs\ProjektOpgave\Delrapport 2\delrapport 2.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 461.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 461.
+("C:\server\apache\htdocs\ProjektOpgave\Delrapport 2\delrapport 2.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 471.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 471.
 Package rerunfilecheck Info: File `delrapport*2.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 461.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 471.
  ) 
 Here is how much of TeX's memory you used:
- 9255 strings out of 493921
- 137885 string characters out of 3144873
- 221498 words of memory out of 3000000
+ 9263 strings out of 493921
+ 138144 string characters out of 3144873
+ 221528 words of memory out of 3000000
  12347 multiletter control sequences out of 15000+200000
  11426 words of font info for 40 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,8n,38p,853b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,8n,38p,1266b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Signar\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 \tcrm1200.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
@@ -1137,9 +1042,9 @@ c10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "delrapport 2.pdf" (26 pages, 684771 bytes).
+Output written on "delrapport 2.pdf" (25 pages, 403090 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
- 242 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 363 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 248 words of extra memory for PDF output out of 10000 (max. 10000000)
 

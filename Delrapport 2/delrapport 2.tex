@@ -272,6 +272,21 @@ Vores klasser er følgende: administrator, kunde, gruppe og reklame. Forholdet m
   \caption{Klassediagram}
 \end{figure}
 
+\subsection{Sekvensdiagram}
+Sekvensdiagram over oprettelse af kunde.
+\\
+\includegraphics[width=\textwidth]{sekvensdiagram1.png}
+\\
+\\
+Sekvensdiagram over oprettelse af gruppe
+\\
+\includegraphics[width=\textwidth]{sekvensdiagram2.png}
+\\
+\\
+Sekvensdiagram over oprettelse af reklame
+\\
+\includegraphics[width=\textwidth]{sekvensdiagram3.png}
+
 \section{Systemdesign sammenfatning}
 Vi er nået dertil, at Treu Media kan oprette kunder, grupper og reklamer. Vi har lavet en grov skitse af systemet, men mangler at implementere nogle funktioner, som f.eks. at give Treu Media mulighed for at ændre en kunde, gruppe og reklame. Vi skal også sørge for at beskytte imod SQL-injections og sikre os, at de krævede felter faktisk bliver udfyldt, når Treu Media f.eks. opretter en reklame. Den vigtigste funktion vi mangler, er at vise en reklame på en hjemmeside. Der findes flere muligheder for, hvordan vi kan lave denne del af systemet. Vi har diskuteret fordele og ulemper ved de forskellige muligheder, og har ikke truffet en endelig beslutning. Højst sandsynligt vælger vi en løsning, hvor kunden skal tilføje en javascript-fil til hjemmesiden, som henter og placerer reklamerne på hjemmesiden.
 
@@ -341,10 +356,10 @@ Vi benytter GitHub til versionstyring. Vores projekt ligger på
 \url{http://github.com/AslakNiclasen/ProjektOpgave}.
 \newline
 \\
-Da vi commiter flere gange i løbet af en programmerings-session, giver det ikke rigtig nogen mening at vedhæfte vores commit-log fordi den er så lang. Den er også offentlig, så alle kan gå ind og se den. Vi har hellere ikke valgt at vedhæfte vores kode, da den også er offentlig.
+Da vi commiter flere gange i løbet af en programmerings-session, giver det ikke rigtig nogen mening at vedhæfte vores commit-log fordi den er så lang. Den er også offentligt tilgængelig, så alle kan gå ind og se den. Vi har heller ikke valgt at vedhæfte vores kode, da den også er offentlig.
 \newline
 \\
-Vi har valgt at commite tit, så vi undgår risikoen ved at den stor del af arbejdet går tabt, hvis uheldet er ude. Grunden til, at Aslak ikke har commited lige så ofte, som de andre er fordi, at han har problemer med Git på sin computer.
+Vi har valgt at commite tit, så vi undgår risikoen ved at en stor del af arbejdet går tabt, hvis uheldet er ude. Grunden til, at Aslak ikke har commited lige så ofte, som de andre er fordi, at han har problemer med Git på sin computer.
 
 
 \section{Projektsamarbejdet}
@@ -392,70 +407,65 @@ Vi vil holde lidt flere møder fremover, alt efter behov. Gruppen arbejder velfu
 \\
 Gruppen begynder planlægning fremover telefonisk med interessenten, og så vil der fra møde til møde indgå klare dagsordner hvis projektet skal fungere optimalt når gruppen skal diskutere emner mere dybdegående med denne.  
 
-\newpage
-\pagenumbering{gobble}
-\section{Bilag 1 - Review: A rational design process}
-Artiklen beskriver den rationelle design process og hvorledes denne er uopnåelig. Dette skyldes i høj grad uvished og menneskelige fejl, men problemet opstår også ved komplexiteten af store programmer. Denne komplexitet gør det svært at overskue processen og alle dens detaljer, hvilket fører til menneskelige fejl. Man kan løse dette problem med burgen af dokumentation.
-Artiklen fokuserer på hvordan man skaber en fiktiv rationel process, som man herefter følger bedst muligt.
+\section{Reviews}
+\subsection{Review: A rational design process}
+Artiklen beskriver den rationelle design process og hvorledes denne er uopnåelig. Dette skyldes i høj grad uvished og menneskelige fejl, men problemet opstår også ved kompleksiteten af store programmer \cite[side~251]{ardp}. Denne komplexitet gør det svært at overskue processen og alle dens detaljer, hvilket fører til menneskelige fejl. Man kan løse dette problem med brugen af dokumentation.
+Artiklen fokuserer på, hvordan man skaber en fiktiv rationel process, som man herefter følger bedst muligt \cite[side~252]{ardp}.
 Dette kaldes en forfalskning af design processen.
 Ovenstående kan gennemføres ved brug af forskellige former for dokumentation, hvoraf den vigtigste er et
-requirements document. Dette dokument indholder informationen om projektet klart og præcist overodnet - ikke mere.
+requirements document. Dette dokument indholder informationen om projektet klart og præcist overodnet - ikke mere \cite[side~252-253]{ardp}.
 Derudover findes der modul guides som definerer ansvar mellem de medvirkende i et projekt.
 
-Til sidst i artiklen sættes der fokus på en diskussion omkring esencen i at dokumentere software før under og efter en designprocess. Der fokuseres på hvilke problemer der opstår, hvilke styrker og svagheder der findes i dokumentationen, og hvordan man optimere styrkerne, og forminsker svaghederne mest muligt, sådan at målet, den rationelle design process, bliver realiseret så meget så muligt.
+Til sidst i artiklen sættes der fokus på en diskussion omkring esencen i at dokumentere software før under og efter en designprocess. Der fokuseres på hvilke problemer der opstår, hvilke styrker og svagheder der findes i dokumentationen, og hvordan man optimere styrkerne, og forminsker svaghederne mest muligt, sådan at målet, den rationelle design process, bliver realiseret så meget så muligt\cite[side~255]{ardp}.
 \\
 \\
-Der rejser sig følgende tanker omkring artiklen:
-Hvorfor er det så svært at lave en perfekt design process
-\\
-"we will never find a process that allows us to design software in a perfectly rational way"
-\\
-\\
-hvorfor opstår der redundans i kode når man har lagt klare retningslinier fra start i et projekt?
-\\
-\\
-Hvordan skaber man god dokumentation til sit program, sådan at dette kan bruges til fremtidige vedligeholdere.
-\\
-\\
-Artiklen kommer desuden med ideer og metoder til at svare på disse spørgsmål.
+Det er tydeligt at se, hvordan opfattelsen af at løse et problem mest effektivt er meget bred. Der findes utallige muligheder, som alle har deres styrker og svagheder. Vi oplever dog samtidigt, at alle disse mulige fremgangsmåder har enkelte dele, som synes at være ens. Disse teoretiske og også praktiske dele er helt essentielle for alle opfattelser. De ses også her i denne artikel. Et godt eksempel på dette er artiklens beskrevede requirements document. Dette er i og for sig knyttet til forfatterens opfattelse af at løse et problem, men hele kernen ved brugen af dette dokument, sætter et øget fokus på vigtigheden af dokumentet. Vi finder samme typer af dokumenter i både agile arbejdsmetoder, som f.eks. Scrum metoden, men også i mere lukkede arbejdsmetoder som f.eks. vandfaldsmetoden. I vores projekt danner disse delrapporter i samme forstand en forståelse for arbejdsmetoden vi benytter. Et dokument der fungerer som en helhed. Et dokument der præcist beskriver, hvad målet og dets måde at opnå dette på, bliver yderst centralt i enhver design process. Hvad end man er en enkelt person, eller flere 100 mennesker i et projekt, så er denne type dokument altid omdrejningspunktet, som man vender tilbage til.
 
-\section{Bilag 2 - Review: Designing for usability}
-Artikelen beskriver tre principper for system design. Forfatterne mener at hvis
-hvis man overholder de tre principper, så vil man med garanti få udviklet et brugervenligt system.  
-De tre principper er følgende:
-\newline
-\\
-Tidelig og løbende fokus/kontakt med brugerne.
-\\
-\\
-Emperisk(erfaringsbaseret) testing af anvendelse af systemet.
-\\
-\\
-iterativt design (tester, modificere, tester, modificere...) 
-\\
-\\
-Der findes metoder der mod strider metodern:
-\\
-\\
-Lav det rigtigt første gang 
-\\
-\\
-tiltro til design guidelines
-\\
-\\
-De tre hovedregler er ikke intuitive for designere. 
 
-Til slut giver artiklen et eksempel på et projekt hvor forfatternes principper har været nyttige.
+\subsection{Review: Designing for usability}
+"Designing for Usability: Key Principles and What Designers Think" - Kursiv
+beskriver tre hovedprincipper inden for system design. Artiklens forfattere John D. Gould og Clayton Lewis er fortalere for disse tre principper. De har i en lang årrække indenfor systemdesign benyttet sig af disse.
+Artiklen beskriver først og fremmest de 3 principper overordnet, og sætter dernæst fokus på hvordan man, af flere grunde, ikke bruger dem i praksis. Forfatterne vælger udfra disse grunde at underbygge og fremane en bedre forståelse for principperne. Til sidst i artiklen tages der et reelt projekt fra IBM og sættes i kontrast principperne, da projektets design process har benyttet sig af disse.
+\\
+\\
+De tre principper som beskrives i artiklen er:
+\\
+- Tidligt fokus på brugere og deres opgaver.
+\\
+- Emperiske målinger: observationer, analyser og registreringer af brugere i systemet.
+\\
+- Iterativt Design: et system design som løbende i processen udvikles i takt med at projektet forløber.\cite[side~300]{dfu}
 
-\section{Bilag 3 - Commit log}
-\includegraphics[width=\linewidth]{log1.png}
+Problemerne ved systemdesignere i praksis:
+Som nævnt underbygger forfatternes argumenter for en bedre forståelse af principperne.
+De tre principper burde være implicite for designerne, men desværre er det ikke tilfældet. Det problem adresseres også i section 2 i artiklen, hvor forfatterne har interviewet en større gruppe designere ift. deres erfaringer om systemdesign. Og det viser sig generelt, at designerne ikke benytter sig af principperne.\cite[side~301]{dfu}
+
+Det store problem ved designprocessen munder ud i, at designerne ikke benytter alle tilgængelige virkemidler optimalt. Deraf bliver det endelige design ikke er fuldt ud så godt som det kunne blive. Ydermere nævnes der forskellige typer af problemer til grund for dette store problem. F.eks. at man som designer ikke ser princippet som værende værd at følge; misforståelse af begreber som er næsten identiske, men har kritiske forskelligeheder i praksis; brugerinteraktionen og udviklerinteraktionen nedprioriteres og underestimeres; man føler at principperne er upraktiske og uhåndterlige som designer. \cite[side~303]{dfu}
+
+De tre principper er hele tiden omdrejningspunktet for artiklen. Men det er en nødvendighed, da de sættes i kontrast til andre principper for system design og projektudvikling, som f.eks. "Design guidelines" og "getting it right the first time". \cite[side~304]{dfu}
+
+Ligesom i den første artikel, ser vi også at processen for et design har mange muligheder, og man kan ikke enes om hvad der er bedst. Dette problem beskrives også af forfatterne (principles of design are arguable, including these)\cite[side~303]{dfu}, men samtidigt bruger de igen argumenter til at understøtte hvorfor deres principper burde følges.
+
+Vi finder disse principper andre steder. F.eks. den iterative designprocess ses i alle former for agile arbejdsprocesser, da hele omdrejningspunktet bliver optimering på baggrund af testning. Denne cyklus skaber et frugtbart resultat sammen med de andre principper i IBM's ADS udviklingsproces, beskrevet i artiklen.\cite[side~309]{dfu}
+
+Også i vores projekt finder vi paralleler til artiklens synspunkter. Herunder de sidste to principper:
+Værd at nævne er en af de former for emperiske målinger projektgruppen kommer til at benytte. Artiklen nævner: "Users should be given simple tasks to carry out, and their performance, thoughts, and attitudes should be recorded and analyzed" \cite[side~302]{dfu}. Det er noget projektgruppen kommer til at gøre med interessenten i et tænke højt forsøg lidt længere fremme i projektet.
+Desuden vil unit testning og andre interne systemtests kunne foretages, hvilket vil kunne placeres under en løbende og skiftende design process med testning, også benævnt som Iterativt Design.
+
 \newpage
-\includegraphics[width=\linewidth]{log2.png}
-\newpage
-\includegraphics[width=\linewidth]{log3.png}
-\newpage
-\includegraphics[width=\linewidth]{log4.png}
-\newpage
-\includegraphics[width=\linewidth]{log5.png}
+\section{Litteraturliste}
+
+\begin{thebibliography}{9}
+
+\bibitem{dfu}
+	John D. Gould, Clayton Lewis.
+	\emph{Designing For Usability: Key Principles And What Designers Think}.
+	Communcations of the ACM: 28 (March 1985)
+	
+\bibitem{ardp}
+	David Lorge Parnas, Paul C. Clements.
+	\emph{A Rational Design Process: How and Why to Fake It}.
+	IEEE Transations On Software Engineering: SE-12 (Februar 1986)
+\end{thebibliography}
 
 \end{document}

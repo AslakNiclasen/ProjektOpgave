@@ -8,16 +8,18 @@
 \contentsline {subsection}{\numberline {4.2}H\IeC {\o }jniveau use case model}{7}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Tre use case modeller}{7}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Klassediagram}{10}{subsection.4.4}
-\contentsline {section}{\numberline {5}Systemdesign sammenfatning}{10}{section.5}
-\contentsline {section}{\numberline {6}Program- og systemtesting}{11}{section.6}
-\contentsline {subsection}{\numberline {6.1}Interne test}{11}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Eksterne test}{11}{subsection.6.2}
-\contentsline {section}{\numberline {7}Brugergr\IeC {\ae }nseflade og interaktionsdesign}{12}{section.7}
-\contentsline {section}{\numberline {8}Versionstyring}{15}{section.8}
-\contentsline {section}{\numberline {9}Projektsamarbejdet}{15}{section.9}
-\contentsline {subsection}{\numberline {9.1}Hvad g\IeC {\r a}r godt?}{15}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Hvad g\IeC {\r a}r mindre godt?}{17}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Hvilke optimeringer i forhold til projektarbejdet kan vi foretage?}{17}{subsection.9.3}
-\contentsline {section}{\numberline {10}Bilag 1 - Review: A rational design process}{}{section.10}
-\contentsline {section}{\numberline {11}Bilag 2 - Review: Designing for usability}{}{section.11}
-\contentsline {section}{\numberline {12}Bilag 3 - Commit log}{}{section.12}
+\contentsline {subsection}{\numberline {4.5}Sekvensdiagram}{11}{subsection.4.5}
+\contentsline {section}{\numberline {5}Systemdesign sammenfatning}{12}{section.5}
+\contentsline {section}{\numberline {6}Program- og systemtesting}{13}{section.6}
+\contentsline {subsection}{\numberline {6.1}Interne test}{13}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Eksterne test}{13}{subsection.6.2}
+\contentsline {section}{\numberline {7}Brugergr\IeC {\ae }nseflade og interaktionsdesign}{14}{section.7}
+\contentsline {section}{\numberline {8}Versionstyring}{17}{section.8}
+\contentsline {section}{\numberline {9}Projektsamarbejdet}{17}{section.9}
+\contentsline {subsection}{\numberline {9.1}Hvad g\IeC {\r a}r godt?}{17}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Hvad g\IeC {\r a}r mindre godt?}{18}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Hvilke optimeringer i forhold til projektarbejdet kan vi foretage?}{19}{subsection.9.3}
+\contentsline {section}{\numberline {10}Reviews}{20}{section.10}
+\contentsline {subsection}{\numberline {10.1}Review: A rational design process}{20}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Review: Designing for usability}{21}{subsection.10.2}
+\contentsline {section}{\numberline {11}Litteraturliste}{24}{section.11}
