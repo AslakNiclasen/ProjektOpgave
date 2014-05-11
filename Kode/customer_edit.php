@@ -3,9 +3,21 @@
     require_once("include/security.php");
     require_once("include/connect.php");
     require_once("include/timezone.php");
-    
-    $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
+
+    $id = $_GET["id"];
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $customer_name = $_POST["customer_name"];
+        $customer_url = $_POST["customer_url"];
+        
+        $conn->query("UPDATE customers SET name = '". $customer_name ."', url = '". $customer_url ."' WHERE id = '". $id ."'");
+        
+        header("location: customers.php");
+    } else {
+        $customer = $conn->query("SELECT * FROM customers WHERE id = '". $id ."'")->fetch_assoc();
+    }
 ?>
+
 
 
 <!DOCTYPE html>
@@ -36,7 +48,8 @@
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
-                                        <li class="active">Customers</li>                             
+                                        <li><a href="customers.php">Customers</a></li>   
+                                        <li class="active">Edit customer</li>                                    
                                     </ul>
                                 </div>
                             </div>
@@ -45,12 +58,8 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h1>Customers</h1>
+                                    <h1>Edit customer</h1>
                                 </div>
-
-                                <a href="customer_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add customer</a>
-                                <br>
-                                <br>
 
                                 <div class="main-content">
                                     <div class="row">
@@ -58,44 +67,22 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-group"></i> Customers</h3>
+                                                    <h3><i class="fa fa-group"></i> Edit customer</h3>
                                                 </div>
                                                 <div class="widget-content">
-<?php
-    if ($customers->num_rows <= 0) {
-        echo "No customer created yet. Create your first customer by clicking <a href='customer_add.php'>here</a>";
-    } else {
-?>
-                                                    <table class="table">
-
-                                                        <tr>
-                                                            <th>
-                                                                Name
-                                                            </th>
-                                                            <th>
-                                                                URL
-                                                            </th>
-                                                            <th>
-                                                                Access Token
-                                                            </th>
-                                                            <th>
-                                                                &nbsp;
-                                                            </th>
-                                                        </tr>                              
-<?php
-        foreach($customers as $customer){
-            echo "<tr>";
-            echo "<td><a href='customer_edit.php?id=". $customer["id"] ."' title='Edit customer'>" . $customer["name"] . "</a></td>";
-            echo "<td>" . $customer["url"] . "</td>";
-            echo "<td>" . $customer["access_token"] . "</td>";
-            echo "<td><a href='customer_edit.php?id=". $customer["id"] ."'><i class='fa fa-wrench' title='Edit customer'></i></a> &nbsp;&nbsp;&nbsp;&nbsp; <i class='fa fa-trash-o' id='customer_delete_". $customer["id"] ."' title='Delete customer'></i></td>";
-            echo "</tr>";
-        }
-?>              
-                                                    </table>
-<?php
-    }
-?>
+                                              
+                                                   <form role="form" method="post" action="customer_edit.php?id=<?php echo $id; ?>">
+                                                      <div class="form-group">
+                                                        <label for="customer_name">Name</label>
+                                                        <input type="text" name="customer_name" id="customer_name" class="form-control" placeholder="Enter Name" value="<?php echo $customer["name"]; ?>">
+                                                      </div>
+                                                      <div class="form-group">
+                                                        <label for="customer_url">URL (Customer's website)</label>
+                                                        <input type="text" name="customer_url" id="customer_url" class="form-control" placeholder="URL" value="<?php echo $customer["url"]; ?>">
+                                                      </div>
+                                                      <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o fa-inverse"></i> Save changes</button>
+                                                    </form>
+                                                    
                                                 </div>
                                             </div>
                                             <!-- END INPUT GROUPS -->
@@ -132,22 +119,5 @@
         <script type="text/javascript" src="assets/js/king-chart-stat.js"></script>
         <script type="text/javascript" src="assets/js/king-table.js"></script>
         <script type="text/javascript" src="assets/js/king-components.js"></script>
-        <script>
-            $(document).ready(function() {
-                $("i, a").tooltip();
-                
-                $("i[id^='customer_delete_']").click(function() {
-                    var id = $(this).attr("id").split("_")[2];
-                    
-                    console.log(id);
-                    
-                    /*
-                    $.post("ajax_customer_delete.php", { id: id }, function(response) {
-                        console.log(response);
-                    });
-                    */
-                });
-            });
-        </script>
     </body>
 </html>

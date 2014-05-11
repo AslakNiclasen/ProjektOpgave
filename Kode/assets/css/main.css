@@ -8201,3 +8201,7 @@ ul.nav-categories > li > a {
   background-color: #555555;
   font-size: 0.8em;
 }
+
+.fa-wrench {
+    color: #000;
+}
