@@ -1,14 +1,15 @@
 \select@language {danish}
-\contentsline {section}{\numberline {1}Indledning}{2}{section.1}
-\contentsline {section}{\numberline {2}Abstract}{2}{section.2}
-\contentsline {section}{\numberline {3}IT-projektets form\IeC {\r a}l og rammer}{2}{section.3}
-\contentsline {subsection}{\numberline {3.1}FACTOR-kriteriet}{2}{subsection.3.1}
+\contentsline {section}{\numberline {1}Abstract}{2}{section.1}
+\contentsline {section}{\numberline {2}Indledning}{3}{section.2}
+\contentsline {section}{\numberline {3}IT-projektets form\IeC {\r a}l og rammer}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}FACTOR-kriteriet}{3}{subsection.3.1}
 \contentsline {section}{\numberline {4}Kravspecifikation for IT-l\IeC {\o }sningen}{4}{section.4}
-\contentsline {section}{\numberline {5}Systemdesign sammenfatning}{4}{section.5}
-\contentsline {section}{\numberline {6}Program- og systemtest}{4}{section.6}
-\contentsline {section}{\numberline {7}Brugergr\IeC {\ae }nseflade og interaktionsdesign}{4}{section.7}
-\contentsline {section}{\numberline {8}Versionstyring}{4}{section.8}
-\contentsline {section}{\numberline {9}Projektsamarbejdet}{4}{section.9}
-\contentsline {section}{\numberline {10}Reviews}{4}{section.10}
-\contentsline {subsection}{\numberline {10.1}Review: No Silver Bullet}{4}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Review: Mocking-it-up or Hands-on The Future}{4}{subsection.10.2}
+\contentsline {subsection}{\numberline {4.1}Funktionelle og ikke-funktionelle krav}{4}{subsection.4.1}
+\contentsline {section}{\numberline {5}Systemdesign sammenfatning}{8}{section.5}
+\contentsline {section}{\numberline {6}Program- og systemtest}{8}{section.6}
+\contentsline {section}{\numberline {7}Brugergr\IeC {\ae }nseflade og interaktionsdesign}{8}{section.7}
+\contentsline {section}{\numberline {8}Versionstyring}{8}{section.8}
+\contentsline {section}{\numberline {9}Projektsamarbejdet}{8}{section.9}
+\contentsline {section}{\numberline {10}Reviews}{8}{section.10}
+\contentsline {subsection}{\numberline {10.1}Review: No Silver Bullet}{8}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Review: Mocking-it-up or Hands-on The Future}{8}{subsection.10.2}
