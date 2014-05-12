@@ -42,8 +42,8 @@
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
-                                        <li><a href="groups.php">Groups</a></li>
-                                        <li class="active">Add group</li>
+                                        <li><a href="groups.php">Zones</a></li>
+                                        <li class="active">Create zone</li>
                                     </ul>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h1>Groups</h1>
+                                    <h1>Create zone</h1>
                                 </div>
 
                                 <div class="main-content">
@@ -61,21 +61,21 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-tags"></i> Groups</h3>
+                                                    <h3><i class="fa fa-sitemap"></i> Create zone</h3>
                                                 </div>
                                                 <div class="widget-content">
 <?php
     if ($customers->num_rows <= 0) {
-        echo "<td>No customer created yet. Create your first customer by clicking <a href='customer_add.php'>here</a></td>";
+        echo "<td>No sites created yet. Create your first site by clicking <a href='customer_add.php'>here</a></td>";
     } else {
 ?>
                                                     <form role="form" method="post" action="group_add.php">
                                                         <div class="form-group">
-                                                            <label for="exampleInputEmail1">Group description</label>
+                                                            <label for="exampleInputEmail1">Zone description</label>
                                                             <input type="text" class="form-control" name="groupname" id="groupname" placeholder="Group name">
                                                         </div>
                                                         <div class="form-group">
-                                                            <label for="exampleInputPassword1">Group belongs to customer</label>
+                                                            <label for="exampleInputPassword1">Zone belongs to site</label>
                                                             <select class="form-control" name="customer_id">
 <?php
         foreach($customers as $customer) {
@@ -84,7 +84,7 @@
 ?>
                                                             </select>
                                                         </div>
-                                                        <button type="submit" class="btn btn-primary">Create group now</button>
+                                                        <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o fa-inverse"></i> Create zone now</button>
                                                     </form>
 <?php
     }

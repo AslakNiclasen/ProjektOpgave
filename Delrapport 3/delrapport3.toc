@@ -9,5 +9,6 @@
 \contentsline {section}{\numberline {7}Brugergr\IeC {\ae }nseflade og interaktionsdesign}{4}{section.7}
 \contentsline {section}{\numberline {8}Versionstyring}{4}{section.8}
 \contentsline {section}{\numberline {9}Projektsamarbejdet}{4}{section.9}
-\contentsline {section}{\numberline {10}Bilag 1 - Review: No silver bullet}{}{section.10}
-\contentsline {section}{\numberline {11}Bilag 2 - Review: Mocking-it-up or hands-on the future}{}{section.11}
+\contentsline {section}{\numberline {10}Reviews}{4}{section.10}
+\contentsline {subsection}{\numberline {10.1}Review: No Silver Bullet}{4}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Review: Mocking-it-up or Hands-on The Future}{4}{subsection.10.2}

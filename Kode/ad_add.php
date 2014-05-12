@@ -67,8 +67,8 @@
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
-                                        <li><a href="ads.php">Ads</a></li>   
-                                        <li class="active">Add ad</li>                                    
+                                        <li><a href="ads.php">Ads</a></li>
+                                        <li class="active">Create ad</li>
                                     </ul>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h1>Ad</h1>
+                                    <h1>Create ad</h1>
                                 </div>
 
                                 <div class="main-content">
@@ -86,7 +86,7 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-picture-o"></i> Add ad</h3>
+                                                    <h3><i class="fa fa-picture-o"></i> Create ad</h3>
                                                 </div>
                                                 <div class="widget-content">
 <?php
@@ -136,7 +136,7 @@
                                                             <input type="file" id="ad_file" name="ad_file">
                                                         </div>
                                                         <br>
-                                                        <button type="submit" class="btn btn-primary" id="create_submit">Create ad now</button>
+                                                        <button type="submit" class="btn btn-primary" id="create_submit"><i class="fa fa-floppy-o fa-inverse"></i> Create ad now</button>
                                                         <br>
                                                         <br>
                                                         <br>

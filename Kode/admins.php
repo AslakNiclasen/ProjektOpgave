@@ -48,7 +48,7 @@
                                     <h1>Admins</h1>
                                 </div>
 
-                                <a href="admin_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add admin</a>
+                                <a href="admin_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Create admin</a>
                                 <br>
                                 <br>
 

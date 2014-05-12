@@ -44,10 +44,10 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h1>Groups</h1>
+                                    <h1>Zones</h1>
                                 </div>
 
-                                <a href="group_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add group</a>
+                                <a href="group_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Create zone</a>
                                 <br>
                                 <br>
 
@@ -57,25 +57,25 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-tags"></i> Groups</h3>
+                                                    <h3><i class="fa fa-sitemap"></i> Zones</h3>
                                                 </div>
                                                 <div class="widget-content">
                                                     
 <?php
     if ($customers->num_rows <= 0) {
-        echo "No customer created yet. Create your first customer by clicking <a href='customer_add.php'>here</a>";
+        echo "No sites created yet. Create your first site by clicking <a href='customer_add.php'>here</a>";
     } else {
         if ($groups->num_rows <= 0) {
-            echo "No group created yet. Create your first group by clicking <a href='group_add.php'>here</a>";
+            echo "No zones created yet. Create your first zone by clicking <a href='group_add.php'>here</a>";
         } else {
 ?>
                                                     <table class="table">
                                                         <tr>
                                                             <th>
-                                                                Group description
+                                                                Zone description
                                                             </th>
                                                             <th>
-                                                                Belongs to customer
+                                                                Belongs to site
                                                             </th>
                                                         </tr>
 <?php

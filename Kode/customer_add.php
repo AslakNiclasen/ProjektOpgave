@@ -53,8 +53,8 @@
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
-                                        <li><a href="customers.php">Customers</a></li>   
-                                        <li class="active">Add customer</li>                                    
+                                        <li><a href="customers.php">Sites</a></li>   
+                                        <li class="active">Create site</li>                                    
                                     </ul>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h1>Customers</h1>
+                                    <h1>Create site</h1>
                                 </div>
 
                                 <div class="main-content">
@@ -72,7 +72,7 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-group"></i> Customers</h3>
+                                                    <h3><i class="fa fa-group"></i> Create site<h3>
                                                 </div>
                                                 <div class="widget-content">
                                               
@@ -82,10 +82,10 @@
                                                         <input type="text" name="customer_name" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
                                                       </div>
                                                       <div class="form-group">
-                                                        <label for="exampleInputPassword1">URL (Customer's website)</label>
+                                                        <label for="exampleInputPassword1">URL</label>
                                                         <input type="text" name="url" class="form-control" id="exampleInputPassword1" placeholder="URL">
                                                       </div>
-                                                      <button type="submit" class="btn btn-primary">Create customer now</button>
+                                                      <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o fa-inverse"></i> Create site now</button>
                                                     </form>
                                                     
                                                 </div>

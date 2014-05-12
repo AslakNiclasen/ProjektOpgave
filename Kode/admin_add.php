@@ -54,7 +54,7 @@
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
                                         <li><a href="admins.php">Admins</a></li>   
-                                        <li class="active">Add admin</li>                                    
+                                        <li class="active">Create admin</li>                                    
                                     </ul>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h1>Admins</h1>
+                                    <h1>Create admin</h1>
                                 </div>
 
                                 <div class="main-content">
@@ -72,7 +72,7 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-user"></i> Admins</h3>
+                                                    <h3><i class="fa fa-user"></i> Create admin</h3>
                                                 </div>
                                                 <div class="widget-content">
                                               
@@ -92,7 +92,7 @@
                                                         <input type="text" name="admin_password" class="form-control" id="admin_password" placeholder="Admin password">
                                                       </div>
                                                       
-                                                      <button type="submit" class="btn btn-primary">Create admin now</button>
+                                                      <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o fa-inverse"></i> Create admin now</button>
                                                     </form>
                                                     
                                                 </div>

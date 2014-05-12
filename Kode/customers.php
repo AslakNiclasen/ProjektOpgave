@@ -36,7 +36,7 @@
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
-                                        <li class="active">Customers</li>                             
+                                        <li class="active">Sites</li>                             
                                     </ul>
                                 </div>
                             </div>
@@ -45,10 +45,10 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h1>Customers</h1>
+                                    <h1>Sites</h1>
                                 </div>
 
-                                <a href="customer_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add customer</a>
+                                <a href="customer_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Create site</a>
                                 <br>
                                 <br>
 
@@ -58,12 +58,12 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-group"></i> Customers</h3>
+                                                    <h3><i class="fa fa-group"></i> Sites</h3>
                                                 </div>
                                                 <div class="widget-content">
 <?php
     if ($customers->num_rows <= 0) {
-        echo "No customer created yet. Create your first customer by clicking <a href='customer_add.php'>here</a>";
+        echo "No sites created yet. Create your first site by clicking <a href='customer_add.php'>here</a>";
     } else {
 ?>
                                                     <table class="table">

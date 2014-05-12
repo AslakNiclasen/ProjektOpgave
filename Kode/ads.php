@@ -49,7 +49,7 @@
                                     <h1>Ads</h1>
                                 </div>
 
-                                <a href="ad_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Add Ad</a>
+                                <a href="ad_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Create Ad</a>
                                 <br>
                                 <br>
 
