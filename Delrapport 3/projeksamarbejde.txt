@@ -1,0 +1,35 @@
+\section{Projektsamarbejdet}
+\subsection{Hvad går godt?}
+\textbf{Internt}
+\newline
+Projektgruppen har i løbet af de sidste par uger mødtes flere gange om ugen, og disse har været yderst produktive. Til disse forskellige møder har vi på dangen planlagt en dagsorden, og al opgaveskrivningen er foregået sammen på selve dagen. Arbejdet mellem gruppen internt, fungerer meget gnidningsfrit og vi opfylder hindandens krav, og de krav der stilles til opgaven. Vi møder velforberedte og friske, således at dagen hvor vi har valgt at mødes bliver så konstruktiv som overhoved muligt. OG det har fungeret fremragende og vi er nu på et stadie i projektet at vi har mulighed for at mindske arbejdsbyrden en smule.
+\\
+\\
+\textbf{Med interessent}
+\\
+Vi har ikke haft et møde med vores interessent til dags dato, men vi har haft 2 møder og mailkorrespondance til vores mellemled mellem os og interessenten. Interessenten giver klart udtryk for et frugtbart samarbejde, med mulighed for fremtidige møder efter vores ønske - det kommer vi selvfølgelig til at benytte os af.
+Vi er på nuværende tidpunkt klar til at teste programmet med interessenten og vi arbejder på at få skab en god kontakt således at testningen sker snarest og kan fremlægges i den kommende delrapport 4.
+\\
+\\
+\subsection{Hvad går mindre godt?}
+\textbf{Internt}
+\\
+Vi har valgt at alle contributions til github, sker udelukkende gennem et grupemedlem, da vi så langt som vi er i vores projekt. Dette skyldes at github og visse udgaver af mac er meget komplicerede at få til at fungere sammen. Det har derfor ikke været muligt at optimere dette problem med en virtuel maskine. Samtidigt med at vi desværre har mistet et gruppemedlem, Amanda, har andre muligheder åbnet sig. Vi kan af den grund nemmere kan mødes. Dette har resulteret i ovenstående omkring github, da begge medlemmer sidder sammen og overfører filer hurtigere, til hinanden, end hvis vi skulle benytte den virtuelle maskine på den ene computer.
+Der er selvfølgelig mere arbejde - her tænkes der konkret rapportskrivningen da vi er nået langt i projektet på nuværende tidspunkt, men begge medlemmer er så fleksible at vi mødes op til (i sidste uge) 5 gange om ugen. Således når vi stadig at lave den mængde af arbejde rapportskrivningen kræver.
+\\
+\\
+\textbf{Med interessent}
+\\
+I og med at gruppen ikke har haft møde med interessenten, er det svært at foretage en vurdering af dette punkt. Vi synes dog i og med at interessenten viser meget interesse og er nem at få kontakt til telefonisk, at vi ikke har nogen problematik her.
+Vi regner med at få kontakt til interessenten i næste uge, og aftale nærmere detaljer omkring projektet.
+\\
+\\
+\subsection{Hvilke optimeringer i forhold til projektarbejdet kan vi foretage?}
+\textbf{Internt}
+\\
+Vi kan ikke optimere vores arbejde mere end vores nuværende indsats. Vores mødeplan og produktiviteten under disse kan ikke optimeres. Begge gruppemedlemmer yder en meget stor indsats og projektet fortsætter stadigt fast fremad.
+\\
+\\
+\textbf{Med interessent}
+\\
+Som nævnt, tager vi snarest kontakt til interessenten, og det betyder, at vi ikke kan gøre mere end at aftale mødetidspunkt og herefter beslutte fremtidige dagsordner med interessenten hvis dette kræves.
