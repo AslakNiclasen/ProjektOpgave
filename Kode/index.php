@@ -1,11 +1,8 @@
 <?php
-    require_once("include/session.php");
-    require_once("include/security.php");
-    require_once("include/connect.php");
-    require_once("include/timezone.php");
+    require_once("include/common_includes.php");
 
-    $ads = $conn->query("SELECT * FROM ads WHERE customer_id = '7'");
-    $customers = $conn->query("SELECT * FROM customers ORDER BY name DESC");
+    $ads = $conn->query("SELECT * FROM ads WHERE site_id = '7'");
+    $sites = $conn->query("SELECT * FROM sites ORDER BY name DESC");
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,37 +18,42 @@
             function drawChart() {
                 var options = {
                     title: 'Ads impressions',
-                    'height': 300,
+                    'height': 400,
+                    'width': 400,
+                    'backgroundColor': '#f9f9f9',
                     'legend': {
-                        'position': 'bottom'
+                        'position': 'none'
+                    },
+                    'vAxis': {'title': 'Impressions',
+                        'minValue': 0, 
+                        'maxValue': 1000
                     }
                 };
 
 <?php
-    foreach($customers as $customer) {
-        $groups = $conn->query("SELECT * FROM groups WHERE customer_id = '". $customer["id"] ."'");
+    foreach($sites as $site) {
+        $zones = $conn->query("SELECT * FROM zones WHERE site_id = '". $site["id"] ."'");
         
-        foreach($groups as $group) {
-            $ads = $conn->query("SELECT * FROM ads WHERE customer_id = '". $customer["id"] ."' AND group_id = '". $group["id"] ."'");
+        foreach($zones as $zone) {
+            $ads = $conn->query("SELECT * FROM ads WHERE site_id = '". $site["id"] ."' AND zone_id = '". $zone["id"] ."'");
             
             if ($ads->num_rows > 0) {
-                
                 echo "var data = google.visualization.arrayToDataTable([\n";
-                echo "['Ad name', 'Number of impressions', 'Remaining impressions'],\n";
+                echo "['Ad name', 'Number of impressions'],\n";
                 
                 $i = 0;
                 foreach ($ads as $ad) {
                     if ($i == count($ads)+1) {
-                        echo "['". $ad["ad_name"] ."', ". $ad["number_of_impressions"] ." , ". $ad["max_impressions"] ."] \n";
+                        echo "['". $ad["ad_name"] ."', ". $ad["number_of_impressions"] ."] \n";
                     } else {
-                        echo "['". $ad["ad_name"] ."', ". $ad["number_of_impressions"] ." , ". $ad["max_impressions"] ."], \n";
+                        echo "['". $ad["ad_name"] ."', ". $ad["number_of_impressions"] ."], \n";
                     }
                     
                     $i++;
                 }
                 echo "]);\n";
                 
-                echo "var chart = new google.visualization.ColumnChart(document.getElementById('chart_div_". $group["id"] ."_". $customer["id"] ."'));\n";
+                echo "var chart = new google.visualization.ColumnChart(document.getElementById('chart_div_". $zone["id"] ."_". $site["id"] ."'));\n";
                 echo "chart.draw(data, options);\n\n";
             }
         }
@@ -61,6 +63,9 @@
         </script>
     </head>
     <body class="dashboard">
+<?php
+    include("include/alerts.php");
+?>
         <div class="wrapper">
             <!-- TOP BAR -->
 <?php
@@ -94,32 +99,32 @@
                                     <div class="row">
                                         <div class="col-md-12">
 <?php
-    foreach ($customers as $customer) {
-        $groups = $conn->query("SELECT * FROM groups WHERE customer_id = '". $customer["id"] ."'");
+    foreach ($sites as $site) {
+        $zones = $conn->query("SELECT * FROM zones WHERE site_id = '". $site["id"] ."'");
 ?>
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-bar-chart-o"></i> Statistics for <?php echo $customer["name"]; ?></h3>
+                                                    <h3><i class="fa fa-asterisk"></i> <?php echo $site["name"]; ?></h3>
                                                 </div>
                                                 <div class="widget-content">
 <?php
-        foreach($groups as $group) {
-            $ads = $conn->query("SELECT * FROM ads WHERE customer_id = '". $customer["id"] ."' AND group_id = '". $group["id"] ."'");
+        foreach($zones as $zone) {
+            $ads = $conn->query("SELECT * FROM ads WHERE site_id = '". $site["id"] ."' AND zone_id = '". $zone["id"] ."'");
             if ($ads->num_rows > 0) {
 ?>
                                                     <div class="widget">
                                                         <div class="widget-header">
-                                                            <h3><i class="fa fa-tags"></i> <?php echo $group["name"]; ?></h3>
+                                                            <h3><i class="fa fa-sitemap"></i> <?php echo $zone["name"]; ?></h3>
                                                         </div>
                                                         <div class="widget-content">
-                                                            <div id="chart_div_<?php echo $group["id"]; ?>_<?php echo $customer["id"]; ?>"></div>
+                                                            <div id="chart_div_<?php echo $zone["id"]; ?>_<?php echo $site["id"]; ?>"></div>
                                                         </div>
                                                     </div>
 <?php
             }
         }
 ?>
-                                                    <div id="chart_div_<?php echo $customer["id"]; ?>"></div>
+                                                    <div id="chart_div_<?php echo $site["id"]; ?>"></div>
                                                 </div>
                                             </div>
 <?php
@@ -158,5 +163,6 @@
         <script type="text/javascript" src="assets/js/king-chart-stat.js"></script>
         <script type="text/javascript" src="assets/js/king-table.js"></script>
         <script type="text/javascript" src="assets/js/king-components.js"></script>
+        <script type="text/javascript" src="js/easyad.js"></script>
     </body>
 </html>

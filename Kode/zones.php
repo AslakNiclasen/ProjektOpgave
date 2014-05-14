@@ -1,11 +1,8 @@
 <?php
-    require_once("include/session.php");
-    require_once("include/security.php");
-    require_once("include/connect.php");
-    require_once("include/timezone.php");
+    require_once("include/common_includes.php");
     
-    $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
-    $groups = $conn->query("SELECT groups.*, customers.name as customer_name FROM groups JOIN customers ON groups.customer_id = customers.id");
+    $sites = $conn->query("SELECT * FROM sites ORDER BY name ASC");
+    $zones = $conn->query("SELECT zones.*, (SELECT COUNT(id) AS ads_count FROM ads WHERE zone_id = zones.id) AS ads_count, sites.name AS site_name FROM zones JOIN sites ON zones.site_id = sites.id");
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,6 +13,9 @@
         <link href="assets/css/main.css" rel="stylesheet" type="text/css">
     </head>
     <body class="dashboard">
+<?php
+    include("include/alerts.php");
+?>
         <div class="wrapper">
             <!-- TOP BAR -->
 <?php
@@ -35,7 +35,7 @@
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
-                                        <li class="active">Groups</li>                                    
+                                        <li class="active">Zones</li>                                    
                                     </ul>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@
                                     <h1>Zones</h1>
                                 </div>
 
-                                <a href="group_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Create zone</a>
+                                <a href="zone_create.php" class="btn btn-primary"><i class="fa fa-plus"></i> Create zone</a>
                                 <br>
                                 <br>
 
@@ -62,11 +62,11 @@
                                                 <div class="widget-content">
                                                     
 <?php
-    if ($customers->num_rows <= 0) {
-        echo "No sites created yet. Create your first site by clicking <a href='customer_add.php'>here</a>";
+    if ($sites->num_rows <= 0) {
+        echo "No sites created yet. Create your first site by clicking <a href='site_create.php'>here</a>";
     } else {
-        if ($groups->num_rows <= 0) {
-            echo "No zones created yet. Create your first zone by clicking <a href='group_add.php'>here</a>";
+        if ($zones->num_rows <= 0) {
+            echo "No zones created yet. Create your first zone by clicking <a href='zone_create.php'>here</a>";
         } else {
 ?>
                                                     <table class="table">
@@ -77,12 +77,20 @@
                                                             <th>
                                                                 Belongs to site
                                                             </th>
+                                                            <th>
+                                                                Ads in zone
+                                                            </th>
+                                                            <th>
+                                                                &nbsp;
+                                                            </th>
                                                         </tr>
 <?php
-            foreach($groups as $group) {
-                echo "<tr>";
-                echo "<td>". $group["name"] ."</td>";
-                echo "<td>". $group["customer_name"] ."</td>";
+            foreach($zones as $zone) {
+                echo "<tr id='tr_". $zone["id"] ."'>";
+                echo "<td><a href='zone_edit.php?id=". $zone["id"] ."' title='Edit zone'>". $zone["name"] ."</a></td>";
+                echo "<td><a href='site_edit.php?id=". $zone["site_id"] ."' title='Edit site'>". $zone["site_name"] ."</a></td>";
+                echo "<td>". $zone["ads_count"] ."</td>";
+                echo "<td align='right'><a href='zone_edit.php?id=". $zone["id"] ."'><i class='fa fa-wrench' title='Edit zone'></i></a> &nbsp;&nbsp;&nbsp;&nbsp; <i class='fa fa-trash-o' id='zone_delete_". $zone["id"] ."' title='Delete zone'></i></td>";
                 echo "</tr>";
             }
 ?>
@@ -129,5 +137,29 @@
         <script type="text/javascript" src="assets/js/king-chart-stat.js"></script>
         <script type="text/javascript" src="assets/js/king-table.js"></script>
         <script type="text/javascript" src="assets/js/king-components.js"></script>
+        <script type="text/javascript" src="js/easyad.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("i, a").tooltip();
+                
+                $("i[id^='zone_delete_']").click(function() {
+                    if (confirm("Do you want to delete?\n\nNOTE! All ads belonging to zone will be deleted")) {
+                        var id = $(this).attr("id").split("_")[2];
+                        
+                        $.post("ajax_zone_delete.php", { id: id }, function(response) {
+                            if (response.status == "OK") {
+                                $("#tr_"+ id).fadeOut(600, function(){
+                                    $("#tr_"+ id).remove();
+                                });
+                                
+                                showFeedback(response.status, response.msg);
+                            } else {
+                                showFeedback(response.status, response.msg);
+                            }
+                        }, "JSON");
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

@@ -1,18 +1,6 @@
 <?php
-    require_once("include/session.php");
-    require_once("include/security.php");
-    require_once("include/connect.php");
-    require_once("include/timezone.php");
+    require_once("include/common_includes.php");
 
-    function generateRandomString($length = 20) {
-        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#Â¤%&/()=?.,-_+';
-        $randomString = '';
-        for ($i = 0; $i < $length; $i++) {
-            $randomString .= $characters[rand(0, strlen($characters) - 1)];
-        }
-        return $randomString;
-    }
-    
     $admin_name = @$_POST["admin_name"];
     $admin_email = @$_POST["admin_email"];
     $admin_password = @$_POST["admin_password"];
@@ -34,6 +22,9 @@
         <link href="assets/css/main.css" rel="stylesheet" type="text/css">
     </head>
     <body class="dashboard">
+<?php
+    include("include/alerts.php");
+?>
         <div class="wrapper">
             <!-- TOP BAR -->
 <?php
@@ -66,6 +57,10 @@
                                     <h1>Create admin</h1>
                                 </div>
 
+                                <a href="admins.php" class="btn btn-primary"><i class="fa fa-angle-double-left"></i> Back to admins</a>
+                                <br>
+                                <br>
+                                
                                 <div class="main-content">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -131,5 +126,6 @@
         <script type="text/javascript" src="assets/js/king-chart-stat.js"></script>
         <script type="text/javascript" src="assets/js/king-table.js"></script>
         <script type="text/javascript" src="assets/js/king-components.js"></script>
+        <script type="text/javascript" src="js/easyad.js"></script>
     </body>
 </html>

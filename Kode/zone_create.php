@@ -1,30 +1,16 @@
 <?php
-    require_once("include/session.php");
-    require_once("include/security.php");
-    require_once("include/connect.php");
-    require_once("include/timezone.php");
-
-    function generateRandomString($length = 20) {
-        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#¤%&/()=?.,-_+';
-        $randomString = '';
-        for ($i = 0; $i < $length; $i++) {
-            $randomString .= $characters[rand(0, strlen($characters) - 1)];
-        }
-        return $randomString;
-    }
+    require_once("include/common_includes.php");
     
-    $customer_name = @$_POST["customer_name"];
-    $url = @$_POST["url"];
-    $access_token = generateRandomString();
+    $sites = $conn->query("SELECT * FROM sites ORDER BY name ASC");
     
-    if ($customer_name && $url) {
-        $conn->query("INSERT INTO customers (name, url, access_token) VALUES('". $customer_name ."', '". $url ."', '". $access_token ."')");
-        header("location: customers.php");
+    $zone_name = @$_POST["zone_name"];
+    $site_id = @$_POST["site_id"];
+    
+    if ($zone_name && $site_id) {
+        $conn->query("INSERT INTO zones (site_id, name) VALUES('". $site_id ."', '". $zone_name ."')");
+        header("location: zones.php");
     }
 ?>
-
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,6 +20,9 @@
         <link href="assets/css/main.css" rel="stylesheet" type="text/css">
     </head>
     <body class="dashboard">
+<?php
+    include("include/alerts.php");
+?>
         <div class="wrapper">
             <!-- TOP BAR -->
 <?php
@@ -53,8 +42,8 @@
                                 <div class="col-md-4">
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
-                                        <li><a href="customers.php">Sites</a></li>   
-                                        <li class="active">Create site</li>                                    
+                                        <li><a href="zones.php">Zones</a></li>
+                                        <li class="active">Create zone</li>
                                     </ul>
                                 </div>
                             </div>
@@ -63,31 +52,47 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h1>Create site</h1>
+                                    <h1>Create zone</h1>
                                 </div>
 
+                                <a href="zones.php" class="btn btn-primary"><i class="fa fa-angle-double-left"></i> Back to zones</a>
+                                <br>
+                                <br>
+                                
                                 <div class="main-content">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-group"></i> Create site<h3>
+                                                    <h3><i class="fa fa-sitemap"></i> Create zone</h3>
                                                 </div>
                                                 <div class="widget-content">
-                                              
-                                                   <form role="form" method="post" action="customer_add.php">
-                                                      <div class="form-group">
-                                                        <label for="exampleInputEmail1">Name</label>
-                                                        <input type="text" name="customer_name" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
-                                                      </div>
-                                                      <div class="form-group">
-                                                        <label for="exampleInputPassword1">URL</label>
-                                                        <input type="text" name="url" class="form-control" id="exampleInputPassword1" placeholder="URL">
-                                                      </div>
-                                                      <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o fa-inverse"></i> Create site now</button>
+<?php
+    if ($sites->num_rows <= 0) {
+        echo "<td>No sites created yet. Create your first site by clicking <a href='site_create.php'>here</a></td>";
+    } else {
+?>
+                                                    <form role="form" method="post" action="zone_create.php">
+                                                        <div class="form-group">
+                                                            <label for="zone_name">Zone description</label>
+                                                            <input type="text" class="form-control" name="zone_name" id="zone_name" placeholder="Zone name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="site_id">Zone belongs to site</label>
+                                                            <select class="form-control" name="site_id" id="site_id">
+<?php
+        foreach($sites as $site) {
+            echo "<option value='". $site["id"] ."'>". $site["name"] ."</option>";
+        }
+?>
+                                                            </select>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o fa-inverse"></i> Create zone now</button>
                                                     </form>
-                                                    
+<?php
+    }
+?>
                                                 </div>
                                             </div>
                                             <!-- END INPUT GROUPS -->
@@ -124,5 +129,6 @@
         <script type="text/javascript" src="assets/js/king-chart-stat.js"></script>
         <script type="text/javascript" src="assets/js/king-table.js"></script>
         <script type="text/javascript" src="assets/js/king-components.js"></script>
+        <script type="text/javascript" src="js/easyad.js"></script>
     </body>
 </html>

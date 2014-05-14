@@ -1,12 +1,9 @@
 <?php
-    require_once("include/session.php");
-    require_once("include/security.php");
-    require_once("include/connect.php");
-    require_once("include/timezone.php");
+    require_once("include/common_includes.php");
 
-    $ads = $conn->query("SELECT ads.*, customers.name AS customer_name, groups.name AS group_name FROM ads JOIN customers ON customers.id = ads.customer_id JOIN groups ON groups.id = ads.group_id ORDER BY ads.ad_name ASC");
-    $customers = $conn->query("SELECT * FROM customers ORDER BY name ASC");
-    $groups = $conn->query("SELECT groups.*, customers.name as customer_name FROM groups JOIN customers ON groups.customer_id = customers.id");
+    $ads = $conn->query("SELECT ads.*, sites.name AS site_name, sites.id AS site_id, zones.name AS zone_name, zones.id AS zone_id FROM ads JOIN sites ON sites.id = ads.site_id JOIN zones ON zones.id = ads.zone_id ORDER BY ads.ad_name ASC");
+    $sites = $conn->query("SELECT * FROM sites ORDER BY name ASC");
+    $zones = $conn->query("SELECT zones.*, sites.name as site_name FROM zones JOIN sites ON zones.site_id = sites.id");
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,6 +15,9 @@
         <link href="assets/css/main.css" rel="stylesheet" type="text/css">
     </head>
     <body class="dashboard">
+<?php
+    include("include/alerts.php");
+?>
         <div class="wrapper">
             <!-- TOP BAR -->
 <?php
@@ -49,7 +49,7 @@
                                     <h1>Ads</h1>
                                 </div>
 
-                                <a href="ad_add.php" class="btn btn-primary"><i class="fa fa-plus"></i> Create Ad</a>
+                                <a href="ad_create.php" class="btn btn-primary"><i class="fa fa-plus"></i> Create Ad</a>
                                 <br>
                                 <br>
 
@@ -59,18 +59,18 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-group"></i> Ads</h3>
+                                                    <h3><i class="fa fa-picture-o"></i> Ads</h3>
                                                 </div>
                                                 <div class="widget-content">
 <?php
-    if ($customers->num_rows <= 0) {
-        echo "You haven't created a customer yet. Create your first customer by clicking <a href='customer_add.php'>here</a>";
+    if ($sites->num_rows <= 0) {
+        echo "You haven't created a site yet. Create your first site by clicking <a href='site_create.php'>here</a>";
     } else {
-        if ($groups->num_rows <= 0) {
-            echo "No group created yet. Create your first group by clicking <a href='group_add.php'>here</a>";
+        if ($zones->num_rows <= 0) {
+            echo "No zone created yet. Create your first zone by clicking <a href='zone_create.php'>here</a>";
         } else {
             if ($ads->num_rows <= 0) {
-                echo "No ad created yet. Create your first ad by clicking <a href='ad_add.php'>here</a>";
+                echo "No ad created yet. Create your first ad by clicking <a href='ad_create.php'>here</a>";
             } else {
 ?>
                                                     <table class="table">
@@ -79,10 +79,10 @@
                                                                 Name
                                                             </th>
                                                             <th>
-                                                                Customer
+                                                                Site
                                                             </th>
                                                             <th>
-                                                                Group
+                                                                Zone
                                                             </th>
                                                             <th>
                                                                 Impressions
@@ -96,10 +96,10 @@
                                                         </tr>                                           
 <?php
                 foreach($ads as $ad){
-                    echo "<tr>";
-                    echo "<td>". $ad['ad_name'] ."</td>";
-                    echo "<td>". $ad['customer_name'] . "</td>";
-                    echo "<td>". $ad['group_name'] . "</td>";
+                    echo "<tr id='tr_". $ad["id"] ."'>";
+                    echo "<td><a href='ad_edit.php?id=". $ad["id"] ."' title='Edit ad'>". $ad["ad_name"] ."</a></td>";
+                    echo "<td><a href='site_edit.php?id=". $ad["site_id"] ."' title='Edit site'>". $ad["site_name"] . "</a></td>";
+                    echo "<td><a href='zone_edit.php?id=". $ad["zone_id"] ."' title='Edit zone'>". $ad["zone_name"] . "</a></td>";
                     if ($ad["max_impressions"] == 0) {
                         echo "<td>". $ad["number_of_impressions"] ."</td>";
                     } else {
@@ -112,12 +112,14 @@
                         echo "<td>". date("d-m-Y", strtotime($ad['ad_deadline'])) . "</td>";
                     }
                     
+                    echo "<td align='right'>";
                     if ($ad["ad_active"] == 1) {
-                        echo "<td><input type='checkbox' class='switch-demo switch-mini' data-on='success' data-off='default' id='ad_active_". $ad["id"] ."' checked></td>";
+                        echo "<input type='checkbox' class='switch-demo switch-mini' data-on='success' data-off='default' id='ad_active_". $ad["id"] ."' checked>";
                     } else {
-                        echo "<td><input type='checkbox' class='switch-demo switch-mini' data-on='success' data-off='default' id='ad_active_". $ad["id"] ."'></td>";
+                        echo "<input type='checkbox' class='switch-demo switch-mini' data-on='success' data-off='default' id='ad_active_". $ad["id"] ."'>";
                     }
-                    
+                    echo " &nbsp;&nbsp;&nbsp;&nbsp; <a href='ad_edit.php?id=". $ad["id"] ."'><i class='fa fa-wrench' title='Edit ad'></i></a> &nbsp;&nbsp;&nbsp;&nbsp; <i class='fa fa-trash-o' id='ad_delete_". $ad["id"] ."' title='Delete ad'></i>";
+                    echo "</td>";
                     
                     echo "</tr>";
                 }
@@ -165,24 +167,45 @@
         <script type="text/javascript" src="assets/js/king-table.js"></script>
         <script type="text/javascript" src="assets/js/king-components.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap-switch.min.js"></script>
+        <script type="text/javascript" src="js/easyad.js"></script>
         <script>
             $(document).ready(function() {
-                 $(".switch-demo").bootstrapSwitch();
-                 
-                 $(".switch-demo").on("switch-change", function(event, state) {
-                     var on_or_off = state.value;
-                     var ad_id = $(this).attr("id").split("_")[2];
-                     
-                     if (on_or_off) {
-                         on_or_off = 1;
-                     } else {
-                         on_or_off = 0;
-                     }
-                     
-                     $.post("ajax_ad_activate.php", { ad_id: ad_id, on_or_off: on_or_off }, function(response) {
-                        console.log(response);
-                     });
-                 });
+                $("i, a, .switch-demo").tooltip();
+
+                $(".switch-demo").bootstrapSwitch();
+
+                $(".switch-demo").on("switch-change", function(event, state) {
+                    var on_or_off = state.value;
+                    var ad_id = $(this).attr("id").split("_")[2];
+
+                    if (on_or_off) {
+                        on_or_off = 1;
+                    } else {
+                        on_or_off = 0;
+                    }
+
+                    $.post("ajax_ad_activate.php", { ad_id: ad_id, on_or_off: on_or_off }, function(response) {
+                        showFeedback(response.status, response.msg);
+                    }, "json");
+                });
+                
+                $("i[id^='ad_delete_']").click(function() {
+                    if (confirm("Do you want to delete?")) {
+                        var id = $(this).attr("id").split("_")[2];
+                        
+                        $.post("ajax_ad_delete.php", { id: id }, function(response) {
+                            if (response.status == "OK") {
+                                $("#tr_"+ id).fadeOut(600, function(){
+                                    $("#tr_"+ id).remove();
+                                });
+                                
+                                showFeedback(response.status, response.msg);
+                            } else {
+                                showFeedback(response.status, response.msg);
+                            }
+                        }, "JSON");
+                    }
+                });
             });
         </script>
     </body>
