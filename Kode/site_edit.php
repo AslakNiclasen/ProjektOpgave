@@ -1,11 +1,11 @@
 <?php
     require_once("include/common_includes.php");
 
-    $id = $_GET["id"];
+    $id = $conn->real_escape_string($_GET["id"]);
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $site_name = $_POST["site_name"];
-        $site_url = $_POST["site_url"];
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && is_numeric($id)) {
+        $site_name = $conn->real_escape_string($_POST["site_name"]);
+        $site_url = $conn->real_escape_string($_POST["site_url"]);
         
         $conn->query("UPDATE sites SET name = '". $site_name ."', url = '". $site_url ."' WHERE id = '". $id ."'");
         

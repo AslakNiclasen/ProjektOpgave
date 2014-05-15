@@ -3,8 +3,6 @@
     
     $admins = $conn->query("SELECT * FROM admins ORDER BY name ASC");
 ?>
-
-
 <!DOCTYPE html>
 <html>
     <head>

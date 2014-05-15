@@ -1,18 +1,15 @@
 <?php
     require_once("include/common_includes.php");
 
-    $admin_name = @$_POST["admin_name"];
-    $admin_email = @$_POST["admin_email"];
-    $admin_password = @$_POST["admin_password"];
+    $admin_name = $conn->real_escape_string(@$_POST["admin_name"]);
+    $admin_email = $conn->real_escape_string(@$_POST["admin_email"]);
+    $admin_password = $conn->real_escape_string(@$_POST["admin_password"]);
     
     if ($admin_name && $admin_email && $admin_password) {
         $conn->query("INSERT INTO admins (name, email, password) VALUES('". $admin_name ."', '". $admin_email ."', '". $admin_password ."')");
         header("location: admins.php");
     }
 ?>
-
-
-
 <!DOCTYPE html>
 <html>
     <head>

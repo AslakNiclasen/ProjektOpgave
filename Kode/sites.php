@@ -3,8 +3,6 @@
     
     $sites = $conn->query("SELECT sites.*, (SELECT COUNT(id) FROM zones WHERE site_id = sites.id) AS zones_count, (SELECT COUNT(id) FROM ads WHERE site_id = sites.id) AS ads_count FROM sites ORDER BY name ASC");
 ?>
-
-
 <!DOCTYPE html>
 <html>
     <head>

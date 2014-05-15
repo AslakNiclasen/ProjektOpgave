@@ -3,10 +3,10 @@
     
     $sites = $conn->query("SELECT * FROM sites ORDER BY name ASC");
     
-    $zone_name = @$_POST["zone_name"];
-    $site_id = @$_POST["site_id"];
+    $zone_name = $conn->real_escape_string(@$_POST["zone_name"]);
+    $site_id = $conn->real_escape_string(@$_POST["site_id"]);
     
-    if ($zone_name && $site_id) {
+    if ($zone_name && is_numeric($site_id)) {
         $conn->query("INSERT INTO zones (site_id, name) VALUES('". $site_id ."', '". $zone_name ."')");
         header("location: zones.php");
     }

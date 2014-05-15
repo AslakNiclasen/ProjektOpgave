@@ -5,9 +5,9 @@
 
     $sites = $conn->query("SELECT * FROM sites");
     
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $zone_description = $_POST["zone_description"];
-        $site_id = $_POST["site_id"];
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && is_numeric($id)) {
+        $zone_description = $conn->real_escape_string($_POST["zone_description"]);
+        $site_id = $conn->real_escape_string($_POST["site_id"]);
         
         $conn->query("UPDATE zones SET name = '". $zone_description ."', site_id = '". $site_id ."' WHERE id = '". $id ."'");
         

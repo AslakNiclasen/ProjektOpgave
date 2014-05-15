@@ -1,7 +1,7 @@
 <?php
     require_once("include/common_includes.php");
     
-    $site_id = $_GET["site_id"];
+    $site_id = $conn->real_escape_string($_GET["site_id"]);
     
     $zones = $conn->query("SELECT id, name FROM zones WHERE site_id = '". $site_id ."'");
     

@@ -1,27 +1,34 @@
 <?php
     require_once("include/common_includes.php");
 
+    //Fetching all sites and zones
     $sites = $conn->query("SELECT * FROM sites ORDER BY name ASC");
     $zones = $conn->query("SELECT * FROM zones ORDER BY name ASC");
 
-    $ad_name = @$_POST["ad_name"];
-    $site_id = @$_POST["site_id"];
-    $zone_id = @$_POST["zone_id"];
-    $max_impressions = @$_POST["max_impressions"];
-    $ad_deadline = @$_POST["ad_deadline"];
-    $file_name_extensions = @explode(".", $_FILES["ad_file"]["name"]);
+    //Fetching all variables and escaping
+    $ad_name = $conn->real_escape_string(@$_POST["ad_name"]);
+    $site_id = $conn->real_escape_string(@$_POST["site_id"]);
+    $zone_id = $conn->real_escape_string(@$_POST["zone_id"]);
+    $max_impressions = $conn->real_escape_string(@$_POST["max_impressions"]);
+    $ad_deadline = $conn->real_escape_string(@$_POST["ad_deadline"]);
+    $file_name = $conn->real_escape_string($_FILES["ad_file"]["name"]);
+    $file_name_tmp = $conn->real_escape_string($_FILES["ad_file"]["tmp_name"]);
+    
+    //Handling file-upload
+    $file_name_extensions = @explode(".", $file_name);
     $length_of_array = count($file_name_extensions);
     $file_type = @$file_name_extensions[$length_of_array-1];
     $new_file_name = generateRandomString() .".". $file_type;  
     
+    //Handling date
     if (strtotime(@$ad_deadline) > 10000) {
         $timestamp = @date("Y-m-d H:i:s", strtotime($ad_deadline));
     } else {
         $timestamp = NULL;
     }
     
-    if ($ad_name && $site_id && $zone_id) {
-        move_uploaded_file($_FILES["ad_file"]["tmp_name"], "ads/" . $new_file_name);
+    if ($ad_name && is_numeric($site_id) && is_numeric($zone_id)) {
+        move_uploaded_file($file_name_tmp, "ads/" . $new_file_name);
 
         $conn->query("INSERT INTO ads (ad_name, file_name, max_impressions, ad_deadline, site_id, zone_id) VALUES('". $ad_name ."', '". $new_file_name ."', '". $max_impressions ."', '". $timestamp ."', '". $site_id ."', '". $zone_id ."')");
         header("location: ads.php");

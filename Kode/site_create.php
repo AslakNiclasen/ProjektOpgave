@@ -1,8 +1,8 @@
 <?php
     require_once("include/common_includes.php");
     
-    $site_name = @$_POST["site_name"];
-    $site_url = @$_POST["site_url"];
+    $site_name = $conn->real_escape_string(@$_POST["site_name"]);
+    $site_url = $conn->real_escape_string(@$_POST["site_url"]);
     $access_token = generateRandomString();
     
     if ($site_name && $site_url) {

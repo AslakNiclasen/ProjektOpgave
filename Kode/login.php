@@ -6,8 +6,8 @@
         header("location: index.php");
     }
     
-	$email = @$_POST["email"];
-	$password = @$_POST["password"];
+	$email = $conn->real_escape_string(@$_POST["email"]);
+	$password = $conn->real_escape_string(@$_POST["password"]);
 
 	if ($email || $password) {
 		$admins = $conn->query("SELECT * FROM admins WHERE email = '". $email ."' AND password = '". $password ."'");
