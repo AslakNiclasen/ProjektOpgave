@@ -78,7 +78,7 @@
                                                                 Belongs to site
                                                             </th>
                                                             <th>
-                                                                Ads in zone
+                                                                <i class="fa fa-picture-o" title="Number of ads in zone"></i>
                                                             </th>
                                                             <th>
                                                                 &nbsp;

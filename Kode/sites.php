@@ -77,10 +77,10 @@
                                                                 Access Token
                                                             </th>
                                                             <th>
-                                                                Zones in site
+                                                                <i class="fa fa-sitemap" title="Number of zones belonging to site"></i>
                                                             </th>
                                                             <th>
-                                                                Ads in site
+                                                                <i class="fa fa-picture-o" title="Number of ads belonging to site"></i>
                                                             </th>
                                                             <th>
                                                                 &nbsp;
