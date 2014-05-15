@@ -11,8 +11,8 @@
     $zone_id = $conn->real_escape_string(@$_POST["zone_id"]);
     $max_impressions = $conn->real_escape_string(@$_POST["max_impressions"]);
     $ad_deadline = $conn->real_escape_string(@$_POST["ad_deadline"]);
-    $file_name = $conn->real_escape_string($_FILES["ad_file"]["name"]);
-    $file_name_tmp = $conn->real_escape_string($_FILES["ad_file"]["tmp_name"]);
+    $file_name = $conn->real_escape_string(@$_FILES["ad_file"]["name"]);
+    $file_name_tmp = $conn->real_escape_string(@$_FILES["ad_file"]["tmp_name"]);
     
     //Handling file-upload
     $file_name_extensions = @explode(".", $file_name);
