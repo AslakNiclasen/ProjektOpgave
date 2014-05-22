@@ -1,14 +1,34 @@
 <?php
     require_once("include/common_includes.php");
+    require_once("classes/classes.php");
     
-    $sites = $conn->query("SELECT * FROM sites ORDER BY name ASC");
-    
-    $zone_name = $conn->real_escape_string(@$_POST["zone_name"]);
-    $site_id = $conn->real_escape_string(@$_POST["site_id"]);
-    
-    if ($zone_name && is_numeric($site_id)) {
-        $conn->query("INSERT INTO zones (site_id, name) VALUES('". $site_id ."', '". $zone_name ."')");
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $zone_name = sanitize($_POST["zone_name"], $conn);
+        $site_id = sanitize($_POST["site_id"], $conn);
+
+        $zone = new Zone($conn);
+
+        if ($zone_name && is_numeric($site_id)) {
+            if ($zone->create($zone_name, $site_id)) {
+                flash_message("OK", "Zone was created successfully");
+            } else {
+                flash_message("NOT_OK", "Zone was not created");
+            }
+        } else {
+            flash_message("NOT_OK", "Zone was not created");
+        }
+
         header("location: zones.php");
+    } else {
+        $sites = new Site($conn);
+
+        $sites->get_all_sites();
+
+
+        $sites = $conn->query("SELECT * FROM sites ORDER BY name ASC");
+        echo "<pre>";
+        print_r($sites);
+        echo "</pre>";
     }
 ?>
 <!DOCTYPE html>
@@ -88,7 +108,7 @@
 ?>
                                                             </select>
                                                         </div>
-                                                        <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o fa-inverse"></i> Create zone now</button>
+                                                        <button type="submit" class="btn btn-primary"><i class="fa fa-check fa-inverse"></i> Create zone now</button>
                                                     </form>
 <?php
     }
@@ -132,3 +152,6 @@
         <script type="text/javascript" src="js/easyad.js"></script>
     </body>
 </html>
+<?php
+    include("include/alerts_remove.php");
+?>

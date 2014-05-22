@@ -1,5 +1,6 @@
 <?php
     require_once("include/common_includes.php");
+    require_once("classes/classes.php");
     
     $sites = $conn->query("SELECT sites.*, (SELECT COUNT(id) FROM zones WHERE site_id = sites.id) AS zones_count, (SELECT COUNT(id) FROM ads WHERE site_id = sites.id) AS ads_count FROM sites ORDER BY name ASC");
 ?>
@@ -164,3 +165,6 @@
         </script>
     </body>
 </html>
+<?php
+    include("include/alerts_remove.php");
+?>

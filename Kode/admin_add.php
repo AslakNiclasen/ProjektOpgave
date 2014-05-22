@@ -84,7 +84,7 @@
                                                         <input type="text" name="admin_password" class="form-control" id="admin_password" placeholder="Admin password">
                                                       </div>
                                                       
-                                                      <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o fa-inverse"></i> Create admin now</button>
+                                                      <button type="submit" class="btn btn-primary"><i class="fa fa-check fa-inverse"></i> Create admin now</button>
                                                     </form>
                                                     
                                                 </div>
@@ -126,3 +126,6 @@
         <script type="text/javascript" src="js/easyad.js"></script>
     </body>
 </html>
+<?php
+    include("include/alerts_remove.php");
+?>

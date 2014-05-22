@@ -18,7 +18,4 @@
             echo "</div>";
         echo "</div>";
     }
-    
-    $_SESSION["status"] = "";
-    $_SESSION["msg"] = "";
 ?>

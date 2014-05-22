@@ -1,19 +1,22 @@
 <?php
     require_once("include/common_includes.php");
-    
-    $site_name = $conn->real_escape_string(@$_POST["site_name"]);
-    $site_url = $conn->real_escape_string(@$_POST["site_url"]);
-    $access_token = generateRandomString();
-    
-    if ($site_name && $site_url) {
-        if ($conn->query("INSERT INTO sites (name, url, access_token) VALUES('". $site_name ."', '". $site_url ."', '". $access_token ."')")) {
+    require_once("classes/classes.php");
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $site_name = sanitize($_POST["site_name"], $conn);
+        $site_url = sanitize($_POST["site_url"], $conn);
+        $access_token = generateRandomString();
+
+        $site = new Site($conn);
+
+        if ($site->create($site_name, $site_url, $access_token)) {
             $_SESSION["status"] = "OK";
             $_SESSION["msg"] = "Site created successfully";
         } else {
             $_SESSION["status"] = "NOT_OK";
             $_SESSION["msg"] = "Site was not created!";
         }
-        
+
         header("location: sites.php");
     }
 ?>
@@ -84,7 +87,7 @@
                                                         <label for="site_url">URL</label>
                                                         <input type="text" name="site_url" class="form-control" id="site_url" placeholder="URL">
                                                       </div>
-                                                      <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o fa-inverse"></i> Create site now</button>
+                                                      <button type="submit" class="btn btn-primary"><i class="fa fa-check fa-inverse"></i> Create site now</button>
                                                     </form>
                                                     
                                                 </div>
@@ -126,3 +129,6 @@
         <script type="text/javascript" src="js/easyad.js"></script>
     </body>
 </html>
+<?php
+    include("include/alerts_remove.php");
+?>

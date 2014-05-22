@@ -1,22 +1,28 @@
 <?php
     require_once("include/common_includes.php");
+    require_once("classes/classes.php");
 
-    $id = $conn->real_escape_string($_GET["id"]);
+    $id = sanitize($_GET["id"], $conn);
 
     if ($_SERVER["REQUEST_METHOD"] == "POST" && is_numeric($id)) {
-        $site_name = $conn->real_escape_string($_POST["site_name"]);
-        $site_url = $conn->real_escape_string($_POST["site_url"]);
-        
-        $conn->query("UPDATE sites SET name = '". $site_name ."', url = '". $site_url ."' WHERE id = '". $id ."'");
+        $site_name = sanitize($_POST["site_name"], $conn);
+        $site_url = sanitize($_POST["site_url"], $conn);
+
+        $site = new site($conn);
+
+        if ($site->edit($id, $site_name, $site_url)) {
+            flash_message("OK", "The site has been updated successfully");
+        } else {
+            flash_message("NOT_OK", "There was an error while trying to update the site");
+        }
         
         header("location: sites.php");
     } else {
-        $site = $conn->query("SELECT * FROM sites WHERE id = '". $id ."'")->fetch_assoc();
+        $site = new site($conn);
+
+        $site = $site->get_site($id);
     }
 ?>
-
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -84,7 +90,7 @@
                                                         <label for="site_url">URL</label>
                                                         <input type="text" name="site_url" id="site_url" class="form-control" placeholder="URL" value="<?php echo $site["url"]; ?>">
                                                       </div>
-                                                      <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o fa-inverse"></i> Save changes now</button>
+                                                      <button type="submit" class="btn btn-primary"><i class="fa fa-check fa-inverse"></i> Save changes now</button>
                                                     </form>
                                                     
                                                 </div>
@@ -126,3 +132,6 @@
         <script type="text/javascript" src="js/easyad.js"></script>
     </body>
 </html>
+<?php
+    include("include/alerts_remove.php");
+?>

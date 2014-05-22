@@ -166,3 +166,6 @@
         <script type="text/javascript" src="js/easyad.js"></script>
     </body>
 </html>
+<?php
+    include("include/alerts_remove.php");
+?>

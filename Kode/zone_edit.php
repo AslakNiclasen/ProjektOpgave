@@ -2,8 +2,6 @@
     require_once("include/common_includes.php");
     
     $id = $_GET["id"];
-
-    $sites = $conn->query("SELECT * FROM sites");
     
     if ($_SERVER["REQUEST_METHOD"] == "POST" && is_numeric($id)) {
         $zone_description = $conn->real_escape_string($_POST["zone_description"]);
@@ -14,6 +12,7 @@
         header("location: zones.php");
     } else {
         $zone = $conn->query("SELECT * FROM zones WHERE id = '". $id ."'")->fetch_assoc();
+        $sites = $conn->query("SELECT * FROM sites");
     }
 ?>
 <!DOCTYPE html>
@@ -48,7 +47,7 @@
                                     <ul class="breadcrumb">
                                         <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
                                         <li><a href="zones.php">Zones</a></li>
-                                        <li class="active">Create zone</li>
+                                        <li class="active">Edit zone</li>
                                     </ul>
                                 </div>
                             </div>
@@ -57,7 +56,7 @@
                             <!-- main -->
                             <div class="content">
                                 <div class="main-header">
-                                    <h1>Create zone</h1>
+                                    <h1>Edit zone</h1>
                                 </div>
 
                                 <a href="zones.php" class="btn btn-primary"><i class="fa fa-angle-double-left"></i> Back to zones</a>
@@ -70,7 +69,7 @@
                                             <!-- INPUT GROUPS -->
                                             <div class="widget">
                                                 <div class="widget-header">
-                                                    <h3><i class="fa fa-sitemap"></i> Create zone</h3>
+                                                    <h3><i class="fa fa-sitemap"></i> Edit zone</h3>
                                                 </div>
                                                 <div class="widget-content">
 <?php
@@ -88,7 +87,7 @@
                                                             <select class="form-control" name="site_id" id="site_id">
 <?php
         foreach($sites as $site) {
-            if ($site["id"] == $zone["customer_id"]) {
+            if ($site["id"] == $zone["site_id"]) {
                 echo "<option value='". $site["id"] ."' selected>". $site["name"] ."</option>";
             } else {
                 echo "<option value='". $site["id"] ."'>". $site["name"] ."</option>";
@@ -97,7 +96,7 @@
 ?>
                                                             </select>
                                                         </div>
-                                                        <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o fa-inverse"></i> Save changes now</button>
+                                                        <button type="submit" class="btn btn-primary"><i class="fa fa-check fa-inverse"></i> Save changes now</button>
                                                     </form>
 <?php
     }
@@ -141,3 +140,6 @@
         <script type="text/javascript" src="js/easyad.js"></script>
     </body>
 </html>
+<?php
+    include("include/alerts_remove.php");
+?>

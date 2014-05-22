@@ -163,3 +163,6 @@
         </script>
     </body>
 </html>
+<?php
+    include("include/alerts_remove.php");
+?>
